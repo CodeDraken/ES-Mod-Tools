@@ -1,4 +1,5 @@
 // make grabbing data easy
+// TODO: refactor into multiple files & maybe add chaining
 
 const { splitAtSpace } = require('./generalUtil')
 
@@ -35,10 +36,12 @@ const readDataPath = _path => {
   return selectedData
 }
 
-const isPath = str => /\//g.test(str)
+// special syntax to access data i.e global/sales
+const isDataPath = str => /\//g.test(str)
 
+// loop over blocks and call a function passing in a specific attribute from each one
 const eachAttrIn = (attr, dataName, callback) => {
-  const selectedData = isPath(dataName)
+  const selectedData = isDataPath(dataName)
     ? readDataPath(dataName)
     : data[dataName]
 
@@ -49,6 +52,13 @@ const eachAttrIn = (attr, dataName, callback) => {
   }
 }
 
+// TODO: selectFrom - select a value from an object
+
+// TODO: selectBlockWith - select an object that has a specific value
+
+// TODO: selectAllBlocksWith - select all objects that have a specific value
+
+// returns array of all planet attributes
 const listAllPlanetAttributes = () => {
   const allAttr = []
 
@@ -59,6 +69,7 @@ const listAllPlanetAttributes = () => {
   return [...new Set(allAttr)]
 }
 
+// returns array of governments
 const listGovernments = () => {
   const govs = []
 
@@ -69,10 +80,11 @@ const listGovernments = () => {
   return govs
 }
 
-console.log(listGovernments())
-
 module.exports = {
   data,
+  isDataPath,
+  readDataPath,
   eachAttrIn,
-  listAllPlanetAttributes
+  listAllPlanetAttributes,
+  listGovernments
 }

@@ -17,6 +17,6 @@
 // - defense fleet ( multiplier for amount of defense ships )
 // - will have a limit so ridiculous combat ratings won't be required.
 
-const attributeModifier = {
+const modifiers = {
 
 }
