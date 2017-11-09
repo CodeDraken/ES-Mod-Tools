@@ -25,14 +25,7 @@ const { listAllPlanetAttributes } = require('../../util/grabDataUtil')
 
 generateModifierFile(
   [{ _path: '/globals/governments', grab: '_value' }],
-  undefined,
+  listAllPlanetAttributes(),
   '/tributeDomination',
   (dataToSanitize) => dataToSanitize.map(key => key.replace(/"/g, '').trim())
 )
-
-// generateModifierFile(
-//   [{ _path: '/globals/governments', grab: '_value' }],
-//   listAllPlanetAttributes(),
-//   '/tributeDomination',
-//   (dataToSanitize) => dataToSanitize.map(key => key.replace(/"/g, '').trim())
-// )

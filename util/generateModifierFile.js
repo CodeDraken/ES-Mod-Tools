@@ -8,7 +8,6 @@ const { modGenerators } = require('../config/paths')
 
 // attribute selecting queries, your own preselected data, output, and a callback if you want to modify the data first
 const generateModifierFile = (arrSelectQueries, optionalData = [], outputDestination, sanitizer = (data) => data) => {
-  console.log(optionalData)
   // select the data
   const selectedData = []
   arrSelectQueries.forEach(({ _path, grab, makeUnique = false }) => {
@@ -42,7 +41,7 @@ const askValues = (data, outputDestination) => {
   stdin.addListener('data', function (d) {
     let input = d.toString().trim()
     // if valid number make it a number
-    input = +input
+    input = !Number.isNaN(+input)
       ? +input
       : input
 
