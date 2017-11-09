@@ -5,7 +5,7 @@
 const { listGovernments } = require('./grabDataUtil')
 
 // pass in what you want to have as modifiers and the destination
-// i.e [ '/global/government' ], '/modifiers'
+// i.e [ '/global/governments' ], '/modifiers'
 const generateModifierFile = (dataArrToSelect, outputDestination) => {
 
 }

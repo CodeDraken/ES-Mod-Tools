@@ -25,6 +25,7 @@ const readDataPath = _path => {
   let selectedData
 
   while (keys.length) {
+    if (selectedData && !selectedData[keys[0]]) console.log('data not found: ', _path)
     // jump into data object or go deeper
     selectedData = selectedData
       ? selectedData[keys[0]]
@@ -52,11 +53,51 @@ const eachAttrIn = (attr, dataName, callback) => {
   }
 }
 
-// TODO: selectFrom - select a value from an object
+// selectFrom - select an attribute from an object that has a specific value
+const selectFrom = (attr, _path, keyValues) => {
+  return selectBlockWith(keyValues, _path)[attr] || null
+}
 
-// TODO: selectBlockWith - select an object that has a specific value
+// selectBlockWith - select an object that has a specific value
+// strictly matches - attributes: 'factory' shouldn't match 'factory tourism'
+const selectBlockWith = (keyValues, _path) => {
+  const blocks = readDataPath(_path)
+  const keyValuesLength = Object.keys(keyValues).length
 
-// TODO: selectAllBlocksWith - select all objects that have a specific value
+  for (let block of blocks) {
+    let matches = 0
+    for (let key in keyValues) {
+      const expectedVal = JSON.stringify(keyValues[key])
+      const actualVal = JSON.stringify(block[key])
+
+      if (actualVal === expectedVal) matches++
+    }
+
+    if (matches === keyValuesLength) return block
+  }
+
+  return null
+}
+
+// selectAllBlocksWith - select all objects that have a specific value
+const selectAllBlocksWith = (keyValues, _path) => {
+  const blocks = readDataPath(_path)
+  return blocks.filter(block => {
+    let isMatch = true
+
+    for (let key in keyValues) {
+      const expectedVal = JSON.stringify(keyValues[key])
+      const actualVal = JSON.stringify(block[key])
+      if (actualVal !== expectedVal) {
+        isMatch = false
+      }
+    }
+
+    return isMatch
+  })
+}
+
+// TODO: selectSimilar - like selectFrom / selectBlockWith but not as strict
 
 // returns array of all planet attributes
 const listAllPlanetAttributes = () => {
@@ -80,11 +121,16 @@ const listGovernments = () => {
   return govs
 }
 
+console.log(selectFrom('attributes', '/map/planets', { _value: 'Ahr' }))
+
 module.exports = {
   data,
   isDataPath,
   readDataPath,
   eachAttrIn,
   listAllPlanetAttributes,
-  listGovernments
+  listGovernments,
+  selectFrom,
+  selectBlockWith,
+  selectAllBlocksWith
 }
