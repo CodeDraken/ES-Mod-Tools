@@ -20,12 +20,56 @@
 // - defense fleet ( multiplier for amount of defense ships )
 // - will have a limit so ridiculous combat ratings won't be required.
 
+const { wordOrQuoted } = require('../../config/regex')
 const { generateModifierFile } = require('../../util/generateModifierFile')
-const { listAllPlanetAttributes } = require('../../util/grabDataUtil')
+const { listAllPlanetAttributes, selectAllBlocksWith } = require('../../util/grabDataUtil')
 
-generateModifierFile(
-  [{ _path: '/globals/governments', grab: '_value' }],
-  listAllPlanetAttributes(),
-  '/tributeDomination',
-  (dataToSanitize) => dataToSanitize.map(key => key.replace(/"/g, '').trim())
-)
+const planetsData = selectAllBlocksWith({ _type: 'planet' }, 'map/planets')
+const systemsData = selectAllBlocksWith({ _type: 'system' }, 'map/systems')
+
+const createModifierFile = () => {
+  generateModifierFile(
+    [{ _path: '/globals/governments', grab: '_value' }],
+    listAllPlanetAttributes(),
+    '/tributeDomination',
+    (dataToSanitize) => dataToSanitize.map(key => key.replace(/"/g, '').trim())
+  )
+}
+
+// TODO: Fix this shit
+const modifyPlanets = (planets = planetsData) => {
+  const modified = planets.map(planet => {
+    const system = systemsData
+    .find(system => system.object
+      .some(object => {
+        const re = new RegExp(String.raw`"_value": "\"?${planet._value}\"?"`, 'g')
+        console.log(object)
+        return object._value === planet._value || JSON.stringify(re.test(object))
+      }))
+
+    try {
+      let { link, government, fleet } = system
+      let { attributes, shipyard, outfitter } = planet
+      console.log(system._value, planet._value)
+
+      if (planet._value === 'Earth') console.log(system, planet)
+
+      // convert string to array
+      attributes = attributes
+      ? attributes.match(wordOrQuoted)
+      : []
+    } catch (err) {
+      console.log(`failed for: ${planet._value}`, system)
+      console.log(err)
+    }
+  })
+
+  return modified
+}
+
+modifyPlanets()
+
+module.exports = {
+  createModifierFile,
+  modifyPlanets
+}

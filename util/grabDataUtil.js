@@ -40,6 +40,19 @@ const readDataPath = _path => {
 // special syntax to access data i.e global/sales
 const isDataPath = str => /\//g.test(str)
 
+// eachBlockIn loops over blocks and passes to callback
+const eachBlockIn = (_path, callback) => {
+  const readData = isDataPath(_path)
+    ? readDataPath(_path)
+    : data[_path]
+
+  for (let block of readData) {
+    const blockClone = {...block}
+
+    callback(blockClone)
+  }
+}
+
 // loop over blocks and call a function passing in a specific attribute from each one
 const eachAttrIn = (attr, _path, callback) => {
   const readData = isDataPath(_path)
@@ -144,6 +157,7 @@ module.exports = {
   data,
   isDataPath,
   readDataPath,
+  eachBlockIn,
   eachAttrIn,
   listAllPlanetAttributes,
   listGovernments,
