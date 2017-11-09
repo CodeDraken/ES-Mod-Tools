@@ -1,0 +1,2100 @@
+{
+  "coalition": {
+    "Transport": {
+      "massRange": {
+        "minMass": 80,
+        "maxMass": 570
+      },
+      "bunks": [
+        0.4035421327367636,
+        -40.72408650260999
+      ],
+      "cargoSpace": [
+        0.10738255033557047,
+        1.9697986577181226
+      ],
+      "cost": [
+        18790.193885160326,
+        -1604553.3184190895
+      ],
+      "drag": [
+        0.012953020134228188,
+        1.3879194630872482
+      ],
+      "engineCap": [
+        0.18277404921700224,
+        28.237136465324383
+      ],
+      "fuelCap": [
+        0.3653989560029829,
+        599.5152870991797
+      ],
+      "heat": [
+        -0.00040082028337061904,
+        0.8227255779269202
+      ],
+      "hull": [
+        8.307233407904548,
+        265.51081282624955
+      ],
+      "outfitSpace": [
+        0.696793437733035,
+        105.38180462341538
+      ],
+      "requiredCrew": [
+        0.037956748695003734,
+        -2.9381058911260265
+      ],
+      "shields": [
+        26.372110365398953,
+        -577.3303504847117
+      ],
+      "weaponCap": [
+        0.4375466070096942,
+        5.424683072334091
+      ],
+      "weapon": {
+        "blastRadius": [
+          0.2612975391498881,
+          -9.856823266219237
+        ],
+        "hitForce": [
+          3.9194630872483223,
+          -147.85234899328862
+        ],
+        "hullDamage": [
+          1.3064876957494407,
+          -49.284116331096186
+        ],
+        "shieldDamage": [
+          2.6129753914988814,
+          -98.56823266219237
+        ]
+      }
+    },
+    "Light Freighter": {
+      "massRange": {
+        "minMass": 100,
+        "maxMass": 380
+      },
+      "bunks": [
+        0.02674689440993789,
+        5.341226708074534
+      ],
+      "cargoSpace": [
+        0.8371118012422362,
+        -52.28416149068326
+      ],
+      "cost": [
+        13239.790372670808,
+        -898310.9472049689
+      ],
+      "drag": [
+        0.02689052795031056,
+        -0.712383540372671
+      ],
+      "engineCap": [
+        0.18237577639751554,
+        17.524068322981364
+      ],
+      "fuelCap": [
+        0.5434782608695652,
+        272.82608695652175
+      ],
+      "heat": [
+        -0.00041925465838509306,
+        0.7281055900621118
+      ],
+      "hull": [
+        22.294254658385093,
+        -1396.8555900621113
+      ],
+      "outfitSpace": [
+        0.764751552795031,
+        75.04813664596273
+      ],
+      "requiredCrew": [
+        0.007531055900621118,
+        0.8377329192546585
+      ],
+      "shields": [
+        7.713509316770186,
+        775.0388198757764
+      ],
+      "weaponCap": [
+        0.3409549689440993,
+        0.41653726708075567
+      ],
+      "weapon": {
+        "blastRadius": [
+          0.1996118012422361,
+          -5.909161490683246
+        ],
+        "hitForce": [
+          2.9941770186335406,
+          -88.63742236024848
+        ],
+        "hullDamage": [
+          0.9980590062111802,
+          -29.54580745341616
+        ],
+        "shieldDamage": [
+          1.9961180124223603,
+          -59.09161490683232
+        ]
+      }
+    },
+    "Heavy Freighter": {
+      "massRange": {
+        "minMass": 340,
+        "maxMass": 670
+      },
+      "bunks": [
+        0.05331262939958593,
+        12.593685300207035
+      ],
+      "cargoSpace": [
+        0.6523809523809525,
+        -21.69047619047626
+      ],
+      "cost": [
+        17336.33540372671,
+        -895667.7018633541
+      ],
+      "drag": [
+        0.025527950310559006,
+        -0.7389751552795047
+      ],
+      "engineCap": [
+        0.11873706004140788,
+        73.38146997929606
+      ],
+      "fuelCap": [
+        0.27950310559006214,
+        460.2484472049689
+      ],
+      "heat": [
+        -0.00023809523809523815,
+        0.6565476190476192
+      ],
+      "hull": [
+        13.167701863354038,
+        2216.1490683229813
+      ],
+      "outfitSpace": [
+        0.2958592132505176,
+        349.07039337474123
+      ],
+      "requiredCrew": [
+        0.01656314699792961,
+        1.4684265010351947
+      ],
+      "shields": [
+        10.49689440993789,
+        2301.552795031055
+      ],
+      "weaponCap": [
+        0.15538302277432714,
+        103.55848861283643
+      ],
+      "weapon": {
+        "blastRadius": [
+          0.22360248447204972,
+          11.198757763975138
+        ],
+        "hitForce": [
+          3.354037267080746,
+          167.981366459627
+        ],
+        "hullDamage": [
+          1.1180124223602486,
+          55.993788819875704
+        ],
+        "shieldDamage": [
+          2.236024844720497,
+          111.98757763975141
+        ]
+      }
+    },
+    "Interceptor": {},
+    "Light Warship": {
+      "massRange": {
+        "minMass": 270,
+        "maxMass": 270
+      },
+      "bunks": [
+        null,
+        null
+      ],
+      "cargoSpace": [
+        null,
+        null
+      ],
+      "cost": [
+        null,
+        null
+      ],
+      "drag": [
+        null,
+        null
+      ],
+      "engineCap": [
+        null,
+        null
+      ],
+      "fuelCap": [
+        null,
+        null
+      ],
+      "heat": [
+        null,
+        null
+      ],
+      "hull": [
+        null,
+        null
+      ],
+      "outfitSpace": [
+        null,
+        null
+      ],
+      "requiredCrew": [
+        null,
+        null
+      ],
+      "shields": [
+        null,
+        null
+      ],
+      "weaponCap": [
+        null,
+        null
+      ],
+      "weapon": {
+        "blastRadius": [
+          null,
+          null
+        ],
+        "hitForce": [
+          null,
+          null
+        ],
+        "hullDamage": [
+          null,
+          null
+        ],
+        "shieldDamage": [
+          null,
+          null
+        ]
+      }
+    },
+    "Medium Warship": {
+      "massRange": {
+        "minMass": 520,
+        "maxMass": 520
+      },
+      "bunks": [
+        null,
+        null
+      ],
+      "cargoSpace": [
+        null,
+        null
+      ],
+      "cost": [
+        null,
+        null
+      ],
+      "drag": [
+        null,
+        null
+      ],
+      "engineCap": [
+        null,
+        null
+      ],
+      "fuelCap": [
+        null,
+        null
+      ],
+      "heat": [
+        null,
+        null
+      ],
+      "hull": [
+        null,
+        null
+      ],
+      "outfitSpace": [
+        null,
+        null
+      ],
+      "requiredCrew": [
+        null,
+        null
+      ],
+      "shields": [
+        null,
+        null
+      ],
+      "weaponCap": [
+        null,
+        null
+      ],
+      "weapon": {
+        "blastRadius": [
+          null,
+          null
+        ],
+        "hitForce": [
+          null,
+          null
+        ],
+        "hullDamage": [
+          null,
+          null
+        ],
+        "shieldDamage": [
+          null,
+          null
+        ]
+      }
+    },
+    "Heavy Warship": {
+      "massRange": {
+        "minMass": 780,
+        "maxMass": 780
+      },
+      "bunks": [
+        null,
+        null
+      ],
+      "cargoSpace": [
+        null,
+        null
+      ],
+      "cost": [
+        null,
+        null
+      ],
+      "drag": [
+        null,
+        null
+      ],
+      "engineCap": [
+        null,
+        null
+      ],
+      "fuelCap": [
+        null,
+        null
+      ],
+      "heat": [
+        null,
+        null
+      ],
+      "hull": [
+        null,
+        null
+      ],
+      "outfitSpace": [
+        null,
+        null
+      ],
+      "requiredCrew": [
+        null,
+        null
+      ],
+      "shields": [
+        null,
+        null
+      ],
+      "weaponCap": [
+        null,
+        null
+      ],
+      "weapon": {
+        "blastRadius": [
+          null,
+          null
+        ],
+        "hitForce": [
+          null,
+          null
+        ],
+        "hullDamage": [
+          null,
+          null
+        ],
+        "shieldDamage": [
+          null,
+          null
+        ]
+      }
+    },
+    "Fighter": {},
+    "Drone": {}
+  },
+  "drak": {
+    "Transport": {},
+    "Light Freighter": {},
+    "Heavy Freighter": {},
+    "Interceptor": {},
+    "Light Warship": {},
+    "Medium Warship": {},
+    "Heavy Warship": {
+      "massRange": {
+        "minMass": 1000,
+        "maxMass": 1000
+      },
+      "bunks": [
+        null,
+        null
+      ],
+      "cargoSpace": [
+        null,
+        null
+      ],
+      "cost": [
+        null,
+        null
+      ],
+      "drag": [
+        null,
+        null
+      ],
+      "engineCap": [
+        null,
+        null
+      ],
+      "fuelCap": [
+        null,
+        null
+      ],
+      "heat": [
+        null,
+        null
+      ],
+      "hull": [
+        null,
+        null
+      ],
+      "outfitSpace": [
+        null,
+        null
+      ],
+      "requiredCrew": [
+        null,
+        null
+      ],
+      "shields": [
+        null,
+        null
+      ],
+      "weaponCap": [
+        null,
+        null
+      ],
+      "weapon": {
+        "blastRadius": [
+          null,
+          null
+        ],
+        "hitForce": [
+          null,
+          null
+        ],
+        "hullDamage": [
+          null,
+          null
+        ],
+        "shieldDamage": [
+          null,
+          null
+        ]
+      }
+    },
+    "Fighter": {},
+    "Drone": {}
+  },
+  "generic": {
+    "Transport": {},
+    "Light Freighter": {},
+    "Heavy Freighter": {},
+    "Interceptor": {},
+    "Light Warship": {},
+    "Medium Warship": {},
+    "Heavy Warship": {},
+    "Fighter": {},
+    "Drone": {}
+  },
+  "hai": {
+    "Transport": {},
+    "Light Freighter": {
+      "massRange": {
+        "minMass": 100,
+        "maxMass": 100
+      },
+      "bunks": [
+        null,
+        null
+      ],
+      "cargoSpace": [
+        null,
+        null
+      ],
+      "cost": [
+        null,
+        null
+      ],
+      "drag": [
+        null,
+        null
+      ],
+      "engineCap": [
+        null,
+        null
+      ],
+      "fuelCap": [
+        null,
+        null
+      ],
+      "heat": [
+        null,
+        null
+      ],
+      "hull": [
+        null,
+        null
+      ],
+      "outfitSpace": [
+        null,
+        null
+      ],
+      "requiredCrew": [
+        null,
+        null
+      ],
+      "shields": [
+        null,
+        null
+      ],
+      "weaponCap": [
+        null,
+        null
+      ],
+      "weapon": {
+        "blastRadius": [
+          null,
+          null
+        ],
+        "hitForce": [
+          null,
+          null
+        ],
+        "hullDamage": [
+          null,
+          null
+        ],
+        "shieldDamage": [
+          null,
+          null
+        ]
+      }
+    },
+    "Heavy Freighter": {
+      "massRange": {
+        "minMass": 270,
+        "maxMass": 270
+      },
+      "bunks": [
+        null,
+        null
+      ],
+      "cargoSpace": [
+        null,
+        null
+      ],
+      "cost": [
+        null,
+        null
+      ],
+      "drag": [
+        null,
+        null
+      ],
+      "engineCap": [
+        null,
+        null
+      ],
+      "fuelCap": [
+        null,
+        null
+      ],
+      "heat": [
+        null,
+        null
+      ],
+      "hull": [
+        null,
+        null
+      ],
+      "outfitSpace": [
+        null,
+        null
+      ],
+      "requiredCrew": [
+        null,
+        null
+      ],
+      "shields": [
+        null,
+        null
+      ],
+      "weaponCap": [
+        null,
+        null
+      ],
+      "weapon": {
+        "blastRadius": [
+          null,
+          null
+        ],
+        "hitForce": [
+          null,
+          null
+        ],
+        "hullDamage": [
+          null,
+          null
+        ],
+        "shieldDamage": [
+          null,
+          null
+        ]
+      }
+    },
+    "Interceptor": {},
+    "Light Warship": {
+      "massRange": {
+        "minMass": 220,
+        "maxMass": 220
+      },
+      "bunks": [
+        null,
+        null
+      ],
+      "cargoSpace": [
+        null,
+        null
+      ],
+      "cost": [
+        null,
+        null
+      ],
+      "drag": [
+        null,
+        null
+      ],
+      "engineCap": [
+        null,
+        null
+      ],
+      "fuelCap": [
+        null,
+        null
+      ],
+      "heat": [
+        null,
+        null
+      ],
+      "hull": [
+        null,
+        null
+      ],
+      "outfitSpace": [
+        null,
+        null
+      ],
+      "requiredCrew": [
+        null,
+        null
+      ],
+      "shields": [
+        null,
+        null
+      ],
+      "weaponCap": [
+        null,
+        null
+      ],
+      "weapon": {
+        "blastRadius": [
+          null,
+          null
+        ],
+        "hitForce": [
+          null,
+          null
+        ],
+        "hullDamage": [
+          null,
+          null
+        ],
+        "shieldDamage": [
+          null,
+          null
+        ]
+      }
+    },
+    "Medium Warship": {},
+    "Heavy Warship": {
+      "massRange": {
+        "minMass": 650,
+        "maxMass": 925
+      },
+      "bunks": [
+        0.08363636363636362,
+        40.636363636363654
+      ],
+      "cargoSpace": [
+        0,
+        142
+      ],
+      "cost": [
+        17818.18181818182,
+        6318181.818181818
+      ],
+      "drag": [
+        0.024,
+        -6.799999999999997
+      ],
+      "engineCap": [
+        0.058181818181818175,
+        112.18181818181819
+      ],
+      "fuelCap": [
+        0.36363636363636365,
+        263.63636363636357
+      ],
+      "heat": [
+        -0.0006545454545454544,
+        1.0254545454545454
+      ],
+      "hull": [
+        4.363636363636362,
+        6963.636363636364
+      ],
+      "outfitSpace": [
+        0.10909090909090903,
+        727.0909090909091
+      ],
+      "requiredCrew": [
+        0.05454545454545455,
+        11.54545454545454
+      ],
+      "shields": [
+        21.090909090909086,
+        18290.909090909092
+      ],
+      "weaponCap": [
+        0.03272727272727273,
+        311.72727272727275
+      ],
+      "weapon": {
+        "blastRadius": [
+          0.18181818181818182,
+          281.81818181818176
+        ],
+        "hitForce": [
+          1.818181818181818,
+          1818.1818181818182
+        ],
+        "hullDamage": [
+          0.909090909090909,
+          1409.0909090909095
+        ],
+        "shieldDamage": [
+          1.818181818181818,
+          2818.181818181819
+        ]
+      }
+    },
+    "Fighter": {
+      "massRange": {
+        "minMass": 31,
+        "maxMass": 31
+      },
+      "bunks": [
+        null,
+        null
+      ],
+      "cargoSpace": [
+        null,
+        null
+      ],
+      "cost": [
+        null,
+        null
+      ],
+      "drag": [
+        null,
+        null
+      ],
+      "engineCap": [
+        null,
+        null
+      ],
+      "fuelCap": [
+        null,
+        null
+      ],
+      "heat": [
+        null,
+        null
+      ],
+      "hull": [
+        null,
+        null
+      ],
+      "outfitSpace": [
+        null,
+        null
+      ],
+      "requiredCrew": [
+        null,
+        null
+      ],
+      "shields": [
+        null,
+        null
+      ],
+      "weaponCap": [
+        null,
+        null
+      ],
+      "weapon": {
+        "blastRadius": [
+          null,
+          null
+        ],
+        "hitForce": [
+          null,
+          null
+        ],
+        "hullDamage": [
+          null,
+          null
+        ],
+        "shieldDamage": [
+          null,
+          null
+        ]
+      }
+    },
+    "Drone": {}
+  },
+  "kestrel": {
+    "Transport": {},
+    "Light Freighter": {},
+    "Heavy Freighter": {},
+    "Interceptor": {},
+    "Light Warship": {},
+    "Medium Warship": {},
+    "Heavy Warship": {
+      "massRange": {
+        "minMass": 740,
+        "maxMass": 760
+      },
+      "bunks": [
+        0,
+        128
+      ],
+      "cargoSpace": [
+        0,
+        120
+      ],
+      "cost": [
+        0,
+        10300000
+      ],
+      "drag": [
+        0,
+        12.5
+      ],
+      "engineCap": [
+        -0.24999999999999994,
+        400
+      ],
+      "fuelCap": [
+        0,
+        500
+      ],
+      "heat": [
+        0,
+        0.45
+      ],
+      "hull": [
+        64.99999999999999,
+        -41899.99999999999
+      ],
+      "outfitSpace": [
+        0,
+        810
+      ],
+      "requiredCrew": [
+        0,
+        72
+      ],
+      "shields": [
+        134.99999999999997,
+        -82499.99999999999
+      ],
+      "weaponCap": [
+        -0.24999999999999994,
+        570
+      ],
+      "weapon": {
+        "blastRadius": [
+          0,
+          260
+        ],
+        "hitForce": [
+          0,
+          3900
+        ],
+        "hullDamage": [
+          0,
+          1300
+        ],
+        "shieldDamage": [
+          0,
+          2600
+        ]
+      }
+    },
+    "Fighter": {},
+    "Drone": {}
+  },
+  "korath": {
+    "Transport": {},
+    "Light Freighter": {},
+    "Heavy Freighter": {
+      "massRange": {
+        "minMass": 1735,
+        "maxMass": 1735
+      },
+      "bunks": [
+        null,
+        null
+      ],
+      "cargoSpace": [
+        null,
+        null
+      ],
+      "cost": [
+        null,
+        null
+      ],
+      "drag": [
+        null,
+        null
+      ],
+      "engineCap": [
+        null,
+        null
+      ],
+      "fuelCap": [
+        null,
+        null
+      ],
+      "heat": [
+        null,
+        null
+      ],
+      "hull": [
+        null,
+        null
+      ],
+      "outfitSpace": [
+        null,
+        null
+      ],
+      "requiredCrew": [
+        null,
+        null
+      ],
+      "shields": [
+        null,
+        null
+      ],
+      "weaponCap": [
+        null,
+        null
+      ],
+      "weapon": {
+        "blastRadius": [
+          null,
+          null
+        ],
+        "hitForce": [
+          null,
+          null
+        ],
+        "hullDamage": [
+          null,
+          null
+        ],
+        "shieldDamage": [
+          null,
+          null
+        ]
+      }
+    },
+    "Interceptor": {},
+    "Light Warship": {
+      "massRange": {
+        "minMass": 250,
+        "maxMass": 420
+      },
+      "bunks": [
+        0,
+        0
+      ],
+      "cargoSpace": [
+        0.1106217616580311,
+        -21.626943005181353
+      ],
+      "cost": [
+        35491.70984455959,
+        -410974.0932642501
+      ],
+      "drag": [
+        -0.006295336787564769,
+        9.122797927461141
+      ],
+      "engineCap": [
+        0.017875647668393786,
+        102.72538860103627
+      ],
+      "fuelCap": [
+        0,
+        400
+      ],
+      "heat": [
+        -0.0028497409326424875,
+        2.0901554404145077
+      ],
+      "hull": [
+        71.60621761658032,
+        -9236.26943005182
+      ],
+      "outfitSpace": [
+        1.0629533678756478,
+        143.7720207253886
+      ],
+      "requiredCrew": [
+        0,
+        0
+      ],
+      "shields": [
+        -0.25906735751295346,
+        18544.55958549223
+      ],
+      "weaponCap": [
+        0.3792746113989638,
+        56.56476683937822
+      ],
+      "weapon": {
+        "blastRadius": [
+          0.2953367875647669,
+          127.20207253886008
+        ],
+        "hitForce": [
+          8.937823834196893,
+          1162.6943005181342
+        ],
+        "hullDamage": [
+          2.9792746113989645,
+          387.56476683937785
+        ],
+        "shieldDamage": [
+          5.958549222797929,
+          775.1295336787557
+        ]
+      }
+    },
+    "Medium Warship": {
+      "massRange": {
+        "minMass": 540,
+        "maxMass": 780
+      },
+      "bunks": [
+        0,
+        0
+      ],
+      "cargoSpace": [
+        0.09091559370529326,
+        -19.017167381974247
+      ],
+      "cost": [
+        27660.944206008586,
+        4920107.296137337
+      ],
+      "drag": [
+        0.012703862660944202,
+        2.2618025751072963
+      ],
+      "engineCap": [
+        0.1298283261802575,
+        28.253218884120187
+      ],
+      "fuelCap": [
+        0,
+        400
+      ],
+      "heat": [
+        0.0003397711015736765,
+        0.5030042918454937
+      ],
+      "hull": [
+        42.260371959942766,
+        -867.3819742489213
+      ],
+      "outfitSpace": [
+        0.8567954220314734,
+        29.06008583690982
+      ],
+      "requiredCrew": [
+        0,
+        0
+      ],
+      "shields": [
+        107.3533619456366,
+        -37212.875536480686
+      ],
+      "weaponCap": [
+        0.4638769670958512,
+        -35.63519313304721
+      ],
+      "weapon": {
+        "blastRadius": [
+          0.2131616595135908,
+          177.25321888412017
+        ],
+        "hitForce": [
+          7.59656652360515,
+          1245.0643776824036
+        ],
+        "hullDamage": [
+          2.532188841201717,
+          415.02145922746763
+        ],
+        "shieldDamage": [
+          5.064377682403434,
+          830.0429184549353
+        ]
+      }
+    },
+    "Heavy Warship": {
+      "massRange": {
+        "minMass": 720,
+        "maxMass": 1350
+      },
+      "bunks": [
+        -0.3603603603603603,
+        466.1036036036035
+      ],
+      "cargoSpace": [
+        -0.12333333333333331,
+        248.5083333333333
+      ],
+      "cost": [
+        37288.01801801801,
+        -7568205.18018017
+      ],
+      "drag": [
+        0.007356756756756755,
+        7.247932432432435
+      ],
+      "engineCap": [
+        0.02709909909909909,
+        134.149009009009
+      ],
+      "fuelCap": [
+        -0.28828828828828823,
+        772.8828828828828
+      ],
+      "heat": [
+        -0.00009189189189189186,
+        0.6904189189189189
+      ],
+      "hull": [
+        89.52972972972971,
+        -57460.79729729728
+      ],
+      "outfitSpace": [
+        0.5299999999999999,
+        345.0250000000001
+      ],
+      "requiredCrew": [
+        -0.20900900900900898,
+        270.34009009009003
+      ],
+      "shields": [
+        41.19099099099098,
+        8978.590090090096
+      ],
+      "weaponCap": [
+        0.24917117117117113,
+        119.55328828828834
+      ],
+      "weapon": {
+        "blastRadius": [
+          0.31423423423423413,
+          25.557657657657785
+        ],
+        "hitForce": [
+          6.475675675675674,
+          922.2432432432452
+        ],
+        "hullDamage": [
+          2.158558558558558,
+          307.4144144144152
+        ],
+        "shieldDamage": [
+          4.317117117117116,
+          614.8288288288304
+        ]
+      }
+    },
+    "Fighter": {
+      "massRange": {
+        "minMass": 34,
+        "maxMass": 40
+      },
+      "bunks": [
+        0.1666666666666667,
+        -5.666666666666669
+      ],
+      "cargoSpace": [
+        0,
+        0
+      ],
+      "cost": [
+        -15000.000000000004,
+        1271000
+      ],
+      "drag": [
+        -0.033333333333333354,
+        2.2333333333333343
+      ],
+      "engineCap": [
+        1.0000000000000002,
+        -10.000000000000007
+      ],
+      "fuelCap": [
+        0,
+        0
+      ],
+      "heat": [
+        -0.016666666666666666,
+        1.5666666666666667
+      ],
+      "hull": [
+        -250.00000000000006,
+        10900.000000000002
+      ],
+      "outfitSpace": [
+        -1.166666666666667,
+        138.66666666666669
+      ],
+      "requiredCrew": [
+        0.1666666666666667,
+        -5.666666666666669
+      ],
+      "shields": [
+        133.33333333333337,
+        -3033.333333333335
+      ],
+      "weaponCap": [
+        0.5000000000000001,
+        4.9999999999999964
+      ],
+      "weapon": {
+        "blastRadius": [
+          6.000000000000001,
+          -192.00000000000003
+        ],
+        "hitForce": [
+          50.00000000000001,
+          -1520.0000000000002
+        ],
+        "hullDamage": [
+          16.66666666666667,
+          -506.66666666666686
+        ],
+        "shieldDamage": [
+          33.33333333333334,
+          -1013.3333333333337
+        ]
+      }
+    },
+    "Drone": {}
+  },
+  "marauders": {
+    "Transport": {},
+    "Light Freighter": {},
+    "Heavy Freighter": {},
+    "Interceptor": {
+      "massRange": {
+        "minMass": 100,
+        "maxMass": 145
+      },
+      "bunks": [
+        0.1888888888888888,
+        -15.888888888888877
+      ],
+      "cargoSpace": [
+        -0.05555555555555553,
+        20.555555555555554
+      ],
+      "cost": [
+        11888.888888888883,
+        -438888.8888888883
+      ],
+      "drag": [
+        0.028888888888888888,
+        -0.9888888888888889
+      ],
+      "engineCap": [
+        0.0740740740740741,
+        92.59259259259258
+      ],
+      "fuelCap": [
+        3.333333333333332,
+        166.6666666666668
+      ],
+      "heat": [
+        -0.0005555555555555546,
+        0.9055555555555554
+      ],
+      "hull": [
+        1.3099717926770565e-16,
+        600
+      ],
+      "outfitSpace": [
+        -0.3333333333333332,
+        273.3333333333333
+      ],
+      "requiredCrew": [
+        0.022222222222222213,
+        -1.222222222222221
+      ],
+      "shields": [
+        -13.333333333333329,
+        4333.333333333333
+      ],
+      "weaponCap": [
+        -0.18518518518518515,
+        98.51851851851852
+      ],
+      "weapon": {
+        "blastRadius": [
+          -0.11111111111111108,
+          47.11111111111111
+        ],
+        "hitForce": [
+          -1.555555555555555,
+          675.5555555555554
+        ],
+        "hullDamage": [
+          -0.5555555555555552,
+          235.55555555555554
+        ],
+        "shieldDamage": [
+          -1.1666666666666663,
+          476.66666666666663
+        ]
+      }
+    },
+    "Light Warship": {
+      "massRange": {
+        "minMass": 140,
+        "maxMass": 145
+      },
+      "bunks": [
+        1.4,
+        -189
+      ],
+      "cargoSpace": [
+        3,
+        -415
+      ],
+      "cost": [
+        210000,
+        -28200000
+      ],
+      "drag": [
+        0.2,
+        -25.3
+      ],
+      "engineCap": [
+        5.666666666666667,
+        -705
+      ],
+      "fuelCap": [
+        20,
+        -2400
+      ],
+      "heat": [
+        0,
+        0.8
+      ],
+      "hull": [
+        140,
+        -18700
+      ],
+      "outfitSpace": [
+        9,
+        -995
+      ],
+      "requiredCrew": [
+        0.6,
+        -80
+      ],
+      "shields": [
+        340,
+        -44100
+      ],
+      "weaponCap": [
+        9,
+        -1190
+      ],
+      "weapon": {
+        "blastRadius": [
+          4,
+          -515
+        ],
+        "hitForce": [
+          70,
+          -9150
+        ],
+        "hullDamage": [
+          25,
+          -3275
+        ],
+        "shieldDamage": [
+          40,
+          -5150
+        ]
+      }
+    },
+    "Medium Warship": {
+      "massRange": {
+        "minMass": 195,
+        "maxMass": 350
+      },
+      "bunks": [
+        0.09084604715672674,
+        -5.497919556171976
+      ],
+      "cargoSpace": [
+        0.06796116504854371,
+        4.757281553398052
+      ],
+      "cost": [
+        2249.6532593619963,
+        3131761.442441054
+      ],
+      "drag": [
+        -0.0013730929264909855,
+        4.7753120665742035
+      ],
+      "engineCap": [
+        -6.89847316271942e-19,
+        116.66666666666667
+      ],
+      "fuelCap": [
+        0.02773925104022188,
+        459.0846047156727
+      ],
+      "heat": [
+        -0.0012898751733703194,
+        1.0525658807212208
+      ],
+      "hull": [
+        8.002773925104021,
+        45.90846047156765
+      ],
+      "outfitSpace": [
+        0.391123439667129,
+        323.0929264909847
+      ],
+      "requiredCrew": [
+        0.02011095700416089,
+        4.836338418862692
+      ],
+      "shields": [
+        3.079056865464633,
+        5558.391123439667
+      ],
+      "weaponCap": [
+        0.16065649560795187,
+        128.86500231160426
+      ],
+      "weapon": {
+        "blastRadius": [
+          0.12343966712898752,
+          52.92649098474342
+        ],
+        "hitForce": [
+          1.8515950069348124,
+          793.8973647711514
+        ],
+        "hullDamage": [
+          0.6171983356449374,
+          264.6324549237171
+        ],
+        "shieldDamage": [
+          1.2343966712898748,
+          529.2649098474342
+        ]
+      }
+    },
+    "Heavy Warship": {
+      "massRange": {
+        "minMass": 560,
+        "maxMass": 640
+      },
+      "bunks": [
+        -0.14583333333333334,
+        161.66666666666669
+      ],
+      "cargoSpace": [
+        -0.25,
+        200
+      ],
+      "cost": [
+        -38750,
+        35600000
+      ],
+      "drag": [
+        0.011249999999999991,
+        0.4000000000000048
+      ],
+      "engineCap": [
+        -0.20833333333333334,
+        300
+      ],
+      "fuelCap": [
+        -1.25,
+        1300
+      ],
+      "heat": [
+        -0.0037500000000000007,
+        2.9000000000000004
+      ],
+      "hull": [
+        17.5,
+        -5700
+      ],
+      "outfitSpace": [
+        1.25,
+        -120
+      ],
+      "requiredCrew": [
+        0.05416666666666667,
+        12.666666666666664
+      ],
+      "shields": [
+        23.75,
+        800
+      ],
+      "weaponCap": [
+        0,
+        276.6666666666667
+      ],
+      "weapon": {
+        "blastRadius": [
+          -1,
+          730
+        ],
+        "hitForce": [
+          -15.625,
+          11500
+        ],
+        "hullDamage": [
+          -5.625,
+          4050
+        ],
+        "shieldDamage": [
+          -10.625,
+          7700
+        ]
+      }
+    },
+    "Fighter": {},
+    "Drone": {}
+  },
+  "pug": {
+    "Transport": {},
+    "Light Freighter": {},
+    "Heavy Freighter": {},
+    "Interceptor": {},
+    "Light Warship": {},
+    "Medium Warship": {
+      "massRange": {
+        "minMass": 410,
+        "maxMass": 670
+      },
+      "bunks": [
+        0.07307692307692308,
+        -2.961538461538467
+      ],
+      "cargoSpace": [
+        0.09230769230769231,
+        2.1538461538461533
+      ],
+      "cost": [
+        321923.07692307694,
+        -125688461.53846154
+      ],
+      "drag": [
+        0.006153846153846152,
+        3.3769230769230782
+      ],
+      "engineCap": [
+        0.43846153846153846,
+        -73.76923076923077
+      ],
+      "fuelCap": [
+        2.3076923076923075,
+        -346.15384615384596
+      ],
+      "heat": [
+        0.00038461538461538494,
+        0.5423076923076922
+      ],
+      "hull": [
+        301.15384615384613,
+        -121773.07692307691
+      ],
+      "outfitSpace": [
+        1.0769230769230769,
+        -81.53846153846155
+      ],
+      "requiredCrew": [
+        0.06538461538461539,
+        -7.807692307692307
+      ],
+      "shields": [
+        350.7692307692308,
+        -137015.38461538462
+      ],
+      "weaponCap": [
+        0.7923076923076923,
+        -140.8461538461538
+      ],
+      "weapon": {
+        "blastRadius": [
+          0.5384615384615384,
+          -40.769230769230774
+        ],
+        "hitForce": [
+          22.76923076923077,
+          -8255.384615384615
+        ],
+        "hullDamage": [
+          15.923076923076923,
+          -6168.461538461539
+        ],
+        "shieldDamage": [
+          31.846153846153847,
+          -12336.923076923078
+        ]
+      }
+    },
+    "Heavy Warship": {},
+    "Fighter": {},
+    "Drone": {}
+  },
+  "quarg": {
+    "Transport": {},
+    "Light Freighter": {},
+    "Heavy Freighter": {},
+    "Interceptor": {},
+    "Light Warship": {},
+    "Medium Warship": {},
+    "Heavy Warship": {
+      "massRange": {
+        "minMass": 360,
+        "maxMass": 460
+      },
+      "bunks": [
+        0.25,
+        95
+      ],
+      "cargoSpace": [
+        1.5,
+        -490
+      ],
+      "cost": [
+        0,
+        5900000
+      ],
+      "drag": [
+        0.03,
+        -1.4999999999999982
+      ],
+      "engineCap": [
+        0,
+        120
+      ],
+      "fuelCap": [
+        2,
+        80
+      ],
+      "heat": [
+        0.0019999999999999996,
+        -0.21999999999999986
+      ],
+      "hull": [
+        200,
+        -22000
+      ],
+      "outfitSpace": [
+        0,
+        600
+      ],
+      "requiredCrew": [
+        -0.4,
+        304
+      ],
+      "shields": [
+        -400,
+        304000
+      ],
+      "weaponCap": [
+        0,
+        200
+      ],
+      "weapon": {
+        "blastRadius": [
+          0,
+          250
+        ],
+        "hitForce": [
+          0,
+          1500
+        ],
+        "hullDamage": [
+          0,
+          500
+        ],
+        "shieldDamage": [
+          0,
+          1000
+        ]
+      }
+    },
+    "Fighter": {},
+    "Drone": {}
+  },
+  "wanderer": {
+    "Transport": {},
+    "Light Freighter": {},
+    "Heavy Freighter": {
+      "massRange": {
+        "minMass": 350,
+        "maxMass": 750
+      },
+      "bunks": [
+        0.16875000000000004,
+        -55.06250000000003
+      ],
+      "cargoSpace": [
+        1.60078125,
+        -427.0234375
+      ],
+      "cost": [
+        0,
+        18300000
+      ],
+      "drag": [
+        0.005,
+        5.649999999999999
+      ],
+      "engineCap": [
+        0,
+        83
+      ],
+      "fuelCap": [
+        0,
+        500
+      ],
+      "heat": [
+        0,
+        0.6
+      ],
+      "hull": [
+        0,
+        47500
+      ],
+      "outfitSpace": [
+        -0.049218750000000006,
+        385.4765625
+      ],
+      "requiredCrew": [
+        0,
+        13
+      ],
+      "shields": [
+        0,
+        17600
+      ],
+      "weaponCap": [
+        -0.07382812500000001,
+        210.71484375
+      ],
+      "weapon": {
+        "blastRadius": [
+          0,
+          280
+        ],
+        "hitForce": [
+          0,
+          4200
+        ],
+        "hullDamage": [
+          0,
+          1400
+        ],
+        "shieldDamage": [
+          0,
+          2800
+        ]
+      }
+    },
+    "Interceptor": {},
+    "Light Warship": {
+      "massRange": {
+        "minMass": 110,
+        "maxMass": 130
+      },
+      "bunks": [
+        0.049999999999999996,
+        9.5
+      ],
+      "cargoSpace": [
+        0.19999999999999998,
+        19.000000000000004
+      ],
+      "cost": [
+        149999.99999999997,
+        -6999999.999999996
+      ],
+      "drag": [
+        0.014999999999999989,
+        0.9500000000000013
+      ],
+      "engineCap": [
+        0.7,
+        26
+      ],
+      "fuelCap": [
+        9.999999999999998,
+        -299.9999999999998
+      ],
+      "heat": [
+        0,
+        0.8
+      ],
+      "hull": [
+        34.99999999999999,
+        2850.000000000001
+      ],
+      "outfitSpace": [
+        2.05,
+        94.50000000000003
+      ],
+      "requiredCrew": [
+        0.09999999999999999,
+        -4.999999999999998
+      ],
+      "shields": [
+        214.99999999999997,
+        -9249.999999999996
+      ],
+      "weaponCap": [
+        0.9499999999999998,
+        -20.499999999999986
+      ],
+      "weapon": {
+        "blastRadius": [
+          0.49999999999999994,
+          15.000000000000007
+        ],
+        "hitForce": [
+          7.499999999999999,
+          225.0000000000001
+        ],
+        "hullDamage": [
+          2.4999999999999996,
+          75.00000000000006
+        ],
+        "shieldDamage": [
+          4.999999999999999,
+          150.0000000000001
+        ]
+      }
+    },
+    "Medium Warship": {
+      "massRange": {
+        "minMass": 260,
+        "maxMass": 320
+      },
+      "bunks": [
+        0.23333333333333334,
+        -21.66666666666667
+      ],
+      "cargoSpace": [
+        -0.35,
+        159
+      ],
+      "cost": [
+        60000,
+        500000
+      ],
+      "drag": [
+        0.025,
+        -1.7999999999999998
+      ],
+      "engineCap": [
+        0.13333333333333333,
+        79.33333333333334
+      ],
+      "fuelCap": [
+        3.3333333333333335,
+        -466.66666666666674
+      ],
+      "heat": [
+        -0.0008333333333333322,
+        0.9166666666666664
+      ],
+      "hull": [
+        105,
+        -7700
+      ],
+      "outfitSpace": [
+        1.9,
+        -1
+      ],
+      "requiredCrew": [
+        0.35,
+        -74
+      ],
+      "shields": [
+        226.66666666666666,
+        -30433.33333333333
+      ],
+      "weaponCap": [
+        1.2166666666666666,
+        -118.33333333333331
+      ],
+      "weapon": {
+        "blastRadius": [
+          1.3333333333333333,
+          -146.66666666666663
+        ],
+        "hitForce": [
+          20,
+          -2200
+        ],
+        "hullDamage": [
+          6.666666666666667,
+          -733.3333333333335
+        ],
+        "shieldDamage": [
+          13.333333333333334,
+          -1466.666666666667
+        ]
+      }
+    },
+    "Heavy Warship": {
+      "massRange": {
+        "minMass": 540,
+        "maxMass": 770
+      },
+      "bunks": [
+        0.15217391304347827,
+        -0.1739130434782652
+      ],
+      "cargoSpace": [
+        0.18260869565217394,
+        -42.608695652173935
+      ],
+      "cost": [
+        37391.30434782609,
+        10308695.652173914
+      ],
+      "drag": [
+        0.013913043478260877,
+        1.186956521739127
+      ],
+      "engineCap": [
+        -0.10434782608695653,
+        220.34782608695653
+      ],
+      "fuelCap": [
+        0,
+        500
+      ],
+      "heat": [
+        -0.00021739130434782585,
+        0.7173913043478259
+      ],
+      "hull": [
+        60.00000000000001,
+        299.9999999999927
+      ],
+      "outfitSpace": [
+        0.7130434782608697,
+        410.9565217391304
+      ],
+      "requiredCrew": [
+        0.1,
+        -1
+      ],
+      "shields": [
+        83.47826086956523,
+        8121.739130434769
+      ],
+      "weaponCap": [
+        0.37391304347826093,
+        140.0869565217391
+      ],
+      "weapon": {
+        "blastRadius": [
+          0.26086956521739135,
+          199.13043478260866
+        ],
+        "hitForce": [
+          3.91304347826087,
+          2986.95652173913
+        ],
+        "hullDamage": [
+          1.3043478260869568,
+          995.6521739130433
+        ],
+        "shieldDamage": [
+          2.6086956521739135,
+          1991.3043478260865
+        ]
+      }
+    },
+    "Fighter": {},
+    "Drone": {}
+  }
+}
