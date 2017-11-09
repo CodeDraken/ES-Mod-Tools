@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:CodeDraken/ES-Mod-Tools.git",
   "author": "CodeDraken",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  }
 }

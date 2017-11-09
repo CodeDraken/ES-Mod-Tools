@@ -41,12 +41,12 @@ const readDataPath = _path => {
 const isDataPath = str => /\//g.test(str)
 
 // loop over blocks and call a function passing in a specific attribute from each one
-const eachAttrIn = (attr, dataName, callback) => {
-  const selectedData = isDataPath(dataName)
-    ? readDataPath(dataName)
-    : data[dataName]
+const eachAttrIn = (attr, _path, callback) => {
+  const readData = isDataPath(_path)
+    ? readDataPath(_path)
+    : data[_path]
 
-  for (let block of selectedData) {
+  for (let block of readData) {
     if (!block[attr]) continue
 
     callback(block[attr])
@@ -56,6 +56,23 @@ const eachAttrIn = (attr, dataName, callback) => {
 // selectFrom - select an attribute from an object that has a specific value
 const selectFrom = (attr, _path, keyValues) => {
   return selectBlockWith(keyValues, _path)[attr] || null
+}
+
+// select all attributes from a file
+const selectAllFrom = (attr, _path) => {
+  const selectedData = []
+  const readData = isDataPath(_path)
+  ? readDataPath(_path)
+  : data[_path]
+
+  for (let block of readData) {
+    const value = block[attr]
+    if (!value) continue
+
+    selectedData.push(value)
+  }
+
+  return selectedData
 }
 
 // selectBlockWith - select an object that has a specific value
@@ -121,7 +138,7 @@ const listGovernments = () => {
   return govs
 }
 
-console.log(selectFrom('attributes', '/map/planets', { _value: 'Ahr' }))
+// console.log(selectFrom('attributes', '/map/planets', { _value: 'Ahr' }))
 
 module.exports = {
   data,
@@ -131,6 +148,7 @@ module.exports = {
   listAllPlanetAttributes,
   listGovernments,
   selectFrom,
+  selectAllFrom,
   selectBlockWith,
   selectAllBlocksWith
 }
