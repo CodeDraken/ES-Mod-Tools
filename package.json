@@ -1,0 +1,8 @@
+{
+  "name": "ES-Mod-Tools",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:CodeDraken/ES-Mod-Tools.git",
+  "author": "CodeDraken",
+  "license": "MIT"
+}
