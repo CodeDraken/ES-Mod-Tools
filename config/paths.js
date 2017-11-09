@@ -7,6 +7,9 @@ module.exports = {
   // mods
   outputGameFiles: path.join(__dirname, '../', 'generatedMods'),
 
+  // mod generators
+  modGenerators: path.join(__dirname, '../', 'modGenerators'),
+
   // JSON
   outputJSON: path.join(__dirname, '../', 'json')
 }

@@ -4,10 +4,11 @@
 
 const { selectAllFrom } = require('./grabDataUtil')
 const { jsonToFile } = require('./jsonToFile')
-const { outputGameFiles } = require('../config/paths')
+const { modGenerators } = require('../config/paths')
 
 // attribute selecting queries, your own preselected data, output, and a callback if you want to modify the data first
-const generateModifierFile = (arrSelectQueries, optionalData, outputDestination, sanitizer = (data) => data) => {
+const generateModifierFile = (arrSelectQueries, optionalData = [], outputDestination, sanitizer = (data) => data) => {
+  console.log(optionalData)
   // select the data
   const selectedData = []
   arrSelectQueries.forEach(({ _path, grab, makeUnique = false }) => {
@@ -22,8 +23,13 @@ const generateModifierFile = (arrSelectQueries, optionalData, outputDestination,
 
   const allDataFlattened = [...selectedData, ...optionalData].reduce((a, b) => a.concat(b), [])
 
+  // clean up the data with the callback function
+  const sanitized = sanitizer(allDataFlattened)
+
+  console.log(`${sanitized.length} modifiers for you to setup...`)
+
   // make sure to include any optionally passed in data
-  askValues(sanitizer(allDataFlattened), outputDestination)
+  askValues(sanitized, outputDestination)
 }
 
 // set modifiers in terminal
@@ -52,8 +58,8 @@ const askValues = (data, outputDestination) => {
     if (i >= data.length) {
       stdin.destroy()
       console.log(`Questions complete. Modifiers set as: ${JSON.stringify(modifiers, null, 2)}`)
-      console.log('writing to file...')
-      jsonToFile(`${outputGameFiles}${outputDestination}`, modifiers)
+      jsonToFile(`${modGenerators}${outputDestination}/modifiers.json`, modifiers)
+      return
     }
 
     console.log(`What value should ${data[i]} have?`)
