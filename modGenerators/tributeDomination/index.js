@@ -19,11 +19,11 @@
 // - government ( fixed value for each gov )
 // - defense fleet ( multiplier for amount of defense ships )
 // - will have a limit so ridiculous combat ratings won't be required.
-const _ = require('lodash')
 
-const { wordOrQuoted } = require('../../config/regex')
+const { wordOrQuoted, tradeFleet } = require('../../config/regex')
 const { generateModifierFile } = require('../../util/generateModifierFile')
 const { listAllPlanetAttributes, selectAllBlocksWith } = require('../../util/grabDataUtil')
+const modifiers = require('./modifiers.json')
 
 const planetsData = selectAllBlocksWith({ _type: 'planet' }, 'map/planets')
 const systemsData = selectAllBlocksWith({ _type: 'system' }, 'map/systems')
@@ -48,18 +48,56 @@ const modifyPlanets = (planets = planetsData) => {
     })
 
     try {
-      let { link, government, fleet } = planetSystem
+      let { link, government, fleet = [] } = planetSystem
       let { attributes, shipyard, outfitter, _value, _type } = planet
+      let tributeVal = 1
+      government = government.replace(/"/g, '')
 
       // convert string to array
       attributes = attributes
       ? attributes.match(wordOrQuoted)
       : []
+
+      // sum up value of attributes, default to 1 if none
+      const attrModifier = attributes
+        .map(attr => modifiers[attr])
+        .filter(attrModifier => !Number.isNaN(+attrModifier))
+        .reduce((a, b) => { return a + b }, 1)
+
+      // if link exists and is more than one multiplier is half # of links
+      // else 0.5
+      const linkModifer = Array.isArray(link)
+        ? (link.length || 1) * 0.5
+        : 0.5
+
+      const warFleets = []
+      // merchant fleets in the area & populate warFleets
+      const merchantFleets = fleet
+        .filter(f => {
+          const isTradeFleet = new RegExp(tradeFleet).test(f)
+          if (!isTradeFleet) warFleets.push(f)
+
+          return isTradeFleet
+        })
+
+      tributeVal = modifiers[government]
+      console.log('--------------\n',
+        modifiers[government], government,
+        attrModifier, attributes,
+        linkModifer, link,
+        warFleets, merchantFleets,
+        '\n--------------'
+      )
+
       return {
         _type,
         _value,
         system: planetSystem._value,
-        tribute: 'test'
+        tribute: {
+          '_value': tributeVal,
+          'threshold': 2500,
+          'fleet': '"Large Militia" 5'
+        }
       }
     } catch (err) {
       const planetValRe = planet._value.replace(/"?\\?/g, '')
@@ -71,7 +109,7 @@ const modifyPlanets = (planets = planetsData) => {
     }
   })
 
-  console.log('modified: ', modified)
+  // console.log('modified: ', modified)
   return modified
 }
 
