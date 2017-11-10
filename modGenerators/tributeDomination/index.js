@@ -175,18 +175,18 @@ const generateMod = () => {
     })
 
     modStr += (
-`planet ${planet._value}
-  tribute ${planet.tribute._value}
-    threshold ${planet.tribute.threshold}
-${fleets}
-`
+    `planet ${planet._value}\n` +
+    `\ttribute ${planet.tribute._value}\n` +
+    `\t\tthreshold ${planet.tribute.threshold}\n` +
+    `${fleets}` +
+    '\n'
     )
   })
 
   return modStr
 }
 
-writeText('./modGenerators/tributeDomination/tribute-domination.txt', generateMod())
+writeText('./modGenerators/tributeDomination//tribute-domination/data/map.txt', generateMod())
 
 module.exports = {
   createModifierFile,

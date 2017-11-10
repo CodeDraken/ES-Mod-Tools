@@ -1,0 +1,1777 @@
+planet "Ablub's Invention"
+	tribute 612015
+		threshold 1000
+		fleet "Heliarch" 13
+
+planet Ada
+	tribute 67515
+		threshold 1000
+		fleet "Small Republic" 39
+		fleet "Large Republic" 38
+
+planet Ahr
+	tribute 3948098
+		threshold 1000
+		fleet "Heliarch" 43
+
+planet Albatross
+	tribute 1350
+		threshold 1000
+		fleet "Small Militia" 6
+
+planet Alexandria
+	tribute 6751
+		threshold 1000
+		fleet "Small Deep" 11
+		fleet "Large Deep" 11
+
+planet Alfheim
+	tribute 14853
+		threshold 1000
+		fleet "Small Deep" 15
+		fleet "Large Deep" 14
+
+planet Allhome
+	tribute 138006
+		threshold 1000
+		fleet "Small Hai" 22
+		fleet "Large Hai" 21
+
+planet "Alta Hai"
+	tribute 812503
+		threshold 1000
+		fleet "Quarg" 10
+
+planet Amazon
+	tribute 73438
+		threshold 1000
+		fleet "Small Syndicate" 35
+		fleet "Large Syndicate" 39
+
+planet Antipode
+	tribute 29705
+		threshold 1000
+		fleet "Small Syndicate" 22
+		fleet "Large Syndicate" 21
+
+planet Arabia
+	tribute 45015
+		threshold 1000
+		fleet "Small Militia" 18
+
+planet "Arachne Station"
+	tribute 20704
+		threshold 1000
+
+planet "Aresepru Nat"
+	tribute 112503
+		threshold 1000
+		fleet "Small Kor Mereti" 23
+		fleet "Large Kor Mereti" 23
+
+planet Asgard
+	tribute 118826
+		threshold 1000
+		fleet "Small Deep" 45
+		fleet "Large Deep" 46
+
+planet "Ashy Reach"
+	tribute 1680042
+		threshold 1000
+		fleet "Heliarch" 22
+
+planet Avalon
+	tribute 0
+		threshold 1000
+
+planet Aventine
+	tribute 17922
+		threshold 1000
+		fleet "Large Remnant" 16
+		fleet "Small Remnant" 15
+
+planet "Bank of Blugtad"
+	tribute 1968049
+		threshold 1000
+		fleet "Heliarch" 24
+
+planet "Belug's Plunge"
+	tribute 792019
+		threshold 1000
+		fleet "Heliarch" 18
+
+planet "Big Sky"
+	tribute 4726
+		threshold 1000
+
+planet Bivrost
+	tribute 11702
+		threshold 1000
+		fleet "Small Deep" 13
+		fleet "Large Deep" 14
+
+planet Bloodsea
+	tribute 2160
+		threshold 1000
+		fleet "Large Militia" 7
+
+planet "Bloptab's Furnace"
+	tribute 330008
+		threshold 1000
+		fleet "Heliarch" 11
+
+planet "Blubipad's Workshop"
+	tribute 1494037
+		threshold 1000
+		fleet "Heliarch" 22
+
+planet "Blue Interior"
+	tribute 1296032
+		threshold 1000
+		fleet "Heliarch" 17
+
+planet Bluestone
+	tribute 44008
+		threshold 1000
+		fleet "Small Syndicate" 24
+		fleet "Large Syndicate" 24
+
+planet Bounty
+	tribute 32407
+		threshold 1000
+		fleet "Small Republic" 14
+
+planet Bourne
+	tribute 9678
+		threshold 1000
+		fleet "Small Militia" 10
+		fleet "Large Militia" 11
+
+planet "Brass Second"
+	tribute 2220055
+		threshold 1000
+		fleet "Heliarch" 27
+
+planet "Bright Echo"
+	tribute 864021
+		threshold 1000
+		fleet "Heliarch" 18
+
+planet "Buccaneer Bay"
+	tribute 1125
+		threshold 1000
+		fleet "Small Core Pirates" 11
+		fleet "Large Core Pirates" 7
+
+planet Burthen
+	tribute 70962
+		threshold 1000
+		fleet "Small Syndicate" 26
+		fleet "Large Syndicate" 27
+
+planet Caelian
+	tribute 35844
+		threshold 1000
+		fleet "Large Remnant" 22
+		fleet "Small Remnant" 23
+
+planet Calda
+	tribute 54012
+		threshold 1000
+		fleet "Small Republic" 33
+		fleet "Large Republic" 35
+
+planet Canyon
+	tribute 61886
+		threshold 1000
+		fleet "Small Syndicate" 25
+		fleet "Large Syndicate" 26
+
+planet "Carbuncle Station"
+	tribute 33307
+		threshold 1000
+		fleet "Small Republic" 25
+		fleet "Large Republic" 26
+
+planet "Ceaseless Toil"
+	tribute 306007
+		threshold 1000
+		fleet "Heliarch" 10
+
+planet "Celestial Third"
+	tribute 1776044
+		threshold 1000
+		fleet "Heliarch" 24
+
+planet "Charon Station"
+	tribute 20706
+		threshold 1000
+		fleet "Small Militia" 20
+		fleet "Large Militia" 21
+
+planet "Charybdis Station"
+	tribute 45383
+		threshold 1000
+		fleet "Small Syndicate" 24
+		fleet "Large Syndicate" 22
+
+planet Chiron
+	tribute 4951
+		threshold 1000
+		fleet "Small Republic" 11
+		fleet "Large Republic" 11
+
+planet "Chosen Nexus"
+	tribute 1890047
+		threshold 1000
+		fleet "Heliarch" 22
+
+planet Clark
+	tribute 9453
+		threshold 1000
+		fleet "Small Militia" 10
+
+planet Clink
+	tribute 27009
+		threshold 1000
+		fleet "Small Militia" 23
+		fleet "Large Militia" 20
+
+planet Cloudfire
+	tribute 160008
+		threshold 1000
+		fleet "Small Hai" 23
+		fleet "Large Hai" 21
+
+planet "Cold Horizon"
+	tribute 360009
+		threshold 1000
+		fleet "Heliarch" 8
+
+planet "Cool Forest"
+	tribute 1134028
+		threshold 1000
+		fleet "Heliarch" 15
+
+planet Cornucopia
+	tribute 15305
+		threshold 1000
+		fleet "Small Militia" 13
+
+planet "Corral of Meblumem"
+	tribute 1188029
+		threshold 1000
+		fleet "Heliarch" 21
+
+planet Covert
+	tribute 6602
+		threshold 1000
+		fleet "Small Core Pirates" 16
+		fleet "Large Core Pirates" 16
+
+planet Crossroads
+	tribute 70962
+		threshold 1000
+		fleet "Small Syndicate" 38
+		fleet "Large Syndicate" 36
+
+planet Dancer
+	tribute 26105
+		threshold 1000
+
+planet Darkcloak
+	tribute 32402
+		threshold 1000
+		fleet "Small Unfettered" 14
+		fleet "Large Unfettered" 14
+
+planet Darkmetal
+	tribute 150007
+		threshold 1000
+		fleet "Small Hai" 23
+		fleet "Large Hai" 23
+
+planet Darkstone
+	tribute 12004
+		threshold 1000
+		fleet "Small Militia" 15
+		fleet "Large Militia" 15
+
+planet Darkwaste
+	tribute 10000
+		threshold 1000
+		fleet "Small Hai" 8
+		fleet "Large Hai" 7
+
+planet "Deadman's Cove"
+	tribute 1800
+		threshold 1000
+		fleet "Small Core Pirates" 11
+		fleet "Large Core Pirates" 10
+
+planet Deep
+	tribute 16205
+		threshold 1000
+		fleet "Small Militia" 14
+		fleet "Large Militia" 14
+
+planet "Deep Treasure"
+	tribute 486012
+		threshold 1000
+		fleet "Heliarch" 10
+
+planet "Deep Water"
+	tribute 612015
+		threshold 1000
+		fleet "Heliarch" 11
+
+planet Delve
+	tribute 258006
+		threshold 1000
+		fleet "Heliarch" 8
+
+planet "Delve of Bloptab"
+	tribute 330008
+		threshold 1000
+		fleet "Heliarch" 12
+
+planet "Desi Seledrak"
+	tribute 1
+		threshold 1000
+
+planet "Devru Kaska"
+	tribute 42001
+		threshold 1000
+		fleet "Small Kor Sestor" 10
+		fleet "Large Kor Sestor" 11
+
+planet "Diligent Hand"
+	tribute 918022
+		threshold 1000
+		fleet "Heliarch" 17
+
+planet "Double Haze"
+	tribute 888022
+		threshold 1000
+		fleet "Heliarch" 15
+
+planet "Drekag Firask"
+	tribute 36001
+		threshold 1000
+		fleet "Small Kor Sestor" 13
+		fleet "Large Kor Sestor" 11
+
+planet Dune
+	tribute 10503
+		threshold 1000
+		fleet "Small Militia" 13
+		fleet "Large Militia" 14
+
+planet "Dusk Companion"
+	tribute 840021
+		threshold 1000
+		fleet "Heliarch" 11
+
+planet Dustmaker
+	tribute 95004
+		threshold 1000
+		fleet "Small Hai" 18
+		fleet "Large Hai" 20
+
+planet "Dwelling of Speloog"
+	tribute 1134028
+		threshold 1000
+		fleet "Heliarch" 18
+
+planet Earth
+	tribute 113425
+		threshold 1000
+		fleet "Small Republic" 37
+		fleet "Large Republic" 35
+
+planet Echo
+	tribute 58513
+		threshold 1000
+
+planet "Elek Kartanu"
+	tribute 4
+		threshold 1000
+
+planet "Ember Reaches"
+	tribute 1
+		threshold 1000
+
+planet "Ember Threshold"
+	tribute 0
+		threshold 1000
+
+planet "Ember Wormhole"
+	tribute 0
+		threshold 1000
+
+planet "Esayaku Fen"
+	tribute 67502
+		threshold 1000
+		fleet "Small Kor Mereti" 19
+		fleet "Large Kor Mereti" 17
+
+planet "Esek Stovar"
+	tribute 78752
+		threshold 1000
+		fleet "Small Kor Mereti" 20
+		fleet "Large Kor Mereti" 19
+
+planet "Eskar Kortuka"
+	tribute 1
+		threshold 1000
+
+planet "Esperaktu Station"
+	tribute 4
+		threshold 1000
+
+planet "Factory of Eblumab"
+	tribute 396009
+		threshold 1000
+		fleet "Heliarch" 14
+
+planet "Far Garden"
+	tribute 996024
+		threshold 1000
+		fleet "Heliarch" 17
+
+planet "Far Home"
+	tribute 864021
+		threshold 1000
+		fleet "Heliarch" 16
+
+planet "Far Monad"
+	tribute 0
+		threshold 1000
+
+planet "Far'en Lai"
+	tribute 4000
+		threshold 1000
+		fleet "Korath Raid" 10
+		fleet "Korath Home" 6
+
+planet "Fara Skaeruti"
+	tribute 52501
+		threshold 1000
+		fleet "Small Kor Mereti" 15
+		fleet "Large Kor Mereti" 16
+
+planet Farpoint
+	tribute 19984
+		threshold 1000
+		fleet "Small Republic" 19
+		fleet "Large Republic" 18
+
+planet Farseer
+	tribute 81018
+		threshold 1000
+		fleet "Small Republic" 42
+		fleet "Large Republic" 42
+
+planet Farwater
+	tribute 184009
+		threshold 1000
+		fleet "Small Hai" 26
+		fleet "Large Hai" 26
+
+planet Featherweight
+	tribute 9677
+		threshold 1000
+		fleet "Small Republic" 12
+
+planet "Fek Rembatu"
+	tribute 67502
+		threshold 1000
+		fleet "Small Kor Mereti" 18
+		fleet "Large Kor Mereti" 19
+
+planet "Fenrir Station"
+	tribute 20254
+		threshold 1000
+		fleet "Small Deep" 17
+		fleet "Large Deep" 16
+
+planet Firelode
+	tribute 10800
+		threshold 1000
+		fleet "Small Unfettered" 9
+		fleet "Large Unfettered" 9
+		fleet "Unfettered Raid" 8
+
+planet "Firka Tesk"
+	tribute 36001
+		threshold 1000
+		fleet "Small Kor Sestor" 13
+		fleet "Large Kor Sestor" 13
+
+planet Flood
+	tribute 22957
+		threshold 1000
+		fleet "Small Militia" 21
+		fleet "Large Militia" 20
+
+planet "Flowing Fields"
+	tribute 612015
+		threshold 1000
+		fleet "Heliarch" 12
+
+planet Follower
+	tribute 95871
+		threshold 1000
+		fleet "Small Deep" 50
+		fleet "Small Republic" 50
+		fleet "Large Republic" 49
+
+planet Forpelog
+	tribute 1625006
+		threshold 1000
+		fleet "Quarg" 14
+
+planet Foundry
+	tribute 84165
+		threshold 1000
+		fleet "Large Syndicate" 25
+		fleet "Small Syndicate" 27
+
+planet "Fourth Shadow"
+	tribute 378009
+		threshold 1000
+		fleet "Heliarch" 10
+
+planet Freedom
+	tribute 8703
+		threshold 1000
+		fleet "Small Northern Pirates" 15
+		fleet "Large Northern Pirates" 18
+
+planet Frostmark
+	tribute 35001
+		threshold 1000
+		fleet "Small Hai" 15
+		fleet "Large Hai" 12
+
+planet Furnace
+	tribute 20903
+		threshold 1000
+		fleet "Small Syndicate" 17
+		fleet "Large Syndicate" 15
+
+planet Geminus
+	tribute 58062
+		threshold 1000
+		fleet "Small Republic" 32
+		fleet "Large Republic" 33
+
+planet Gemstone
+	tribute 25318
+		threshold 1000
+
+planet "Gentle Rain"
+	tribute 1080027
+		threshold 1000
+		fleet "Heliarch" 15
+
+planet Geyser
+	tribute 34432
+		threshold 1000
+		fleet "Small Republic" 26
+		fleet "Large Republic" 23
+
+planet Giverstone
+	tribute 150007
+		threshold 1000
+		fleet "Small Hai" 26
+		fleet "Large Hai" 26
+
+planet Glaze
+	tribute 34211
+		threshold 1000
+		fleet "Small Militia" 26
+		fleet "Large Militia" 24
+
+planet "Glittering Ice"
+	tribute 1200030
+		threshold 1000
+		fleet "Heliarch" 15
+
+planet Glory
+	tribute 63914
+		threshold 1000
+		fleet "Small Republic" 36
+		fleet "Large Republic" 40
+
+planet Grakhord
+	tribute 1625006
+		threshold 1000
+		fleet "Quarg" 14
+
+planet Greenbloom
+	tribute 175008
+		threshold 1000
+		fleet "Small Hai" 26
+		fleet "Large Hai" 27
+
+planet Greenrock
+	tribute 2160
+		threshold 1000
+		fleet "Large Militia" 7
+
+planet Greenwater
+	tribute 92004
+		threshold 1000
+		fleet "Small Hai" 17
+		fleet "Large Hai" 17
+
+planet "Gresku Fodar"
+	tribute 28002
+		threshold 1000
+		fleet "Korath Raid" 15
+		fleet "Korath Home" 19
+
+planet Hai-home
+	tribute 175008
+		threshold 1000
+		fleet "Small Hai" 24
+		fleet "Large Hai" 28
+
+planet "Hammer of Debrugt"
+	tribute 1872046
+		threshold 1000
+		fleet "Heliarch" 26
+
+planet Harmony
+	tribute 34432
+		threshold 1000
+
+planet Haven
+	tribute 3301
+		threshold 1000
+		fleet "Small Northern Pirates" 8
+		fleet "Large Northern Pirates" 12
+
+planet Haze
+	tribute 8101
+		threshold 1000
+		fleet "Small Deep" 11
+		fleet "Large Deep" 9
+
+planet Heartland
+	tribute 18906
+		threshold 1000
+		fleet "Small Militia" 12
+
+planet Heartvalley
+	tribute 190009
+		threshold 1000
+		fleet "Small Hai" 29
+		fleet "Large Hai" 28
+
+planet Helheim
+	tribute 10802
+		threshold 1000
+		fleet "Small Deep" 13
+		fleet "Large Deep" 14
+
+planet Hephaestus
+	tribute 84165
+		threshold 1000
+		fleet "Small Syndicate" 29
+		fleet "Large Syndicate" 30
+
+planet Hermes
+	tribute 83043
+		threshold 1000
+		fleet "Small Republic" 31
+		fleet "Large Republic" 29
+
+planet Hestia
+	tribute 135030
+		threshold 1000
+		fleet "Small Republic" 47
+		fleet "Large Republic" 48
+
+planet Hippocrates
+	tribute 27505
+		threshold 1000
+		fleet "Small Syndicate" 18
+		fleet "Large Syndicate" 21
+
+planet Hope
+	tribute 6002
+		threshold 1000
+		fleet "Small Militia" 10
+		fleet "Large Militia" 13
+
+planet Hopper
+	tribute 16878
+		threshold 1000
+
+planet "Huginn Station"
+	tribute 27006
+		threshold 1000
+		fleet "Small Deep" 29
+		fleet "Large Deep" 25
+		fleet "Small Republic" 29
+
+planet Humanika
+	tribute 725002
+		threshold 1000
+		fleet "Quarg" 6
+
+planet "Hydra Station"
+	tribute 9003
+		threshold 1000
+		fleet "Small Militia" 13
+
+planet Icefall
+	tribute 99018
+		threshold 1000
+		fleet "Small Syndicate" 32
+		fleet "Large Syndicate" 33
+
+planet Icelake
+	tribute 46002
+		threshold 1000
+		fleet "Small Hai" 12
+		fleet "Large Hai" 12
+
+planet Ingot
+	tribute 42759
+		threshold 1000
+		fleet "Small Republic" 15
+
+planet "Inmost Blue"
+	tribute 1512037
+		threshold 1000
+		fleet "Heliarch" 23
+
+planet "Into White"
+	tribute 240006
+		threshold 1000
+		fleet "Heliarch" 7
+
+planet "Karek Fornati"
+	tribute 36003
+		threshold 1000
+		fleet "Kor Efret Home" 17
+
+planet "Kasichara Fet"
+	tribute 2
+		threshold 1000
+
+planet "Keneska Fek"
+	tribute 72002
+		threshold 1000
+		fleet "Small Kor Sestor" 15
+		fleet "Large Kor Sestor" 18
+
+planet "Kessel Sepret"
+	tribute 28002
+		threshold 1000
+		fleet "Korath Raid" 15
+		fleet "Korath Home" 16
+
+planet "Ki Patek Ka"
+	tribute 2490062
+		threshold 1000
+		fleet "Heliarch" 27
+
+planet "Korati Efreti"
+	tribute 1500006
+		threshold 1000
+		fleet "Quarg" 22
+		fleet "Large Quarg" 22
+
+planet "Korbatri Eska"
+	tribute 90003
+		threshold 1000
+		fleet "Small Kor Mereti" 22
+		fleet "Large Kor Mereti" 20
+
+planet "Kort Kehai"
+	tribute 87503
+		threshold 1000
+		fleet "Wanderer Drones" 20
+		fleet "Wanderer Defense" 23
+
+planet "Kort Vek'kri"
+	tribute 43751
+		threshold 1000
+		fleet "Wanderer Drones" 14
+		fleet "Wanderer Defense" 12
+
+planet "Kraken Station"
+	tribute 18565
+		threshold 1000
+		fleet "Small Syndicate" 10
+
+planet "Kuwaru Efreti"
+	tribute 3250013
+		threshold 1000
+		fleet "Quarg" 37
+		fleet "Large Quarg" 38
+
+planet Lagrange
+	tribute 3187512
+		threshold 1000
+		fleet "Quarg" 19
+
+planet "Laki Nemparu"
+	tribute 72007
+		threshold 1000
+		fleet "Kor Efret Home" 20
+
+planet "Leviathan Station"
+	tribute 6751
+		threshold 1000
+		fleet "Small Deep" 11
+		fleet "Large Deep" 11
+
+planet Lichen
+	tribute 27009
+		threshold 1000
+		fleet "Small Militia" 15
+
+planet Lodestone
+	tribute 42082
+		threshold 1000
+		fleet "Small Syndicate" 16
+
+planet Longjump
+	tribute 30610
+		threshold 1000
+		fleet "Small Militia" 29
+		fleet "Large Militia" 33
+
+planet Luna
+	tribute 124227
+		threshold 1000
+		fleet "Small Republic" 37
+		fleet "Large Republic" 35
+
+planet Maelstrom
+	tribute 47598
+		threshold 1000
+		fleet "Small Republic" 24
+		fleet "Large Republic" 20
+
+planet Mainsail
+	tribute 45010
+		threshold 1000
+		fleet "Small Republic" 29
+		fleet "Large Republic" 26
+
+planet Maker
+	tribute 89116
+		threshold 1000
+		fleet "Small Syndicate" 17
+
+planet Makerplace
+	tribute 190009
+		threshold 1000
+		fleet "Small Hai" 29
+		fleet "Large Hai" 29
+
+planet Mani
+	tribute 20254
+		threshold 1000
+		fleet "Small Deep" 18
+		fleet "Large Deep" 19
+
+planet "Market of Gupta"
+	tribute 1836045
+		threshold 1000
+		fleet "Heliarch" 27
+
+planet Mars
+	tribute 110724
+		threshold 1000
+		fleet "Small Republic" 34
+		fleet "Large Republic" 34
+
+planet Martini
+	tribute 67515
+		threshold 1000
+		fleet "Small Republic" 38
+		fleet "Large Republic" 40
+
+planet "Mebla's Portion"
+	tribute 936023
+		threshold 1000
+		fleet "Heliarch" 17
+
+planet Memory
+	tribute 52211
+		threshold 1000
+		fleet "Small Deep" 45
+		fleet "Large Deep" 44
+		fleet "Small Republic" 41
+
+planet "Merask Fortuno"
+	tribute 131254
+		threshold 1000
+		fleet "Small Kor Mereti" 23
+		fleet "Large Kor Mereti" 26
+
+planet Mere
+	tribute 6002
+		threshold 1000
+		fleet "Small Militia" 9
+
+planet "Mereti Station"
+	tribute 157505
+		threshold 1000
+		fleet "Large Kor Mereti" 32
+		fleet "Small Kor Mereti" 33
+
+planet "Miblulub's Plenty"
+	tribute 1530038
+		threshold 1000
+		fleet "Heliarch" 22
+
+planet Midgard
+	tribute 21267
+		threshold 1000
+		fleet "Small Deep" 17
+		fleet "Large Deep" 13
+
+planet "Midway Emerald"
+	tribute 1674041
+		threshold 1000
+		fleet "Heliarch" 24
+
+planet Millrace
+	tribute 18153
+		threshold 1000
+		fleet "Small Syndicate" 15
+		fleet "Large Syndicate" 13
+
+planet Mirrorlake
+	tribute 200010
+		threshold 1000
+		fleet "Small Hai" 26
+		fleet "Large Hai" 27
+
+planet Moonshake
+	tribute 42082
+		threshold 1000
+		fleet "Small Syndicate" 21
+		fleet "Large Syndicate" 23
+
+planet "Muninn Station"
+	tribute 31507
+		threshold 1000
+		fleet "Small Deep" 33
+		fleet "Large Deep" 32
+		fleet "Small Republic" 32
+
+planet Muspel
+	tribute 22955
+		threshold 1000
+		fleet "Small Deep" 18
+		fleet "Large Deep" 19
+
+planet Mutiny
+	tribute 3601
+		threshold 1000
+		fleet "Small Core Pirates" 9
+		fleet "Large Core Pirates" 9
+
+planet Mystery
+	tribute 810020
+		threshold 1000
+		fleet "Heliarch" 12
+
+planet Nasqueron
+	tribute 0
+		threshold 1000
+
+planet "Nearby Jade"
+	tribute 756018
+		threshold 1000
+		fleet "Heliarch" 17
+
+planet "New Argentina"
+	tribute 18904
+		threshold 1000
+
+planet "New Austria"
+	tribute 33757
+		threshold 1000
+		fleet "Small Republic" 18
+
+planet "New Boston"
+	tribute 18906
+		threshold 1000
+		fleet "Small Militia" 13
+
+planet "New Britain"
+	tribute 26408
+		threshold 1000
+		fleet "Small Militia" 19
+
+planet "New China"
+	tribute 39608
+		threshold 1000
+		fleet "Small Republic" 21
+		fleet "Large Republic" 22
+
+planet "New Finding"
+	tribute 306007
+		threshold 1000
+		fleet "Heliarch" 13
+
+planet "New Greenland"
+	tribute 6752
+		threshold 1000
+		fleet "Small Militia" 11
+
+planet "New Holland"
+	tribute 9453
+		threshold 1000
+		fleet "Small Militia" 13
+
+planet "New Iceland"
+	tribute 28359
+		threshold 1000
+		fleet "Small Militia" 20
+
+planet "New India"
+	tribute 28809
+		threshold 1000
+		fleet "Small Militia" 20
+		fleet "Large Militia" 24
+
+planet "New Kansas"
+	tribute 4501
+		threshold 1000
+
+planet "New Portland"
+	tribute 18906
+		threshold 1000
+		fleet "Small Militia" 14
+
+planet "New Sahara"
+	tribute 35445
+		threshold 1000
+		fleet "Small Republic" 14
+
+planet "New Switzerland"
+	tribute 20254
+		threshold 1000
+		fleet "Small Republic" 14
+
+planet "New Tibet"
+	tribute 19206
+		threshold 1000
+		fleet "Small Militia" 16
+
+planet "New Wales"
+	tribute 15005
+		threshold 1000
+		fleet "Small Militia" 12
+
+planet "New Washington"
+	tribute 37137
+		threshold 1000
+		fleet "Small Militia" 17
+
+planet Newhome
+	tribute 35001
+		threshold 1000
+		fleet "Small Hai" 14
+		fleet "Large Hai" 14
+
+planet Nifel
+	tribute 31732
+		threshold 1000
+		fleet "Small Deep" 23
+		fleet "Large Deep" 23
+
+planet Nimbus
+	tribute 10726
+		threshold 1000
+		fleet "Small Syndicate" 11
+		fleet "Large Syndicate" 13
+
+planet Norn
+	tribute 13503
+		threshold 1000
+		fleet "Small Deep" 14
+		fleet "Large Deep" 15
+
+planet Oasis
+	tribute 9303
+		threshold 1000
+		fleet "Small Militia" 17
+		fleet "Large Militia" 15
+
+planet "Oberon Station"
+	tribute 40844
+		threshold 1000
+		fleet "Small Syndicate" 17
+		fleet "Large Syndicate" 15
+
+planet Oblivion
+	tribute 37133
+		threshold 1000
+
+planet Pearl
+	tribute 54012
+		threshold 1000
+		fleet "Small Republic" 31
+		fleet "Large Republic" 30
+
+planet "Phoenix Station"
+	tribute 6751
+		threshold 1000
+		fleet "Small Deep" 12
+		fleet "Large Deep" 12
+
+planet Pilot
+	tribute 28806
+		threshold 1000
+		fleet "Small Republic" 24
+		fleet "Large Republic" 23
+
+planet Placer
+	tribute 89116
+		threshold 1000
+		fleet "Small Syndicate" 29
+		fleet "Large Syndicate" 28
+
+planet "Plort's Water"
+	tribute 306007
+		threshold 1000
+		fleet "Heliarch" 10
+
+planet Poisonwood
+	tribute 17216
+		threshold 1000
+
+planet Poseidos
+	tribute 6002
+		threshold 1000
+		fleet "Small Militia" 14
+		fleet "Large Militia" 9
+
+planet Prime
+	tribute 44559
+		threshold 1000
+		fleet "Small Republic" 19
+		fleet "Large Republic" 23
+
+planet Pugglemug
+	tribute 10000
+		threshold 1000
+		fleet "Small Pug" 10
+		fleet "Large Pug" 9
+
+planet Pugglequat
+	tribute 10000
+		threshold 1000
+		fleet "Small Pug" 10
+		fleet "Large Pug" 11
+
+planet Quicksilver
+	tribute 14027
+		threshold 1000
+		fleet "Small Syndicate" 12
+
+planet Rand
+	tribute 16878
+		threshold 1000
+
+planet "Refuge of Belugt"
+	tribute 432010
+		threshold 1000
+		fleet "Heliarch" 15
+
+planet "Rekat Moraski"
+	tribute 105003
+		threshold 1000
+		fleet "Small Kor Mereti" 23
+		fleet "Large Kor Mereti" 24
+
+planet Relic
+	tribute 6751
+		threshold 1000
+		fleet "Small Republic" 12
+		fleet "Large Republic" 12
+
+planet "Remnant Wormhole"
+	tribute 0
+		threshold 1000
+
+planet "Remote Blue"
+	tribute 312007
+		threshold 1000
+		fleet "Heliarch" 11
+
+planet Reunion
+	tribute 40844
+		threshold 1000
+		fleet "Small Syndicate" 11
+
+planet Revelation
+	tribute 810020
+		threshold 1000
+		fleet "Heliarch" 13
+
+planet "Ring of Friendship"
+	tribute 1080027
+		threshold 1000
+		fleet "Heliarch" 13
+
+planet "Ring of Power"
+	tribute 1080027
+		threshold 1000
+		fleet "Heliarch" 14
+
+planet "Ring of Wisdom"
+	tribute 1080027
+		threshold 1000
+		fleet "Heliarch" 16
+
+planet Rust
+	tribute 1008025
+		threshold 1000
+		fleet "Heliarch" 16
+
+planet "Rusty Second"
+	tribute 2232055
+		threshold 1000
+		fleet "Heliarch" 27
+
+planet "Sabira Eseskrai"
+	tribute 6
+		threshold 1000
+
+planet "Safaresk Enlai"
+	tribute 14001
+		threshold 1000
+		fleet "Korath Raid" 12
+		fleet "Korath Home" 10
+
+planet "Sandy Two"
+	tribute 444011
+		threshold 1000
+		fleet "Heliarch" 11
+
+planet "Sapira Mereti"
+	tribute 135004
+		threshold 1000
+		fleet "Large Kor Mereti" 27
+		fleet "Small Kor Mereti" 28
+
+planet "Sarisa Fentra"
+	tribute 1
+		threshold 1000
+
+planet Saros
+	tribute 1296032
+		threshold 1000
+		fleet "Heliarch" 21
+
+planet "Sasirka Gatru"
+	tribute 144004
+		threshold 1000
+		fleet "Small Kor Sestor" 19
+		fleet "Large Kor Sestor" 22
+
+planet "Sebra Skira"
+	tribute 168005
+		threshold 1000
+		fleet "Small Kor Sestor" 22
+		fleet "Large Kor Sestor" 23
+
+planet "Second Cerulean"
+	tribute 612015
+		threshold 1000
+		fleet "Heliarch" 11
+
+planet "Second Rose"
+	tribute 396009
+		threshold 1000
+		fleet "Heliarch" 16
+
+planet "Second Viridian"
+	tribute 756018
+		threshold 1000
+		fleet "Heliarch" 18
+
+planet "Secret Sky"
+	tribute 918022
+		threshold 1000
+		fleet "Heliarch" 17
+
+planet "Sek Alarfarat"
+	tribute 4
+		threshold 1000
+
+planet "Selefkar Refinery"
+	tribute 2
+		threshold 1000
+
+planet "Seleptra Nak"
+	tribute 2
+		threshold 1000
+
+planet "Separa Tiklar"
+	tribute 14001
+		threshold 1000
+		fleet "Korath Raid" 12
+		fleet "Korath Home" 11
+
+planet "Septar Lorku"
+	tribute 28002
+		threshold 1000
+		fleet "Korath Raid" 15
+		fleet "Korath Home" 16
+
+planet Serpens
+	tribute 29031
+		threshold 1000
+		fleet "Small Republic" 18
+		fleet "Large Republic" 21
+
+planet "Sessiliki Far"
+	tribute 28002
+		threshold 1000
+		fleet "Korath Raid" 16
+		fleet "Korath Home" 16
+
+planet "Sestor Ikfar"
+	tribute 144004
+		threshold 1000
+		fleet "Small Kor Sestor" 21
+		fleet "Large Kor Sestor" 23
+
+planet "Setar Fort"
+	tribute 36003
+		threshold 1000
+		fleet "Kor Efret Home" 17
+
+planet "Shadow of Leaves"
+	tribute 936023
+		threshold 1000
+		fleet "Heliarch" 14
+
+planet "Shadowed Valley"
+	tribute 306007
+		threshold 1000
+		fleet "Heliarch" 12
+
+planet Shangri-La
+	tribute 25029
+		threshold 1000
+		fleet "Small Syndicate" 18
+		fleet "Large Syndicate" 21
+
+planet "Shifting Sand"
+	tribute 240006
+		threshold 1000
+		fleet "Heliarch" 8
+
+planet Shiver
+	tribute 18004
+		threshold 1000
+		fleet "Small Republic" 13
+		fleet "Large Republic" 12
+
+planet Shorebreak
+	tribute 12604
+		threshold 1000
+		fleet "Small Militia" 17
+		fleet "Large Militia" 17
+
+planet Shroud
+	tribute 48610
+		threshold 1000
+		fleet "Small Republic" 22
+		fleet "Large Republic" 24
+
+planet Silver
+	tribute 54012
+		threshold 1000
+		fleet "Small Republic" 22
+		fleet "Large Republic" 25
+
+planet Sinter
+	tribute 15005
+		threshold 1000
+		fleet "Small Militia" 17
+		fleet "Large Militia" 18
+
+planet Skillet
+	tribute 26105
+		threshold 1000
+		fleet "Small Republic" 24
+		fleet "Large Republic" 20
+
+planet Skyfarm
+	tribute 80004
+		threshold 1000
+		fleet "Small Hai" 14
+		fleet "Large Hai" 15
+
+planet Skymoot
+	tribute 24008
+		threshold 1000
+		fleet "Small Militia" 25
+		fleet "Large Militia" 26
+
+planet Slylandro
+	tribute 0
+		threshold 1000
+
+planet "Smuggler's Den"
+	tribute 2300
+		threshold 1000
+		fleet "Small Southern Pirates" 12
+		fleet "Large Southern Pirates" 12
+		fleet "Small Northern Pirates" 11
+		fleet "Large Northern Pirates" 10
+
+planet Snowfeather
+	tribute 70003
+		threshold 1000
+		fleet "Small Hai" 19
+		fleet "Large Hai" 18
+
+planet Solace
+	tribute 31210
+		threshold 1000
+		fleet "Small Militia" 33
+		fleet "Large Militia" 31
+
+planet "Solima Skarati"
+	tribute 4
+		threshold 1000
+
+planet "Sopi Lefarkata"
+	tribute 108003
+		threshold 1000
+		fleet "Small Kor Sestor" 19
+		fleet "Large Kor Sestor" 19
+
+planet "Spera Anatrusk"
+	tribute 7
+		threshold 1000
+
+planet Splashdown
+	tribute 28806
+		threshold 1000
+		fleet "Small Republic" 24
+		fleet "Large Republic" 21
+
+planet Starcross
+	tribute 20931
+		threshold 1000
+		fleet "Small Militia" 20
+		fleet "Large Militia" 20
+
+planet Stonebreak
+	tribute 47502
+		threshold 1000
+		fleet "Small Hai" 14
+		fleet "Large Hai" 12
+
+planet Stormhold
+	tribute 5402
+		threshold 1000
+		fleet "Small Core Pirates" 14
+		fleet "Large Core Pirates" 15
+
+planet "Stronghold of Flugbu"
+	tribute 612015
+		threshold 1000
+		fleet "Heliarch" 12
+
+planet Sundive
+	tribute 33556
+		threshold 1000
+
+planet Sundrinker
+	tribute 36012
+		threshold 1000
+		fleet "Small Militia" 27
+		fleet "Large Militia" 24
+
+planet Sunracer
+	tribute 60235
+		threshold 1000
+		fleet "Small Syndicate" 29
+		fleet "Large Syndicate" 31
+
+planet "Tebuteb's Table"
+	tribute 612015
+		threshold 1000
+		fleet "Heliarch" 12
+
+planet "Tefkar Ret"
+	tribute 56005
+		threshold 1000
+		fleet "Kor Efret Home" 16
+
+planet "Third Umber"
+	tribute 1116027
+		threshold 1000
+		fleet "Heliarch" 20
+
+planet Thrall
+	tribute 40509
+		threshold 1000
+		fleet "Small Republic" 23
+		fleet "Large Republic" 24
+
+planet Thule
+	tribute 1800
+		threshold 1000
+		fleet "Small Southern Pirates" 13
+		fleet "Large Southern Pirates" 9
+		fleet "Small Northern Pirates" 11
+		fleet "Large Northern Pirates" 11
+
+planet Thunder
+	tribute 6751
+		threshold 1000
+
+planet "Tik Klai"
+	tribute 57502
+		threshold 1000
+		fleet "Wanderer Drones" 17
+		fleet "Wanderer Defense" 19
+
+planet Tinker
+	tribute 29705
+		threshold 1000
+		fleet "Small Syndicate" 15
+
+planet Trinket
+	tribute 11403
+		threshold 1000
+		fleet "Small Militia" 16
+		fleet "Large Militia" 14
+
+planet "Triton Station"
+	tribute 20929
+		threshold 1000
+		fleet "Small Republic" 14
+		fleet "Large Republic" 13
+
+planet Trove
+	tribute 11827
+		threshold 1000
+		fleet "Small Syndicate" 12
+
+planet Tundra
+	tribute 30010
+		threshold 1000
+		fleet "Small Militia" 19
+
+planet "Turquoise Four"
+	tribute 306007
+		threshold 1000
+		fleet "Heliarch" 12
+
+planet Twinstar
+	tribute 48616
+		threshold 1000
+		fleet "Small Militia" 39
+		fleet "Large Militia" 39
+
+planet "Typhon Station"
+	tribute 15005
+		threshold 1000
+		fleet "Small Militia" 19
+		fleet "Large Militia" 19
+
+planet Vail
+	tribute 40959
+		threshold 1000
+		fleet "Small Republic" 26
+		fleet "Large Republic" 23
+
+planet Valhalla
+	tribute 39833
+		threshold 1000
+		fleet "Small Deep" 26
+		fleet "Large Deep" 28
+
+planet "Var' Kar'i'i"
+	tribute 72502
+		threshold 1000
+		fleet "Wanderer Drones" 19
+		fleet "Wanderer Defense" 22
+
+planet "Var' Kayi"
+	tribute 117504
+		threshold 1000
+		fleet "Wanderer Drones" 29
+		fleet "Wanderer Defense" 32
+
+planet "Var' Roi"
+	tribute 63752
+		threshold 1000
+		fleet "Wanderer Drones" 21
+		fleet "Wanderer Defense" 21
+
+planet "Vara K'chrai"
+	tribute 88128
+		threshold 1000
+		fleet "Wanderer Drones" 19
+		fleet "Wanderer Defense" 24
+
+planet "Vara Ke'sok"
+	tribute 65627
+		threshold 1000
+		fleet "Wanderer Drones" 20
+		fleet "Wanderer Defense" 21
+
+planet "Vara Ke'stai"
+	tribute 28751
+		threshold 1000
+		fleet "Wanderer Drones" 13
+		fleet "Wanderer Defense" 16
+
+planet "Vara Kehi'ki"
+	tribute 71252
+		threshold 1000
+		fleet "Wanderer Drones" 22
+		fleet "Wanderer Defense" 23
+
+planet "Vara Pug"
+	tribute 35001
+		threshold 1000
+		fleet "Small Pug" 13
+		fleet "Large Pug" 14
+
+planet "Vara Rakak"
+	tribute 28751
+		threshold 1000
+		fleet "Wanderer Drones" 12
+		fleet "Wanderer Defense" 12
+
+planet "Varu Ek'lak'lai"
+	tribute 31251
+		threshold 1000
+		fleet "Wanderer Drones" 16
+		fleet "Wanderer Defense" 15
+
+planet "Varu K'est"
+	tribute 50002
+		threshold 1000
+		fleet "Wanderer Drones" 17
+		fleet "Wanderer Defense" 18
+
+planet "Varu K'prai"
+	tribute 40626
+		threshold 1000
+		fleet "Wanderer Drones" 11
+		fleet "Wanderer Defense" 14
+
+planet "Varu Mer'ek"
+	tribute 57502
+		threshold 1000
+		fleet "Wanderer Drones" 16
+		fleet "Wanderer Defense" 20
+
+planet "Varu Tek'kai"
+	tribute 63752
+		threshold 1000
+		fleet "Wanderer Drones" 19
+		fleet "Wanderer Defense" 21
+
+planet "Varu Tev'kei"
+	tribute 86253
+		threshold 1000
+		fleet "Wanderer Drones" 20
+		fleet "Wanderer Defense" 19
+
+planet "Vibrant Water"
+	tribute 306007
+		threshold 1000
+		fleet "Heliarch" 10
+
+planet Viminal
+	tribute 26883
+		threshold 1000
+		fleet "Large Remnant" 18
+		fleet "Small Remnant" 18
+
+planet Vinci
+	tribute 47935
+		threshold 1000
+		fleet "Small Republic" 30
+		fleet "Large Republic" 31
+
+planet Warfeed
+	tribute 10800
+		threshold 1000
+		fleet "Small Unfettered" 8
+		fleet "Large Unfettered" 12
+
+planet "Warm Slope"
+	tribute 312007
+		threshold 1000
+		fleet "Heliarch" 12
+
+planet "Warm Wind"
+	tribute 1080027
+		threshold 1000
+		fleet "Heliarch" 15
+
+planet Watcher
+	tribute 35107
+		threshold 1000
+		fleet "Small Republic" 20
+		fleet "Large Republic" 17
+
+planet Wayfarer
+	tribute 26105
+		threshold 1000
+
+planet "Weir of Glubatub"
+	tribute 918022
+		threshold 1000
+		fleet "Heliarch" 17
+
+planet Windblain
+	tribute 37133
+		threshold 1000
+		fleet "Small Deep" 27
+		fleet "Large Deep" 28
+
+planet Winter
+	tribute 9003
+		threshold 1000
+		fleet "Small Militia" 12
+		fleet "Large Militia" 14
+
+planet "Wormhole Alpha"
+	tribute 1800
+		threshold 1000
+
+planet "Wyvern Station"
+	tribute 7502
+		threshold 1000
+		fleet "Small Militia" 11
+		fleet "Large Militia" 11
+
+planet Zenith
+	tribute 1800
+		threshold 1000
+		fleet "Small Northern Pirates" 8
+		fleet "Large Northern Pirates" 9
+
+planet Zug
+	tribute 37812
+		threshold 1000
+		fleet "Small Militia" 27
+		fleet "Large Militia" 29
+
