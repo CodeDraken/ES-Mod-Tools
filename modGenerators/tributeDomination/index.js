@@ -19,6 +19,7 @@
 // - government ( fixed value for each gov )
 // - defense fleet ( multiplier for amount of defense ships )
 // - will have a limit so ridiculous combat ratings won't be required.
+const _ = require('lodash')
 
 const { wordOrQuoted } = require('../../config/regex')
 const { generateModifierFile } = require('../../util/generateModifierFile')
@@ -36,34 +37,42 @@ const createModifierFile = () => {
   )
 }
 
-// TODO: Fix this shit
+// TODO: Fix this shit | breaks for deeply nested objects
 const modifyPlanets = (planets = planetsData) => {
   const modified = planets.map(planet => {
-    const system = systemsData
-    .find(system => system.object
-      .some(object => {
-        const re = new RegExp(String.raw`"_value": "\"?${planet._value}\"?"`, 'g')
-        console.log(object)
-        return object._value === planet._value || JSON.stringify(re.test(object))
-      }))
+    const planetSystem = systemsData
+    .find(system => {
+      // if (planet._value === `"Var' Roi"`)console.log(planet._value)
+      const planetValRe = planet._value.replace(/"?\\?/g, '')
+      const re = new RegExp(String.raw`"_value":"\\?.?${planetValRe}\\?.?`, 'g')
+      return system.object.some(object => object._value === planet._value) || re.test(JSON.stringify(system.object))
+    })
 
     try {
-      let { link, government, fleet } = system
-      let { attributes, shipyard, outfitter } = planet
-      console.log(system._value, planet._value)
-
-      if (planet._value === 'Earth') console.log(system, planet)
+      let { link, government, fleet } = planetSystem
+      let { attributes, shipyard, outfitter, _value, _type } = planet
 
       // convert string to array
       attributes = attributes
       ? attributes.match(wordOrQuoted)
       : []
+      return {
+        _type,
+        _value,
+        system: planetSystem._value,
+        tribute: 'test'
+      }
     } catch (err) {
-      console.log(`failed for: ${planet._value}`, system)
+      const planetValRe = planet._value.replace(/"?\\?/g, '')
+      const re = new RegExp(`"_value":.?${planetValRe}.?`, 'g')
+
+      console.log(`failed for: ${planet._value}`, planetSystem)
+      console.log(re)
       console.log(err)
     }
   })
 
+  console.log('modified: ', modified)
   return modified
 }
 
