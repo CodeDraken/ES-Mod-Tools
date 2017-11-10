@@ -14,7 +14,8 @@ const data = {
     systems: require('../json/map/map-systems.json')
   },
   util: {
-    shipGenerationEquations: require('../json/util/generation_equations.json')
+    shipGenerationEquations: require('../json/util/generation-equations.json'),
+    superFleets: require('../json/util/super-fleets.json')
   }
 }
 

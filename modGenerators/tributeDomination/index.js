@@ -22,11 +22,14 @@
 
 const { wordOrQuoted, tradeFleet } = require('../../config/regex')
 const { generateModifierFile } = require('../../util/generateModifierFile')
-const { listAllPlanetAttributes, selectAllBlocksWith } = require('../../util/grabDataUtil')
+const { listAllPlanetAttributes, selectAllBlocksWith, selectFrom } = require('../../util/grabDataUtil')
 const modifiers = require('./modifiers.json')
 
 const planetsData = selectAllBlocksWith({ _type: 'planet' }, 'map/planets')
 const systemsData = selectAllBlocksWith({ _type: 'system' }, 'map/systems')
+
+// remove numbers & quotes
+const sanitizeStr = str => str.replace(/ \d+/g, '').replace(/"/g, '').trim()
 
 const createModifierFile = () => {
   generateModifierFile(
@@ -36,6 +39,17 @@ const createModifierFile = () => {
     (dataToSanitize) => dataToSanitize.map(key => key.replace(/"/g, '').trim())
   )
 }
+
+const isOwnedFleet = (fleetStr, government) => {
+  // all fleet names should be quoted and without the number to match properly
+  const fleetName = '"' + sanitizeStr(fleetStr) + '"'
+  const fleetObj = selectFrom('government', '/util/superFleets', { _value: fleetName })
+    .replace(/"/g, '').trim()
+  // grab the fleet and check the government value
+  return government === fleetObj
+}
+
+const isTradeFleet = fleet => new RegExp(tradeFleet).test(fleet)
 
 const modifyPlanets = (planets = planetsData) => {
   const modified = planets.map(planet => {
@@ -48,10 +62,23 @@ const modifyPlanets = (planets = planetsData) => {
     })
 
     try {
-      let { link, government, fleet = [] } = planetSystem
-      let { attributes, shipyard, outfitter, _value, _type } = planet
+      let { link = [], government = '', fleet = [] } = planetSystem
+      let { attributes = '', shipyard = [], outfitter = [], _value = '', _type = '' } = planet
       let tributeVal = 1
-      government = government.replace(/"/g, '')
+      government = sanitizeStr(government)
+
+      // make sure to use proper fleets
+      if (Array.isArray(fleet) && fleet.some(f => /(Arach)|(Kimek)|(Saryd)/gi.test(f))) {
+        // use heliarch
+        government = '"Heliarch"'
+      } else if (/(Arach)|(Kimek)|(Saryd)/gi.test(fleet)) {
+        government = '"Heliarch'
+      } else if (Array.isArray(fleet) && fleet.some(f => /Militia/gi.test(f))) {
+        // use militia
+        government = '"Militia"'
+      } else if (/Militia/gi.test(fleet)) {
+        government = '"Militia"'
+      }
 
       // convert string to array
       attributes = attributes
@@ -66,39 +93,63 @@ const modifyPlanets = (planets = planetsData) => {
 
       // if link exists and is more than one multiplier is half # of links
       // else 0.5
-      const linkModifer = Array.isArray(link)
+      const linkModifier = Array.isArray(link)
         ? (link.length || 1) * 0.5
         : 0.5
 
-      const warFleets = []
+      const ownedFleets = (Array.isArray(fleet)
+        ? fleet.filter(f => isOwnedFleet(f, government) && !isTradeFleet(f))
+        : isOwnedFleet(fleet, government) && !isTradeFleet(fleet)
+          ? [fleet]
+          : []
+      ).map(f => sanitizeStr(f))
+
       // merchant fleets in the area & populate warFleets
-      const merchantFleets = fleet
-        .filter(f => {
-          const isTradeFleet = new RegExp(tradeFleet).test(f)
-          if (!isTradeFleet) warFleets.push(f)
+      const merchantFleets = Array.isArray(fleet)
+        ? fleet.filter(f => isTradeFleet(f)).map(f => sanitizeStr(f))
+        : isTradeFleet(fleet)
+          ? [fleet]
+          : []
 
-          return isTradeFleet
-        })
+      tributeVal += modifiers[government] || 0
+      tributeVal = Math.floor(tributeVal * attrModifier * linkModifier * (merchantFleets.length / 2 || 0.8))
 
-      tributeVal = modifiers[government]
-      console.log('--------------\n',
-        modifiers[government], government,
-        attrModifier, attributes,
-        linkModifer, link,
-        warFleets, merchantFleets,
-        '\n--------------'
-      )
+      // * attrModifier * linkModifier * 0.5
+      const defenseFleet = ownedFleets.map(f => {
+        const amount = Math.floor(
+          tributeVal * 0.0003 + ownedFleets.length * 2 * attrModifier * linkModifier -
+          (modifiers[government] * 0.0005) + 1
+        )
+        return `"${f}" ${amount}`
+      })
 
-      return {
+      // console.log('--------------\n',
+      //   tributeVal,
+      //   modifiers[government], government,
+      //   planet._value,
+      //   attrModifier, attributes,
+      //   linkModifer, link,
+      //   ownedFleets,
+      //   merchantFleets,
+      //   fleet,
+      //   '\n--------------'
+      // )
+
+      const updatedPlanet = {
         _type,
         _value,
         system: planetSystem._value,
         tribute: {
           '_value': tributeVal,
-          'threshold': 2500,
-          'fleet': '"Large Militia" 5'
+          'threshold': 1000,
+          'fleet': defenseFleet
         }
       }
+
+      // if (updatedPlanet.tribute._value > 100000)
+      console.log(updatedPlanet)
+
+      return updatedPlanet
     } catch (err) {
       const planetValRe = planet._value.replace(/"?\\?/g, '')
       const re = new RegExp(`"_value":.?${planetValRe}.?`, 'g')
@@ -109,7 +160,6 @@ const modifyPlanets = (planets = planetsData) => {
     }
   })
 
-  // console.log('modified: ', modified)
   return modified
 }
 
