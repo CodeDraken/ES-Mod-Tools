@@ -151,7 +151,42 @@ const listGovernments = () => {
   return govs
 }
 
-// console.log(selectFrom('attributes', '/map/planets', { _value: 'Ahr' }))
+// TODO: refactor the regex search method into separate function
+const listPlanetSystems = () => {
+  const planets = readDataPath('map/planets')
+  const systems = readDataPath('map/systems')
+
+  const planetAndSystem = planets
+    .map(planet => {
+      const planetSystem = systems
+      .find(system => {
+        const planetValRe = planet._value.replace(/"?\\?/g, '')
+        const re = new RegExp(String.raw`"_value":"\\?.?${planetValRe}\\?.?`, 'g')
+
+        return system.object.some(object => object._value === planet._value) || re.test(JSON.stringify(system.object))
+      })
+
+      try {
+        let systemName = planetSystem._value
+        let planetName = planet._value
+
+        return {
+          _type: planet._type,
+          _value: planetName,
+          system: systemName
+        }
+      } catch (err) {
+        const planetValRe = planet._value.replace(/"?\\?/g, '')
+        const re = new RegExp(`"_value":.?${planetValRe}.?`, 'g')
+
+        console.log(`list planet-system failed for: ${planet._value}`, planetSystem)
+        console.log(re)
+        console.log(err)
+      }
+    })
+
+  return planetAndSystem
+}
 
 module.exports = {
   data,
@@ -164,5 +199,6 @@ module.exports = {
   selectFrom,
   selectAllFrom,
   selectBlockWith,
-  selectAllBlocksWith
+  selectAllBlocksWith,
+  listPlanetSystems
 }

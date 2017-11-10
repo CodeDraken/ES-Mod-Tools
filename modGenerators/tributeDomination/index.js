@@ -37,14 +37,13 @@ const createModifierFile = () => {
   )
 }
 
-// TODO: Fix this shit | breaks for deeply nested objects
 const modifyPlanets = (planets = planetsData) => {
   const modified = planets.map(planet => {
     const planetSystem = systemsData
     .find(system => {
-      // if (planet._value === `"Var' Roi"`)console.log(planet._value)
       const planetValRe = planet._value.replace(/"?\\?/g, '')
       const re = new RegExp(String.raw`"_value":"\\?.?${planetValRe}\\?.?`, 'g')
+
       return system.object.some(object => object._value === planet._value) || re.test(JSON.stringify(system.object))
     })
 
