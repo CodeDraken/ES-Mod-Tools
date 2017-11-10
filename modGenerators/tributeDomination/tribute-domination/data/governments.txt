@@ -1,0 +1,17 @@
+government "Coalition"
+	language ""
+
+government "Korath"
+	language ""
+
+government "Kor Efret"
+	language ""
+
+government "Kor Mereti"
+	language ""
+
+government "Kor Sestor"
+	language ""
+
+government "Wanderer"
+	language ""
