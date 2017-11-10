@@ -6,7 +6,7 @@ var getDirName = require('path').dirname
 const jsonToFile = (_path, obj) => {
   const json = JSON.stringify(obj, null, 2)
 
-  console.log('writing: ', _path)
+  console.log('writing JSON to: ', _path)
 
   if (json.length > 3) {
     mkdirp(getDirName(_path), (err) => {
@@ -19,4 +19,18 @@ const jsonToFile = (_path, obj) => {
   }
 }
 
-module.exports = { jsonToFile }
+const writeText = (_path, str) => {
+  console.log('writing string to: ', _path)
+
+  if (str.length > 3) {
+    mkdirp(getDirName(_path), (err) => {
+      if (err) console.log('jsonToFile Error: ', err)
+
+      fs.writeFileSync(_path, str)
+    })
+  } else {
+    console.log('file looks empty, skipping: ', _path)
+  }
+}
+
+module.exports = { jsonToFile, writeText }

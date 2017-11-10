@@ -23,6 +23,7 @@
 const { wordOrQuoted, tradeFleet } = require('../../config/regex')
 const { generateModifierFile } = require('../../util/generateModifierFile')
 const { listAllPlanetAttributes, selectAllBlocksWith, selectFrom } = require('../../util/grabDataUtil')
+const { writeText } = require('../../util/jsonToFile')
 const modifiers = require('./modifiers.json')
 
 const planetsData = selectAllBlocksWith({ _type: 'planet' }, 'map/planets')
@@ -70,14 +71,14 @@ const modifyPlanets = (planets = planetsData) => {
       // make sure to use proper fleets
       if (Array.isArray(fleet) && fleet.some(f => /(Arach)|(Kimek)|(Saryd)/gi.test(f))) {
         // use heliarch
-        government = '"Heliarch"'
+        government = 'Heliarch'
       } else if (/(Arach)|(Kimek)|(Saryd)/gi.test(fleet)) {
-        government = '"Heliarch'
+        government = 'Heliarch'
       } else if (Array.isArray(fleet) && fleet.some(f => /Militia/gi.test(f))) {
         // use militia
-        government = '"Militia"'
+        government = 'Militia'
       } else if (/Militia/gi.test(fleet)) {
-        government = '"Militia"'
+        government = 'Militia'
       }
 
       // convert string to array
@@ -117,8 +118,7 @@ const modifyPlanets = (planets = planetsData) => {
       // * attrModifier * linkModifier * 0.5
       const defenseFleet = ownedFleets.map(f => {
         const amount = Math.floor(
-          tributeVal * 0.0003 + ownedFleets.length * 2 * attrModifier * linkModifier -
-          (modifiers[government] * 0.0005) + 1
+          5 + Math.random() * 5 + (tributeVal % 40000 * 0.0001) + ownedFleets.length * attrModifier * linkModifier - (modifiers[government] * 0.000015)
         )
         return `"${f}" ${amount}`
       })
@@ -128,7 +128,7 @@ const modifyPlanets = (planets = planetsData) => {
       //   modifiers[government], government,
       //   planet._value,
       //   attrModifier, attributes,
-      //   linkModifer, link,
+      //   linkModifier, link,
       //   ownedFleets,
       //   merchantFleets,
       //   fleet,
@@ -146,8 +146,7 @@ const modifyPlanets = (planets = planetsData) => {
         }
       }
 
-      // if (updatedPlanet.tribute._value > 100000)
-      console.log(updatedPlanet)
+      // console.log(updatedPlanet)
 
       return updatedPlanet
     } catch (err) {
@@ -163,9 +162,34 @@ const modifyPlanets = (planets = planetsData) => {
   return modified
 }
 
-modifyPlanets()
+// TODO: refactor to a util function outside file
+const generateMod = () => {
+  const moddedPlanets = modifyPlanets()
+  let modStr = ''
+
+  moddedPlanets.forEach(planet => {
+    let fleets = ''
+
+    planet.tribute.fleet.forEach(fleet => {
+      fleets += `\t\tfleet ${fleet}\n`
+    })
+
+    modStr += (
+`planet ${planet._value}
+  tribute ${planet.tribute._value}
+    threshold ${planet.tribute.threshold}
+${fleets}
+`
+    )
+  })
+
+  return modStr
+}
+
+writeText('./modGenerators/tributeDomination/tribute-domination.txt', generateMod())
 
 module.exports = {
   createModifierFile,
-  modifyPlanets
+  modifyPlanets,
+  generateMod
 }
