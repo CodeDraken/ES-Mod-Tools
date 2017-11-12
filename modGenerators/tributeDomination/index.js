@@ -151,7 +151,7 @@ const modifyPlanets = (planets = planetsData) => {
             '"Large Northern Pirates" 15'
           ],
           [
-            '"Pug Arfecta Rand"'
+            '"Pug Arfecta Rand" 1'
           ],
           [
             '"Quarg" 5'
@@ -159,7 +159,7 @@ const modifyPlanets = (planets = planetsData) => {
           [
             '"Marauder fleet X" 2',
             '"Hired Guns" 5',
-            '"Marauder fleet IV"'
+            '"Marauder fleet IV" 1'
           ]
 
         ]
