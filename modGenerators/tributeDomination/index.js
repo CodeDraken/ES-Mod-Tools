@@ -143,9 +143,27 @@ const modifyPlanets = (planets = planetsData) => {
         return `"${f}" ${(fleetAmount + Math.random() * 5) << 0}`
       })
 
-      // no empty fleets
+      // replace empty planets with a random group
       if (!defenseFleet.length) {
-        defenseFleet = []
+        const possibleFleets = [
+          [
+            'fleet "Small Northern Pirates" 10',
+            'fleet "Large Northern Pirates" 15'
+          ],
+          [
+            'fleet "Pug Arfecta"'
+          ],
+          [
+            'fleet "Quarg" 5'
+          ],
+          [
+            'fleet "Marauder fleet X" 2',
+            'fleet "Hired Guns" 5',
+            'fleet "Marauder fleet IV"'
+          ]
+
+        ]
+        defenseFleet = possibleFleets[(Math.random() * possibleFleets.length) << 0]
       }
 
       // console.log('--------------\n',
