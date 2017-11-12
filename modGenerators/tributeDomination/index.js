@@ -68,6 +68,10 @@ const modifyPlanets = (planets = planetsData) => {
       let tributeVal = 1
       government = sanitizeStr(government)
 
+      const numOfShipyards = Array.isArray(shipyard)
+        ? shipyard.length
+        : 1
+
       // make sure to use proper fleets
       if (Array.isArray(fleet) && fleet.some(f => /(Arach)|(Kimek)|(Saryd)/gi.test(f))) {
         // use heliarch
@@ -113,20 +117,36 @@ const modifyPlanets = (planets = planetsData) => {
           : []
 
       tributeVal += modifiers[government] || 0
-      tributeVal = Math.floor(tributeVal * attrModifier * linkModifier * (merchantFleets.length / 2 || 0.8))
+      tributeVal = tributeVal * attrModifier * linkModifier * (merchantFleets.length / 2 || 0.8)
 
-      // * attrModifier * linkModifier * 0.5
-      const defenseFleet = ownedFleets.map(f => {
-        let amount = Math.random() * 5 + (tributeVal % 40000 * 0.0001) + ownedFleets.length * attrModifier * linkModifier - (modifiers[government] * 0.000015)
-        // limits
-        amount = amount < 5
-        ? 5 + Math.random() * 10
-        : amount > 40
-          ? 40
-          : amount
+      // amount of defense ships
+      // growth constant the higher the number the more ships lesser factions will have and less for stronger factions
+      const growthConst = 50000
+      const minFleet = 5
+      const minTotal = 10 + numOfShipyards
+      const maxTotal = 45 + numOfShipyards * 3
+      let fleetAmount = (growthConst / modifiers[government] + linkModifier + attrModifier - growthConst / tributeVal) << 0
+      const totalShips = ownedFleets.length * fleetAmount
 
-        return `"${f}" ${amount >> 0}`
+      // min & max fleets in total
+      if (totalShips > maxTotal) {
+        fleetAmount = (maxTotal / ownedFleets.length + Math.random() * 5) << 0
+      } else if (totalShips < 10) {
+        fleetAmount = (minTotal / ownedFleets.length + Math.random() * 5) << 0
+      }
+
+      if (tributeVal < fleetAmount * 100) {
+        tributeVal = (fleetAmount * 100 + Math.random() * 2500) << 0
+      }
+
+      let defenseFleet = ownedFleets.map(f => {
+        return `"${f}" ${(fleetAmount + Math.random() * 5) << 0}`
       })
+
+      // no empty fleets
+      if (!defenseFleet.length) {
+        defenseFleet = []
+      }
 
       // console.log('--------------\n',
       //   tributeVal,
@@ -145,7 +165,7 @@ const modifyPlanets = (planets = planetsData) => {
         _value,
         system: planetSystem._value,
         tribute: {
-          '_value': tributeVal,
+          '_value': tributeVal >> 0,
           'threshold': 1000,
           'fleet': defenseFleet
         }
