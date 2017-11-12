@@ -1,14 +1,14 @@
-fleet "Pug Arfecta"
+fleet "Pug Arfecta Rand"
 	government "Pug"
 	names "pug"
 	cargo 1
 	personality
 		heroic
 	variant 1
-    "Pug Arfecta"
-    "Pug Enfolta" 15
+		"Pug Arfecta"
+		"Pug Enfolta" 15
 		"Pug Zibruka" 15
 	variant 2
 		"Pug Arfecta" 2
-    "Pug Enfolta" 2
+		"Pug Enfolta" 2
 		"Pug Zibruka" 2
