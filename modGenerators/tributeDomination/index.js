@@ -117,10 +117,15 @@ const modifyPlanets = (planets = planetsData) => {
 
       // * attrModifier * linkModifier * 0.5
       const defenseFleet = ownedFleets.map(f => {
-        const amount = Math.floor(
-          5 + Math.random() * 5 + (tributeVal % 40000 * 0.0001) + ownedFleets.length * attrModifier * linkModifier - (modifiers[government] * 0.000015)
-        )
-        return `"${f}" ${amount}`
+        let amount = Math.random() * 5 + (tributeVal % 40000 * 0.0001) + ownedFleets.length * attrModifier * linkModifier - (modifiers[government] * 0.000015)
+        // limits
+        amount = amount < 5
+        ? 5 + Math.random() * 10
+        : amount > 40
+          ? 40
+          : amount
+
+        return `"${f}" ${amount >> 0}`
       })
 
       // console.log('--------------\n',
@@ -186,7 +191,7 @@ const generateMod = () => {
   return modStr
 }
 
-writeText('./modGenerators/tributeDomination//tribute-domination/data/map.txt', generateMod())
+writeText('./modGenerators/tributeDomination/tribute-domination/data/map.txt', generateMod())
 
 module.exports = {
   createModifierFile,
