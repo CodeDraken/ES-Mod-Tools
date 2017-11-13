@@ -41,8 +41,8 @@ const generateMod = () => {
   const planetMods = generatePlanetMods()
   const playerFactRelations = generatePlayerFaction().relations
 
-  writeText('./modGenerators/tributeDomination/tribute-domination/data/map.txt', planetMods)
-  writeText('./modGenerators/tributeDomination/tribute-domination/data/conquerablePlanets.txt', conquerablePlanets)
+  writeText('./modGenerators/tributeDomination/tribute-domination/data/map.txt', planetMods.tributePlanets)
+  writeText('./modGenerators/tributeDomination/tribute-domination/data/conquerablePlanets.txt', planetMods.conquerablePlanets)
   writeText('./modGenerators/tributeDomination/tribute-domination/data/playerFactionRelations.txt', playerFactRelations)
 }
 

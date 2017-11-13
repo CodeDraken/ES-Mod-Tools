@@ -135,7 +135,12 @@ const modifyPlanets = (planets = planetsData) => {
         }
       }
 
-      conquerablePlanets += conquerPlanet(planetSystem, _value) + '\n'
+      conquerablePlanets += conquerPlanet({
+        fleetArr: Array.isArray(fleet) ? fleet : [fleet],
+        government,
+        systemName: planetSystem._value,
+        planetName: _value
+      }) + '\n'
 
       // console.log(updatedPlanet)
 
@@ -155,7 +160,7 @@ const modifyPlanets = (planets = planetsData) => {
 
 const generatePlanetMods = () => {
   const moddedPlanets = modifyPlanets()
-  let modStr = ''
+  let tributePlanets = ''
 
   moddedPlanets.forEach(planet => {
     let fleets = ''
@@ -164,7 +169,7 @@ const generatePlanetMods = () => {
       fleets += `\t\tfleet ${fleet}\n`
     })
 
-    modStr += (
+    tributePlanets += (
       `planet ${planet._value}\n` +
       `\ttribute ${planet.tribute._value}\n` +
       `\t\tthreshold ${planet.tribute.threshold}\n` +
@@ -173,11 +178,13 @@ const generatePlanetMods = () => {
       )
   })
 
-  return modStr
+  return {
+    conquerablePlanets,
+    tributePlanets
+  }
 }
 
 module.exports = {
   modifyPlanets,
-  generatePlanetMods,
-  conquerablePlanets
+  generatePlanetMods
 }

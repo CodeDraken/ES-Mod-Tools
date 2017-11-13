@@ -51,7 +51,8 @@ fleet "Rand Defense Fleet"
 		"Marauder Firebird (Engines)" 3
 		"Marauder Raven" 5
 
-fleet "Player Militia"
+# starting player fleets militia
+fleet "Small Player Fleet"
 	government "Player Faction"
 	names "militia"
 	cargo 1
@@ -96,3 +97,72 @@ fleet "Player Militia"
 	variant 2
 		"Hawk (Speedy)"
 		"Sparrow" 2
+
+fleet "Large Player Fleet"
+	government "Player Faction"
+	names "militia"
+	cargo 1
+	personality
+		heroic frugal
+		confusion 20
+	variant 10
+		"Bastion"
+	variant 5
+		"Bastion (Heavy)"
+	variant 5
+		"Bastion (Laser)"
+	variant 8
+		"Osprey"
+		"Fury"
+	variant 4
+		"Osprey (Missile)"
+		"Fury (Missile)"
+	variant 4
+		"Osprey (Laser)"
+		"Fury (Laser)"
+	variant 4
+		"Argosy"
+	variant 3
+		"Argosy (Blaster)"
+	variant 2
+		"Argosy (Laser)"
+	variant 2
+		"Argosy (Missile)"
+	variant 2
+		"Argosy (Turret)"
+	variant 6
+		"Bastion"
+		"Osprey"
+	variant 3
+		"Bastion (Heavy)"
+		"Osprey (Missile)"
+	variant 3
+		"Bastion (Laser)"
+		"Osprey (Laser)"
+	variant 4
+		"Bastion"
+		"Sparrow" 2
+	variant 2
+		"Bastion (Heavy)"
+		"Sparrow" 2
+	variant 2
+		"Bastion (Laser)"
+		"Sparrow" 2
+	variant 2
+		"Falcon"
+	variant 1
+		"Falcon (Heavy)"
+	variant 1
+		"Falcon (Laser)"
+	variant 2
+		"Falcon"
+		"Hawk" 2
+		"Sparrow" 3
+	variant 1
+		"Falcon (Heavy)"
+		"Hawk" 2
+		"Sparrow" 3
+	variant 1
+		"Falcon (Laser)"
+		"Hawk" 2
+		"Sparrow" 3
