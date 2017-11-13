@@ -24,6 +24,8 @@ const { modifyPlanets } = require('./modifyPlanets')
 const { generateModifierFile } = require('../../util/generateModifierFile')
 const { listAllPlanetAttributes } = require('../../util/grabDataUtil')
 const { writeText } = require('../../util/jsonToFile')
+const { generatePlanetMods } = require('./modifyPlanets')
+const { generatePlayerFaction } = require('./generatePlayerFaction')
 
 const createModifierFile = () => {
   generateModifierFile(
@@ -36,29 +38,14 @@ const createModifierFile = () => {
 
 // TODO: refactor to a util function outside file
 const generateMod = () => {
-  const moddedPlanets = modifyPlanets()
-  let modStr = ''
+  const planetMods = generatePlanetMods()
+  const playerFactRelations = generatePlayerFaction().relations
 
-  moddedPlanets.forEach(planet => {
-    let fleets = ''
-
-    planet.tribute.fleet.forEach(fleet => {
-      fleets += `\t\tfleet ${fleet}\n`
-    })
-
-    modStr += (
-    `planet ${planet._value}\n` +
-    `\ttribute ${planet.tribute._value}\n` +
-    `\t\tthreshold ${planet.tribute.threshold}\n` +
-    `${fleets}` +
-    '\n'
-    )
-  })
-
-  return modStr
+  writeText('./modGenerators/tributeDomination/tribute-domination/data/map.txt', planetMods)
+  writeText('./modGenerators/tributeDomination/tribute-domination/data/playerFactionRelations.txt', playerFactRelations)
 }
 
-writeText('./modGenerators/tributeDomination/tribute-domination/data/map.txt', generateMod())
+generateMod()
 
 module.exports = {
   createModifierFile,

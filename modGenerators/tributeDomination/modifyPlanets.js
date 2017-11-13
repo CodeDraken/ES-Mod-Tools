@@ -148,6 +148,30 @@ const modifyPlanets = (planets = planetsData) => {
   return modified
 }
 
+const generatePlanetMods = () => {
+  const moddedPlanets = modifyPlanets()
+  let modStr = ''
+
+  moddedPlanets.forEach(planet => {
+    let fleets = ''
+
+    planet.tribute.fleet.forEach(fleet => {
+      fleets += `\t\tfleet ${fleet}\n`
+    })
+
+    modStr += (
+      `planet ${planet._value}\n` +
+      `\ttribute ${planet.tribute._value}\n` +
+      `\t\tthreshold ${planet.tribute.threshold}\n` +
+      `${fleets}` +
+      '\n'
+      )
+  })
+
+  return modStr
+}
+
 module.exports = {
-  modifyPlanets
+  modifyPlanets,
+  generatePlanetMods
 }
