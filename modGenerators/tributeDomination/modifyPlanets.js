@@ -3,9 +3,12 @@ const { isOwnedFleet, isTradeFleet } = require('../../util/fleetUtil')
 const { wordOrQuoted } = require('../../config/regex')
 const { selectAllBlocksWith } = require('../../util/grabDataUtil')
 const modifiers = require('./modifiers.json')
+const conquerPlanet = require('./templates/conquerPlanet')
 
 const systemsData = selectAllBlocksWith({ _type: 'system' }, 'map/systems')
 const planetsData = selectAllBlocksWith({ _type: 'planet' }, 'map/planets')
+
+let conquerablePlanets = ''
 
 const modifyPlanets = (planets = planetsData) => {
   const modified = planets.map(planet => {
@@ -132,6 +135,8 @@ const modifyPlanets = (planets = planetsData) => {
         }
       }
 
+      conquerablePlanets += conquerPlanet(planetSystem, _value) + '\n'
+
       // console.log(updatedPlanet)
 
       return updatedPlanet
@@ -173,5 +178,6 @@ const generatePlanetMods = () => {
 
 module.exports = {
   modifyPlanets,
-  generatePlanetMods
+  generatePlanetMods,
+  conquerablePlanets
 }

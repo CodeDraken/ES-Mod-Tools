@@ -24,7 +24,7 @@ const { modifyPlanets } = require('./modifyPlanets')
 const { generateModifierFile } = require('../../util/generateModifierFile')
 const { listAllPlanetAttributes } = require('../../util/grabDataUtil')
 const { writeText } = require('../../util/jsonToFile')
-const { generatePlanetMods } = require('./modifyPlanets')
+const { generatePlanetMods, conquerablePlanets } = require('./modifyPlanets')
 const { generatePlayerFaction } = require('./generatePlayerFaction')
 
 const createModifierFile = () => {
@@ -42,6 +42,7 @@ const generateMod = () => {
   const playerFactRelations = generatePlayerFaction().relations
 
   writeText('./modGenerators/tributeDomination/tribute-domination/data/map.txt', planetMods)
+  writeText('./modGenerators/tributeDomination/tribute-domination/data/conquerablePlanets.txt', conquerablePlanets)
   writeText('./modGenerators/tributeDomination/tribute-domination/data/playerFactionRelations.txt', playerFactRelations)
 }
 
