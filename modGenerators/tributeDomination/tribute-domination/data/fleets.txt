@@ -10,43 +10,89 @@ fleet "Rand Defense Fleet"
 		"Marauder Quicksilver" 8
 		"Marauder Arrow" 3
 		"Marauder Bounder" 3
-    "Korath Raider" 1
+		"Korath Raider" 1
 		"Korath Chaser" 2
 	variant
 		"Pug Arfecta" 1
 		"Pug Enfolta" 12
 		"Pug Zibruka" 12
-    "Pug Maboro" 5
-  variant
+		"Pug Maboro" 5
+	variant
 		"Quarg Skylark" 5
-    "Quarg Wardragon" 5
-  variant
+		"Quarg Wardragon" 5
+	variant
 		"Hawk" 8
 		"Hawk (Rocket)" 8
-    "Raven" 5
+		"Raven" 5
 		"Fury (Missile)" 5
-    "Aerie" 3
-    "Corvette" 3
-    "Osprey" 3
-    "Manta" 5
-    "Splinter" 3
-    "Shield Beetle (Tracker)" 1
-  variant
-    "Marauder Raven" 5
-    "Korath Raider" 3
+		"Aerie" 3
+		"Corvette" 3
+		"Osprey" 3
+		"Manta" 5
+		"Splinter" 3
+		"Shield Beetle (Tracker)" 1
+	variant
+		"Marauder Raven" 5
+		"Korath Raider" 3
 		"Korath Chaser" 6
-  variant
-    "Shield Beetle (Tracker)" 1
-    "Shield Beetle" 1
+	variant
+		"Shield Beetle (Tracker)" 1
+		"Shield Beetle" 1
 		"Lightning Bug (Pulse)" 2
-    "Pond Strider" 2
-    "Flea" 16
-  variant
-    "Bactrian (Hired Gun)" 3
+		"Pond Strider" 2
+		"Flea" 16
+	variant
+		"Bactrian (Hired Gun)" 3
 		"Dagger" 11
 		"Modified Argosy" 5
-    "Mule (Heavy)" 2
-    "Splinter (Laser)" 3
-    "Marauder Leviathan (Weapons)" 2
+		"Mule (Heavy)" 2
+		"Splinter (Laser)" 3
+		"Marauder Leviathan (Weapons)" 2
 		"Marauder Firebird (Engines)" 3
 		"Marauder Raven" 5
+
+fleet "Player Militia"
+	government "Player Faction"
+	names "militia"
+	cargo 1
+	personality
+		heroic frugal timid
+		confusion 20
+	variant 8
+		"Hawk"
+		"Sparrow"
+	variant 4
+		"Hawk"
+		"Fury"
+	variant 2
+		"Hawk"
+		"Fury (Missile)"
+	variant 2
+		"Hawk"
+		"Fury (Laser)"
+	variant 4
+		"Fury" 2
+	variant 2
+		"Fury (Laser)"
+		"Fury (Missile)"
+	variant 10
+		"Sparrow" 2
+	variant 2
+		"Hawk"
+	variant 1
+		"Hawk (Rocket)"
+	variant 1
+		"Hawk (Speedy)"
+	variant 2
+		"Sparrow"
+	variant 2
+		"Osprey"
+	variant 4
+		"Hawk"
+		"Sparrow" 2
+	variant 2
+		"Hawk (Rocket)"
+		"Sparrow" 2
+	variant 2
+		"Hawk (Speedy)"
+		"Sparrow" 2

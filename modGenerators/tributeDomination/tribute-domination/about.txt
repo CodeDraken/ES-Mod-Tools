@@ -1,5 +1,5 @@
-A generated mod that allows you to demand tribute from all planets and increases the tribute amount.
+A (mostly) generated mod that allows you to demand tribute from all planets and increases the tribute amount.
 
 Author: Legolas @CodeDraken
 
-Current version: v0.0.1
+Current version: Beta v0.2.0
