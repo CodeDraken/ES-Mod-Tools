@@ -1,14 +1,52 @@
-fleet "Pug Arfecta Rand"
-	government "Pug"
-	names "pug"
-	cargo 1
+fleet "Rand Defense Fleet"
+	government "Bounty Hunter"
+	names "bounty hunter"
 	personality
-		heroic
-	variant 1
-		"Pug Arfecta"
-		"Pug Enfolta" 15
-		"Pug Zibruka" 15
-	variant 2
-		"Pug Arfecta" 2
-		"Pug Enfolta" 2
-		"Pug Zibruka" 2
+		nemesis waiting heroic
+	variant
+		"Marauder Leviathan (Weapons)" 3
+		"Marauder Firebird (Engines)" 4
+		"Marauder Raven" 5
+		"Marauder Quicksilver" 8
+		"Marauder Arrow" 3
+		"Marauder Bounder" 3
+    "Korath Raider" 1
+		"Korath Chaser" 2
+	variant
+		"Pug Arfecta" 1
+		"Pug Enfolta" 12
+		"Pug Zibruka" 12
+    "Pug Maboro" 5
+  variant
+		"Quarg Skylark" 5
+    "Quarg Wardragon" 5
+  variant
+		"Hawk" 8
+		"Hawk (Rocket)" 8
+    "Raven" 5
+		"Fury (Missile)" 5
+    "Aerie" 3
+    "Corvette" 3
+    "Osprey" 3
+    "Manta" 5
+    "Splinter" 3
+    "Shield Beetle (Tracker)" 1
+  variant
+    "Marauder Raven" 5
+    "Korath Raider" 3
+		"Korath Chaser" 6
+  variant
+    "Shield Beetle (Tracker)" 1
+    "Shield Beetle" 1
+		"Lightning Bug (Pulse)" 2
+    "Pond Strider" 2
+    "Flea" 16
+  variant
+    "Bactrian (Hired Gun)" 3
+		"Dagger" 11
+		"Modified Argosy" 5
+    "Mule (Heavy)" 2
+    "Splinter (Laser)" 3
+    "Marauder Leviathan (Weapons)" 2
+		"Marauder Firebird (Engines)" 3
+		"Marauder Raven" 5

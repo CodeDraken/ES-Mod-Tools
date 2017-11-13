@@ -147,19 +147,7 @@ const modifyPlanets = (planets = planetsData) => {
       if (!defenseFleet.length) {
         const possibleFleets = [
           [
-            '"Small Northern Pirates" 10',
-            '"Large Northern Pirates" 15'
-          ],
-          [
-            '"Pug Arfecta Rand" 1'
-          ],
-          [
-            '"Quarg" 5'
-          ],
-          [
-            '"Marauder fleet X" 2',
-            '"Hired Guns" 5',
-            '"Marauder fleet IV" 1'
+            '"Rand Defense Fleet" 1'
           ]
 
         ]
