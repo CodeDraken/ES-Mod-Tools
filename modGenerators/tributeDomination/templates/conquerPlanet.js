@@ -33,10 +33,10 @@ mission "Player Conquer: ${sanitizedSystemName}"
 	on complete
 		event "Player Conquer: ${sanitizedSystemName}"
 
-	event "Player Conquer: ${sanitizedSystemName}"
+event "Player Conquer: ${sanitizedSystemName}"
 	system "${sanitizedSystemName}"
-			government "Player Faction"
-			fleet "Small Player Fleet" ${smallFleetChance}
-			fleet "Large Player Fleet" ${largeFleetChance}
+	government "Player Faction"
+	fleet "Small Player Fleet" ${smallFleetChance}
+	fleet "Large Player Fleet" ${largeFleetChance}
 `
 }
