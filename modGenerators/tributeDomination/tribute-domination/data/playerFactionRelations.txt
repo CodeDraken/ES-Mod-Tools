@@ -1094,62 +1094,6 @@ mission "Player Fact Force Peace: Syndicate"
 		fail
 
 
-mission "Player Fact Declare War: Test Dummy"
-	landing
-	repeat
-	to offer
-		"reputation: Test Dummy" < -1
-		not "event: Player Fact Declare War: Test Dummy"
-	on offer
-		event "Player Fact Declare War: Test Dummy"
-		fail
-
-event "Player Fact Declare War: Test Dummy"
-	government "Test Dummy"
-		"attitude toward"
-			"Player Faction" -100
-	government "Player Faction"
-		"attitude toward"
-			"Test Dummy" -100
-	"reputation: Test Dummy" = -100
-
-
-mission "Player Fact Make Peace: Test Dummy"
-	job
-	repeat
-	name "Make peace with the Test Dummy"
-	description "Make peace with the Test Dummy."
-	to offer
-		"reputation: Test Dummy" < -1
-		has "event: Player Fact Declare War: Test Dummy"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Test Dummy"
-		clear "event: Player Fact Make Peace: Test Dummy"
-		fail
-
-event "Player Fact Make Peace: Test Dummy"
-	clear "event: Player Fact Declare War: Test Dummy"
-	government "Test Dummy"
-		"attitude toward"
-			"Player Faction" 5
-	government "Player Faction"
-		"attitude toward"
-			"Test Dummy" 5
-	"reputation: Test Dummy" = 5
-	clear "event: Player Fact Make Peace: Test Dummy"
-
-
-mission "Player Fact Force Peace: Test Dummy"
-	landing
-	repeat
-	to offer
-		"reputation: Test Dummy" > 1
-		has "event: Player Fact Declare War: Test Dummy"
-	on offer
-		event "Player Fact Make Peace: Test Dummy"
-		fail
 
 mission "Player Fact Declare War: Uninhabited"
 	landing

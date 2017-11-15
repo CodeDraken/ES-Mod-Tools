@@ -1,7 +1,7 @@
 const declareWarAt = -1
 // no allowing peace with these
 const ignoreGov = [
-  'Alpha', 'Author', 'Bounty', 'Bounty Hunter', 'Escort', 'Independent', 'Indigenous Lifeform', 'Korath Nanobots', 'Kor Mereti', 'Kor Sestor', 'Neutral', 'Parrot', 'Syndicate (Extremist)'
+  'Alpha', 'Author', 'Bounty', 'Bounty Hunter', 'Escort', 'Independent', 'Indigenous Lifeform', 'Korath Nanobots', 'Kor Mereti', 'Kor Sestor', 'Neutral', 'Parrot', 'Syndicate (Extremist)', 'Test Dummy'
 ]
 
 // generates player faction relations with other governments
