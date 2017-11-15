@@ -20,10 +20,10 @@ module.exports = (government) => {
 event "Player Fact Declare War: ${government}"
 	government "${government}"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"${government}" -100
+			"${government}" -.5
 	"reputation: ${government}" = -100
 
 
@@ -46,10 +46,10 @@ event "Player Fact Make Peace: ${government}"
 	clear "event: Player Fact Declare War: ${government}"
 	government "${government}"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"${government}" 5
+			"${government}" .1
 	"reputation: ${government}" = 5
 	clear "event: Player Fact Make Peace: ${government}"
 

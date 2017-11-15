@@ -15,10 +15,10 @@ mission "Player Fact Declare War: Coalition"
 event "Player Fact Declare War: Coalition"
 	government "Coalition"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Coalition" -100
+			"Coalition" -.5
 	"reputation: Coalition" = -100
 
 
@@ -41,10 +41,10 @@ event "Player Fact Make Peace: Coalition"
 	clear "event: Player Fact Declare War: Coalition"
 	government "Coalition"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Coalition" 5
+			"Coalition" .1
 	"reputation: Coalition" = 5
 	clear "event: Player Fact Make Peace: Coalition"
 
@@ -72,10 +72,10 @@ mission "Player Fact Declare War: Deep"
 event "Player Fact Declare War: Deep"
 	government "Deep"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Deep" -100
+			"Deep" -.5
 	"reputation: Deep" = -100
 
 
@@ -98,10 +98,10 @@ event "Player Fact Make Peace: Deep"
 	clear "event: Player Fact Declare War: Deep"
 	government "Deep"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Deep" 5
+			"Deep" .1
 	"reputation: Deep" = 5
 	clear "event: Player Fact Make Peace: Deep"
 
@@ -129,10 +129,10 @@ mission "Player Fact Declare War: Drak"
 event "Player Fact Declare War: Drak"
 	government "Drak"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Drak" -100
+			"Drak" -.5
 	"reputation: Drak" = -100
 
 
@@ -155,10 +155,10 @@ event "Player Fact Make Peace: Drak"
 	clear "event: Player Fact Declare War: Drak"
 	government "Drak"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Drak" 5
+			"Drak" .1
 	"reputation: Drak" = 5
 	clear "event: Player Fact Make Peace: Drak"
 
@@ -187,10 +187,10 @@ mission "Player Fact Declare War: Free Worlds"
 event "Player Fact Declare War: Free Worlds"
 	government "Free Worlds"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Free Worlds" -100
+			"Free Worlds" -.5
 	"reputation: Free Worlds" = -100
 
 
@@ -213,10 +213,10 @@ event "Player Fact Make Peace: Free Worlds"
 	clear "event: Player Fact Declare War: Free Worlds"
 	government "Free Worlds"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Free Worlds" 5
+			"Free Worlds" .1
 	"reputation: Free Worlds" = 5
 	clear "event: Player Fact Make Peace: Free Worlds"
 
@@ -244,10 +244,10 @@ mission "Player Fact Declare War: Hai"
 event "Player Fact Declare War: Hai"
 	government "Hai"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Hai" -100
+			"Hai" -.5
 	"reputation: Hai" = -100
 
 
@@ -270,10 +270,10 @@ event "Player Fact Make Peace: Hai"
 	clear "event: Player Fact Declare War: Hai"
 	government "Hai"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Hai" 5
+			"Hai" .1
 	"reputation: Hai" = 5
 	clear "event: Player Fact Make Peace: Hai"
 
@@ -301,10 +301,10 @@ mission "Player Fact Declare War: Hai (Unfettered)"
 event "Player Fact Declare War: Hai (Unfettered)"
 	government "Hai (Unfettered)"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Hai (Unfettered)" -100
+			"Hai (Unfettered)" -.5
 	"reputation: Hai (Unfettered)" = -100
 
 
@@ -327,10 +327,10 @@ event "Player Fact Make Peace: Hai (Unfettered)"
 	clear "event: Player Fact Declare War: Hai (Unfettered)"
 	government "Hai (Unfettered)"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Hai (Unfettered)" 5
+			"Hai (Unfettered)" .1
 	"reputation: Hai (Unfettered)" = 5
 	clear "event: Player Fact Make Peace: Hai (Unfettered)"
 
@@ -358,10 +358,10 @@ mission "Player Fact Declare War: Heliarch"
 event "Player Fact Declare War: Heliarch"
 	government "Heliarch"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Heliarch" -100
+			"Heliarch" -.5
 	"reputation: Heliarch" = -100
 
 
@@ -384,10 +384,10 @@ event "Player Fact Make Peace: Heliarch"
 	clear "event: Player Fact Declare War: Heliarch"
 	government "Heliarch"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Heliarch" 5
+			"Heliarch" .1
 	"reputation: Heliarch" = 5
 	clear "event: Player Fact Make Peace: Heliarch"
 
@@ -417,10 +417,10 @@ mission "Player Fact Declare War: Korath"
 event "Player Fact Declare War: Korath"
 	government "Korath"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Korath" -100
+			"Korath" -.5
 	"reputation: Korath" = -100
 
 
@@ -443,10 +443,10 @@ event "Player Fact Make Peace: Korath"
 	clear "event: Player Fact Declare War: Korath"
 	government "Korath"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Korath" 5
+			"Korath" .1
 	"reputation: Korath" = 5
 	clear "event: Player Fact Make Peace: Korath"
 
@@ -475,10 +475,10 @@ mission "Player Fact Declare War: Kor Efret"
 event "Player Fact Declare War: Kor Efret"
 	government "Kor Efret"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Kor Efret" -100
+			"Kor Efret" -.5
 	"reputation: Kor Efret" = -100
 
 
@@ -501,10 +501,10 @@ event "Player Fact Make Peace: Kor Efret"
 	clear "event: Player Fact Declare War: Kor Efret"
 	government "Kor Efret"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Kor Efret" 5
+			"Kor Efret" .1
 	"reputation: Kor Efret" = 5
 	clear "event: Player Fact Make Peace: Kor Efret"
 
@@ -534,10 +534,10 @@ mission "Player Fact Declare War: Merchant"
 event "Player Fact Declare War: Merchant"
 	government "Merchant"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Merchant" -100
+			"Merchant" -.5
 	"reputation: Merchant" = -100
 
 
@@ -560,10 +560,10 @@ event "Player Fact Make Peace: Merchant"
 	clear "event: Player Fact Declare War: Merchant"
 	government "Merchant"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Merchant" 5
+			"Merchant" .1
 	"reputation: Merchant" = 5
 	clear "event: Player Fact Make Peace: Merchant"
 
@@ -591,10 +591,10 @@ mission "Player Fact Declare War: Militia"
 event "Player Fact Declare War: Militia"
 	government "Militia"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Militia" -100
+			"Militia" -.5
 	"reputation: Militia" = -100
 
 
@@ -617,10 +617,10 @@ event "Player Fact Make Peace: Militia"
 	clear "event: Player Fact Declare War: Militia"
 	government "Militia"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Militia" 5
+			"Militia" .1
 	"reputation: Militia" = 5
 	clear "event: Player Fact Make Peace: Militia"
 
@@ -648,10 +648,10 @@ mission "Player Fact Declare War: Navy Intelligence"
 event "Player Fact Declare War: Navy Intelligence"
 	government "Navy Intelligence"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Navy Intelligence" -100
+			"Navy Intelligence" -.5
 	"reputation: Navy Intelligence" = -100
 
 
@@ -674,10 +674,10 @@ event "Player Fact Make Peace: Navy Intelligence"
 	clear "event: Player Fact Declare War: Navy Intelligence"
 	government "Navy Intelligence"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Navy Intelligence" 5
+			"Navy Intelligence" .1
 	"reputation: Navy Intelligence" = 5
 	clear "event: Player Fact Make Peace: Navy Intelligence"
 
@@ -705,10 +705,10 @@ mission "Player Fact Declare War: Navy (Oathkeeper)"
 event "Player Fact Declare War: Navy (Oathkeeper)"
 	government "Navy (Oathkeeper)"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Navy (Oathkeeper)" -100
+			"Navy (Oathkeeper)" -.5
 	"reputation: Navy (Oathkeeper)" = -100
 
 
@@ -731,10 +731,10 @@ event "Player Fact Make Peace: Navy (Oathkeeper)"
 	clear "event: Player Fact Declare War: Navy (Oathkeeper)"
 	government "Navy (Oathkeeper)"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Navy (Oathkeeper)" 5
+			"Navy (Oathkeeper)" .1
 	"reputation: Navy (Oathkeeper)" = 5
 	clear "event: Player Fact Make Peace: Navy (Oathkeeper)"
 
@@ -764,10 +764,10 @@ mission "Player Fact Declare War: Pirate"
 event "Player Fact Declare War: Pirate"
 	government "Pirate"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Pirate" -100
+			"Pirate" -.5
 	"reputation: Pirate" = -100
 
 
@@ -790,10 +790,10 @@ event "Player Fact Make Peace: Pirate"
 	clear "event: Player Fact Declare War: Pirate"
 	government "Pirate"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Pirate" 5
+			"Pirate" .1
 	"reputation: Pirate" = 5
 	clear "event: Player Fact Make Peace: Pirate"
 
@@ -821,10 +821,10 @@ mission "Player Fact Declare War: Pug"
 event "Player Fact Declare War: Pug"
 	government "Pug"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Pug" -100
+			"Pug" -.5
 	"reputation: Pug" = -100
 
 
@@ -847,10 +847,10 @@ event "Player Fact Make Peace: Pug"
 	clear "event: Player Fact Declare War: Pug"
 	government "Pug"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Pug" 5
+			"Pug" .1
 	"reputation: Pug" = 5
 	clear "event: Player Fact Make Peace: Pug"
 
@@ -878,10 +878,10 @@ mission "Player Fact Declare War: Quarg"
 event "Player Fact Declare War: Quarg"
 	government "Quarg"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Quarg" -100
+			"Quarg" -.5
 	"reputation: Quarg" = -100
 
 
@@ -904,10 +904,10 @@ event "Player Fact Make Peace: Quarg"
 	clear "event: Player Fact Declare War: Quarg"
 	government "Quarg"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Quarg" 5
+			"Quarg" .1
 	"reputation: Quarg" = 5
 	clear "event: Player Fact Make Peace: Quarg"
 
@@ -935,10 +935,10 @@ mission "Player Fact Declare War: Remnant"
 event "Player Fact Declare War: Remnant"
 	government "Remnant"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Remnant" -100
+			"Remnant" -.5
 	"reputation: Remnant" = -100
 
 
@@ -961,10 +961,10 @@ event "Player Fact Make Peace: Remnant"
 	clear "event: Player Fact Declare War: Remnant"
 	government "Remnant"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Remnant" 5
+			"Remnant" .1
 	"reputation: Remnant" = 5
 	clear "event: Player Fact Make Peace: Remnant"
 
@@ -992,10 +992,10 @@ mission "Player Fact Declare War: Republic"
 event "Player Fact Declare War: Republic"
 	government "Republic"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Republic" -100
+			"Republic" -.5
 	"reputation: Republic" = -100
 
 
@@ -1018,10 +1018,10 @@ event "Player Fact Make Peace: Republic"
 	clear "event: Player Fact Declare War: Republic"
 	government "Republic"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Republic" 5
+			"Republic" .1
 	"reputation: Republic" = 5
 	clear "event: Player Fact Make Peace: Republic"
 
@@ -1049,10 +1049,10 @@ mission "Player Fact Declare War: Syndicate"
 event "Player Fact Declare War: Syndicate"
 	government "Syndicate"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Syndicate" -100
+			"Syndicate" -.5
 	"reputation: Syndicate" = -100
 
 
@@ -1075,10 +1075,10 @@ event "Player Fact Make Peace: Syndicate"
 	clear "event: Player Fact Declare War: Syndicate"
 	government "Syndicate"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Syndicate" 5
+			"Syndicate" .1
 	"reputation: Syndicate" = 5
 	clear "event: Player Fact Make Peace: Syndicate"
 
@@ -1108,10 +1108,10 @@ mission "Player Fact Declare War: Uninhabited"
 event "Player Fact Declare War: Uninhabited"
 	government "Uninhabited"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Uninhabited" -100
+			"Uninhabited" -.5
 	"reputation: Uninhabited" = -100
 
 
@@ -1134,10 +1134,10 @@ event "Player Fact Make Peace: Uninhabited"
 	clear "event: Player Fact Declare War: Uninhabited"
 	government "Uninhabited"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Uninhabited" 5
+			"Uninhabited" .1
 	"reputation: Uninhabited" = 5
 	clear "event: Player Fact Make Peace: Uninhabited"
 
@@ -1165,10 +1165,10 @@ mission "Player Fact Declare War: Wanderer"
 event "Player Fact Declare War: Wanderer"
 	government "Wanderer"
 		"attitude toward"
-			"Player Faction" -100
+			"Player Faction" -.5
 	government "Player Faction"
 		"attitude toward"
-			"Wanderer" -100
+			"Wanderer" -.5
 	"reputation: Wanderer" = -100
 
 
@@ -1191,10 +1191,10 @@ event "Player Fact Make Peace: Wanderer"
 	clear "event: Player Fact Declare War: Wanderer"
 	government "Wanderer"
 		"attitude toward"
-			"Player Faction" 5
+			"Player Faction" .1
 	government "Player Faction"
 		"attitude toward"
-			"Wanderer" 5
+			"Wanderer" .1
 	"reputation: Wanderer" = 5
 	clear "event: Player Fact Make Peace: Wanderer"
 
