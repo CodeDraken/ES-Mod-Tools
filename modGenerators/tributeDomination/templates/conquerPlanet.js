@@ -15,8 +15,8 @@ module.exports = ({ fleetArr, government, systemName, planetName, links }) => {
 
   gameStr += `
 	system "${link}"
-		fleet "Small Player Fleet" ${smallFleetChance + 500}
-		fleet "Large Player Fleet" ${largeFleetChance + 2000}
+		fleet "Small Player Fleet" ${smallFleetChance}
+		fleet "Large Player Fleet" ${largeFleetChance}
 		${linkedFleet
 			.reduce((fleetStr, fleet) => {
   fleetStr += `fleet ${fleet}\n\t\t`
