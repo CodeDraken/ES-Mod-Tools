@@ -2,4 +2,4 @@ A (mostly) generated mod that allows you to demand tribute from all planets, inc
 
 Author: Legolas @CodeDraken
 
-Current version: Beta v0.5.0
+Current version: Beta v0.6.0
