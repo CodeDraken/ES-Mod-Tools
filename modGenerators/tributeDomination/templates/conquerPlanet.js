@@ -10,22 +10,23 @@ module.exports = ({ fleetArr, government, systemName, planetName, links }) => {
 
 	// invade nearby territories
   const linkedFleets = links.reduce((gameStr, link) => {
-  const linkedSystem = selectBlockWith({ _value: link }, 'map/systems')
-  const linkedFleet = Array.isArray(linkedSystem.fleet) ? linkedSystem.fleet : [linkedSystem.fleet]
+    const linkedSystem = selectBlockWith({ _value: link }, 'map/systems')
+    const linkedFleet = Array.isArray(linkedSystem.fleet) ? linkedSystem.fleet : [linkedSystem.fleet]
 
-  gameStr += `
+//   ${linkedFleet
+//     .reduce((fleetStr, fleet) => {
+// fleetStr += `fleet ${fleet}\n\t\t`
+// return fleetStr
+// }, '')}
+
+    gameStr += `
 	system "${link}"
-		fleet "Small Player Fleet" ${smallFleetChance}
-		fleet "Large Player Fleet" ${largeFleetChance}
-		${linkedFleet
-			.reduce((fleetStr, fleet) => {
-  fleetStr += `fleet ${fleet}\n\t\t`
-  return fleetStr
-}, '')}
+		add fleet "Small Player Fleet" ${smallFleetChance}
+		add fleet "Large Player Fleet" ${largeFleetChance}
 `
 
-  return gameStr
-}, '')
+    return gameStr
+  }, '')
 
   return `
 mission "Player Conquer: ${sanitizedSystemName}"
@@ -56,13 +57,14 @@ mission "Player Conquer: ${sanitizedSystemName}"
 event "Player Conquer: ${sanitizedSystemName}"
 	system "${sanitizedSystemName}"
 		government "Player Faction"
-		fleet "Small Player Fleet" ${smallFleetChance}
-		fleet "Large Player Fleet" ${largeFleetChance}
-		${fleetArr
-			.reduce((fleetStr, fleet) => {
-  fleetStr += `fleet ${fleet}\n\t\t`
-  return fleetStr
-}, '')}
+		add fleet "Small Player Fleet" ${smallFleetChance}
+		add fleet "Large Player Fleet" ${largeFleetChance}
 	${linkedFleets}
 `
 }
+
+// ${fleetArr
+//   .reduce((fleetStr, fleet) => {
+// fleetStr += `fleet ${fleet}\n\t\t`
+// return fleetStr
+// }, '')}
