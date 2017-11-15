@@ -10,10 +10,10 @@ module.exports = ({ fleetArr, government, systemName, planetName, links }) => {
 
 	// invade nearby territories
   const linkedFleets = links.reduce((gameStr, link) => {
-    const linkedSystem = selectBlockWith({ _value: link }, 'map/systems')
-    const linkedFleet = Array.isArray(linkedSystem.fleet) ? linkedSystem.fleet : [linkedSystem.fleet]
+  const linkedSystem = selectBlockWith({ _value: link }, 'map/systems')
+  const linkedFleet = Array.isArray(linkedSystem.fleet) ? linkedSystem.fleet : [linkedSystem.fleet]
 
-    gameStr += `
+  gameStr += `
 	system "${link}"
 		fleet "Small Player Fleet" ${smallFleetChance + 500}
 		fleet "Large Player Fleet" ${largeFleetChance + 2000}
@@ -24,8 +24,8 @@ module.exports = ({ fleetArr, government, systemName, planetName, links }) => {
 }, '')}
 `
 
-    return gameStr
-  }, '')
+  return gameStr
+}, '')
 
   return `
 mission "Player Conquer: ${sanitizedSystemName}"

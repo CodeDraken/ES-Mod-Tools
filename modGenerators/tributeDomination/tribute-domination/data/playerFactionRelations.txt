@@ -1,230 +1,6 @@
-mission "Player Fact Declare War: Alpha"
-	landing
-	repeat
-	to offer
-		"reputation: Alpha" < -1
-		not "event: Player Fact Declare War: Alpha"
-	on offer
-		event "Player Fact Declare War: Alpha"
-		fail
-
-event "Player Fact Declare War: Alpha"
-	government "Alpha"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Alpha" -1000
-	"reputation: Alpha" = -1000
 
 
-mission "Player Fact Make Peace: Alpha"
-	job
-	repeat
-	name "Make peace with the Alpha"
-	description "Make peace with the Alpha."
-	to offer
-		"reputation: Alpha" < -1
-		has "event: Player Fact Declare War: Alpha"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Alpha"
-		clear "event: Player Fact Make Peace: Alpha"
-		fail
 
-event "Player Fact Make Peace: Alpha"
-	clear "event: Player Fact Declare War: Alpha"
-	government "Alpha"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Alpha" 0
-	"reputation: Alpha" = 0
-	clear "event: Player Fact Make Peace: Alpha"
-
-
-mission "Player Fact Force Peace: Alpha"
-	landing
-	repeat
-	to offer
-		"reputation: Alpha" > 1
-		has "event: Player Fact Declare War: Alpha"
-	on offer
-		event "Player Fact Make Peace: Alpha"
-		fail
-
-mission "Player Fact Declare War: Author"
-	landing
-	repeat
-	to offer
-		"reputation: Author" < -1
-		not "event: Player Fact Declare War: Author"
-	on offer
-		event "Player Fact Declare War: Author"
-		fail
-
-event "Player Fact Declare War: Author"
-	government "Author"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Author" -1000
-	"reputation: Author" = -1000
-
-
-mission "Player Fact Make Peace: Author"
-	job
-	repeat
-	name "Make peace with the Author"
-	description "Make peace with the Author."
-	to offer
-		"reputation: Author" < -1
-		has "event: Player Fact Declare War: Author"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Author"
-		clear "event: Player Fact Make Peace: Author"
-		fail
-
-event "Player Fact Make Peace: Author"
-	clear "event: Player Fact Declare War: Author"
-	government "Author"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Author" 0
-	"reputation: Author" = 0
-	clear "event: Player Fact Make Peace: Author"
-
-
-mission "Player Fact Force Peace: Author"
-	landing
-	repeat
-	to offer
-		"reputation: Author" > 1
-		has "event: Player Fact Declare War: Author"
-	on offer
-		event "Player Fact Make Peace: Author"
-		fail
-
-mission "Player Fact Declare War: Bounty"
-	landing
-	repeat
-	to offer
-		"reputation: Bounty" < -1
-		not "event: Player Fact Declare War: Bounty"
-	on offer
-		event "Player Fact Declare War: Bounty"
-		fail
-
-event "Player Fact Declare War: Bounty"
-	government "Bounty"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Bounty" -1000
-	"reputation: Bounty" = -1000
-
-
-mission "Player Fact Make Peace: Bounty"
-	job
-	repeat
-	name "Make peace with the Bounty"
-	description "Make peace with the Bounty."
-	to offer
-		"reputation: Bounty" < -1
-		has "event: Player Fact Declare War: Bounty"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Bounty"
-		clear "event: Player Fact Make Peace: Bounty"
-		fail
-
-event "Player Fact Make Peace: Bounty"
-	clear "event: Player Fact Declare War: Bounty"
-	government "Bounty"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Bounty" 0
-	"reputation: Bounty" = 0
-	clear "event: Player Fact Make Peace: Bounty"
-
-
-mission "Player Fact Force Peace: Bounty"
-	landing
-	repeat
-	to offer
-		"reputation: Bounty" > 1
-		has "event: Player Fact Declare War: Bounty"
-	on offer
-		event "Player Fact Make Peace: Bounty"
-		fail
-
-mission "Player Fact Declare War: Bounty Hunter"
-	landing
-	repeat
-	to offer
-		"reputation: Bounty Hunter" < -1
-		not "event: Player Fact Declare War: Bounty Hunter"
-	on offer
-		event "Player Fact Declare War: Bounty Hunter"
-		fail
-
-event "Player Fact Declare War: Bounty Hunter"
-	government "Bounty Hunter"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Bounty Hunter" -1000
-	"reputation: Bounty Hunter" = -1000
-
-
-mission "Player Fact Make Peace: Bounty Hunter"
-	job
-	repeat
-	name "Make peace with the Bounty Hunter"
-	description "Make peace with the Bounty Hunter."
-	to offer
-		"reputation: Bounty Hunter" < -1
-		has "event: Player Fact Declare War: Bounty Hunter"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Bounty Hunter"
-		clear "event: Player Fact Make Peace: Bounty Hunter"
-		fail
-
-event "Player Fact Make Peace: Bounty Hunter"
-	clear "event: Player Fact Declare War: Bounty Hunter"
-	government "Bounty Hunter"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Bounty Hunter" 0
-	"reputation: Bounty Hunter" = 0
-	clear "event: Player Fact Make Peace: Bounty Hunter"
-
-
-mission "Player Fact Force Peace: Bounty Hunter"
-	landing
-	repeat
-	to offer
-		"reputation: Bounty Hunter" > 1
-		has "event: Player Fact Declare War: Bounty Hunter"
-	on offer
-		event "Player Fact Make Peace: Bounty Hunter"
-		fail
 
 mission "Player Fact Declare War: Coalition"
 	landing
@@ -239,11 +15,11 @@ mission "Player Fact Declare War: Coalition"
 event "Player Fact Declare War: Coalition"
 	government "Coalition"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Coalition" -1000
-	"reputation: Coalition" = -1000
+			"Coalition" -100
+	"reputation: Coalition" = -100
 
 
 mission "Player Fact Make Peace: Coalition"
@@ -265,11 +41,11 @@ event "Player Fact Make Peace: Coalition"
 	clear "event: Player Fact Declare War: Coalition"
 	government "Coalition"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Coalition" 0
-	"reputation: Coalition" = 0
+			"Coalition" 5
+	"reputation: Coalition" = 5
 	clear "event: Player Fact Make Peace: Coalition"
 
 
@@ -296,11 +72,11 @@ mission "Player Fact Declare War: Deep"
 event "Player Fact Declare War: Deep"
 	government "Deep"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Deep" -1000
-	"reputation: Deep" = -1000
+			"Deep" -100
+	"reputation: Deep" = -100
 
 
 mission "Player Fact Make Peace: Deep"
@@ -322,11 +98,11 @@ event "Player Fact Make Peace: Deep"
 	clear "event: Player Fact Declare War: Deep"
 	government "Deep"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Deep" 0
-	"reputation: Deep" = 0
+			"Deep" 5
+	"reputation: Deep" = 5
 	clear "event: Player Fact Make Peace: Deep"
 
 
@@ -353,11 +129,11 @@ mission "Player Fact Declare War: Drak"
 event "Player Fact Declare War: Drak"
 	government "Drak"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Drak" -1000
-	"reputation: Drak" = -1000
+			"Drak" -100
+	"reputation: Drak" = -100
 
 
 mission "Player Fact Make Peace: Drak"
@@ -379,11 +155,11 @@ event "Player Fact Make Peace: Drak"
 	clear "event: Player Fact Declare War: Drak"
 	government "Drak"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Drak" 0
-	"reputation: Drak" = 0
+			"Drak" 5
+	"reputation: Drak" = 5
 	clear "event: Player Fact Make Peace: Drak"
 
 
@@ -397,62 +173,6 @@ mission "Player Fact Force Peace: Drak"
 		event "Player Fact Make Peace: Drak"
 		fail
 
-mission "Player Fact Declare War: Escort"
-	landing
-	repeat
-	to offer
-		"reputation: Escort" < -1
-		not "event: Player Fact Declare War: Escort"
-	on offer
-		event "Player Fact Declare War: Escort"
-		fail
-
-event "Player Fact Declare War: Escort"
-	government "Escort"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Escort" -1000
-	"reputation: Escort" = -1000
-
-
-mission "Player Fact Make Peace: Escort"
-	job
-	repeat
-	name "Make peace with the Escort"
-	description "Make peace with the Escort."
-	to offer
-		"reputation: Escort" < -1
-		has "event: Player Fact Declare War: Escort"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Escort"
-		clear "event: Player Fact Make Peace: Escort"
-		fail
-
-event "Player Fact Make Peace: Escort"
-	clear "event: Player Fact Declare War: Escort"
-	government "Escort"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Escort" 0
-	"reputation: Escort" = 0
-	clear "event: Player Fact Make Peace: Escort"
-
-
-mission "Player Fact Force Peace: Escort"
-	landing
-	repeat
-	to offer
-		"reputation: Escort" > 1
-		has "event: Player Fact Declare War: Escort"
-	on offer
-		event "Player Fact Make Peace: Escort"
-		fail
 
 mission "Player Fact Declare War: Free Worlds"
 	landing
@@ -467,11 +187,11 @@ mission "Player Fact Declare War: Free Worlds"
 event "Player Fact Declare War: Free Worlds"
 	government "Free Worlds"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Free Worlds" -1000
-	"reputation: Free Worlds" = -1000
+			"Free Worlds" -100
+	"reputation: Free Worlds" = -100
 
 
 mission "Player Fact Make Peace: Free Worlds"
@@ -493,11 +213,11 @@ event "Player Fact Make Peace: Free Worlds"
 	clear "event: Player Fact Declare War: Free Worlds"
 	government "Free Worlds"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Free Worlds" 0
-	"reputation: Free Worlds" = 0
+			"Free Worlds" 5
+	"reputation: Free Worlds" = 5
 	clear "event: Player Fact Make Peace: Free Worlds"
 
 
@@ -524,11 +244,11 @@ mission "Player Fact Declare War: Hai"
 event "Player Fact Declare War: Hai"
 	government "Hai"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Hai" -1000
-	"reputation: Hai" = -1000
+			"Hai" -100
+	"reputation: Hai" = -100
 
 
 mission "Player Fact Make Peace: Hai"
@@ -550,11 +270,11 @@ event "Player Fact Make Peace: Hai"
 	clear "event: Player Fact Declare War: Hai"
 	government "Hai"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Hai" 0
-	"reputation: Hai" = 0
+			"Hai" 5
+	"reputation: Hai" = 5
 	clear "event: Player Fact Make Peace: Hai"
 
 
@@ -581,11 +301,11 @@ mission "Player Fact Declare War: Hai (Unfettered)"
 event "Player Fact Declare War: Hai (Unfettered)"
 	government "Hai (Unfettered)"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Hai (Unfettered)" -1000
-	"reputation: Hai (Unfettered)" = -1000
+			"Hai (Unfettered)" -100
+	"reputation: Hai (Unfettered)" = -100
 
 
 mission "Player Fact Make Peace: Hai (Unfettered)"
@@ -607,11 +327,11 @@ event "Player Fact Make Peace: Hai (Unfettered)"
 	clear "event: Player Fact Declare War: Hai (Unfettered)"
 	government "Hai (Unfettered)"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Hai (Unfettered)" 0
-	"reputation: Hai (Unfettered)" = 0
+			"Hai (Unfettered)" 5
+	"reputation: Hai (Unfettered)" = 5
 	clear "event: Player Fact Make Peace: Hai (Unfettered)"
 
 
@@ -638,11 +358,11 @@ mission "Player Fact Declare War: Heliarch"
 event "Player Fact Declare War: Heliarch"
 	government "Heliarch"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Heliarch" -1000
-	"reputation: Heliarch" = -1000
+			"Heliarch" -100
+	"reputation: Heliarch" = -100
 
 
 mission "Player Fact Make Peace: Heliarch"
@@ -664,11 +384,11 @@ event "Player Fact Make Peace: Heliarch"
 	clear "event: Player Fact Declare War: Heliarch"
 	government "Heliarch"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Heliarch" 0
-	"reputation: Heliarch" = 0
+			"Heliarch" 5
+	"reputation: Heliarch" = 5
 	clear "event: Player Fact Make Peace: Heliarch"
 
 
@@ -682,119 +402,7 @@ mission "Player Fact Force Peace: Heliarch"
 		event "Player Fact Make Peace: Heliarch"
 		fail
 
-mission "Player Fact Declare War: Independent"
-	landing
-	repeat
-	to offer
-		"reputation: Independent" < -1
-		not "event: Player Fact Declare War: Independent"
-	on offer
-		event "Player Fact Declare War: Independent"
-		fail
 
-event "Player Fact Declare War: Independent"
-	government "Independent"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Independent" -1000
-	"reputation: Independent" = -1000
-
-
-mission "Player Fact Make Peace: Independent"
-	job
-	repeat
-	name "Make peace with the Independent"
-	description "Make peace with the Independent."
-	to offer
-		"reputation: Independent" < -1
-		has "event: Player Fact Declare War: Independent"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Independent"
-		clear "event: Player Fact Make Peace: Independent"
-		fail
-
-event "Player Fact Make Peace: Independent"
-	clear "event: Player Fact Declare War: Independent"
-	government "Independent"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Independent" 0
-	"reputation: Independent" = 0
-	clear "event: Player Fact Make Peace: Independent"
-
-
-mission "Player Fact Force Peace: Independent"
-	landing
-	repeat
-	to offer
-		"reputation: Independent" > 1
-		has "event: Player Fact Declare War: Independent"
-	on offer
-		event "Player Fact Make Peace: Independent"
-		fail
-
-mission "Player Fact Declare War: Indigenous Lifeform"
-	landing
-	repeat
-	to offer
-		"reputation: Indigenous Lifeform" < -1
-		not "event: Player Fact Declare War: Indigenous Lifeform"
-	on offer
-		event "Player Fact Declare War: Indigenous Lifeform"
-		fail
-
-event "Player Fact Declare War: Indigenous Lifeform"
-	government "Indigenous Lifeform"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Indigenous Lifeform" -1000
-	"reputation: Indigenous Lifeform" = -1000
-
-
-mission "Player Fact Make Peace: Indigenous Lifeform"
-	job
-	repeat
-	name "Make peace with the Indigenous Lifeform"
-	description "Make peace with the Indigenous Lifeform."
-	to offer
-		"reputation: Indigenous Lifeform" < -1
-		has "event: Player Fact Declare War: Indigenous Lifeform"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Indigenous Lifeform"
-		clear "event: Player Fact Make Peace: Indigenous Lifeform"
-		fail
-
-event "Player Fact Make Peace: Indigenous Lifeform"
-	clear "event: Player Fact Declare War: Indigenous Lifeform"
-	government "Indigenous Lifeform"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Indigenous Lifeform" 0
-	"reputation: Indigenous Lifeform" = 0
-	clear "event: Player Fact Make Peace: Indigenous Lifeform"
-
-
-mission "Player Fact Force Peace: Indigenous Lifeform"
-	landing
-	repeat
-	to offer
-		"reputation: Indigenous Lifeform" > 1
-		has "event: Player Fact Declare War: Indigenous Lifeform"
-	on offer
-		event "Player Fact Make Peace: Indigenous Lifeform"
-		fail
 
 mission "Player Fact Declare War: Korath"
 	landing
@@ -809,11 +417,11 @@ mission "Player Fact Declare War: Korath"
 event "Player Fact Declare War: Korath"
 	government "Korath"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Korath" -1000
-	"reputation: Korath" = -1000
+			"Korath" -100
+	"reputation: Korath" = -100
 
 
 mission "Player Fact Make Peace: Korath"
@@ -835,11 +443,11 @@ event "Player Fact Make Peace: Korath"
 	clear "event: Player Fact Declare War: Korath"
 	government "Korath"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Korath" 0
-	"reputation: Korath" = 0
+			"Korath" 5
+	"reputation: Korath" = 5
 	clear "event: Player Fact Make Peace: Korath"
 
 
@@ -853,62 +461,6 @@ mission "Player Fact Force Peace: Korath"
 		event "Player Fact Make Peace: Korath"
 		fail
 
-mission "Player Fact Declare War: Korath Nanobots"
-	landing
-	repeat
-	to offer
-		"reputation: Korath Nanobots" < -1
-		not "event: Player Fact Declare War: Korath Nanobots"
-	on offer
-		event "Player Fact Declare War: Korath Nanobots"
-		fail
-
-event "Player Fact Declare War: Korath Nanobots"
-	government "Korath Nanobots"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Korath Nanobots" -1000
-	"reputation: Korath Nanobots" = -1000
-
-
-mission "Player Fact Make Peace: Korath Nanobots"
-	job
-	repeat
-	name "Make peace with the Korath Nanobots"
-	description "Make peace with the Korath Nanobots."
-	to offer
-		"reputation: Korath Nanobots" < -1
-		has "event: Player Fact Declare War: Korath Nanobots"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Korath Nanobots"
-		clear "event: Player Fact Make Peace: Korath Nanobots"
-		fail
-
-event "Player Fact Make Peace: Korath Nanobots"
-	clear "event: Player Fact Declare War: Korath Nanobots"
-	government "Korath Nanobots"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Korath Nanobots" 0
-	"reputation: Korath Nanobots" = 0
-	clear "event: Player Fact Make Peace: Korath Nanobots"
-
-
-mission "Player Fact Force Peace: Korath Nanobots"
-	landing
-	repeat
-	to offer
-		"reputation: Korath Nanobots" > 1
-		has "event: Player Fact Declare War: Korath Nanobots"
-	on offer
-		event "Player Fact Make Peace: Korath Nanobots"
-		fail
 
 mission "Player Fact Declare War: Kor Efret"
 	landing
@@ -923,11 +475,11 @@ mission "Player Fact Declare War: Kor Efret"
 event "Player Fact Declare War: Kor Efret"
 	government "Kor Efret"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Kor Efret" -1000
-	"reputation: Kor Efret" = -1000
+			"Kor Efret" -100
+	"reputation: Kor Efret" = -100
 
 
 mission "Player Fact Make Peace: Kor Efret"
@@ -949,11 +501,11 @@ event "Player Fact Make Peace: Kor Efret"
 	clear "event: Player Fact Declare War: Kor Efret"
 	government "Kor Efret"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Kor Efret" 0
-	"reputation: Kor Efret" = 0
+			"Kor Efret" 5
+	"reputation: Kor Efret" = 5
 	clear "event: Player Fact Make Peace: Kor Efret"
 
 
@@ -967,119 +519,7 @@ mission "Player Fact Force Peace: Kor Efret"
 		event "Player Fact Make Peace: Kor Efret"
 		fail
 
-mission "Player Fact Declare War: Kor Mereti"
-	landing
-	repeat
-	to offer
-		"reputation: Kor Mereti" < -1
-		not "event: Player Fact Declare War: Kor Mereti"
-	on offer
-		event "Player Fact Declare War: Kor Mereti"
-		fail
 
-event "Player Fact Declare War: Kor Mereti"
-	government "Kor Mereti"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Kor Mereti" -1000
-	"reputation: Kor Mereti" = -1000
-
-
-mission "Player Fact Make Peace: Kor Mereti"
-	job
-	repeat
-	name "Make peace with the Kor Mereti"
-	description "Make peace with the Kor Mereti."
-	to offer
-		"reputation: Kor Mereti" < -1
-		has "event: Player Fact Declare War: Kor Mereti"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Kor Mereti"
-		clear "event: Player Fact Make Peace: Kor Mereti"
-		fail
-
-event "Player Fact Make Peace: Kor Mereti"
-	clear "event: Player Fact Declare War: Kor Mereti"
-	government "Kor Mereti"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Kor Mereti" 0
-	"reputation: Kor Mereti" = 0
-	clear "event: Player Fact Make Peace: Kor Mereti"
-
-
-mission "Player Fact Force Peace: Kor Mereti"
-	landing
-	repeat
-	to offer
-		"reputation: Kor Mereti" > 1
-		has "event: Player Fact Declare War: Kor Mereti"
-	on offer
-		event "Player Fact Make Peace: Kor Mereti"
-		fail
-
-mission "Player Fact Declare War: Kor Sestor"
-	landing
-	repeat
-	to offer
-		"reputation: Kor Sestor" < -1
-		not "event: Player Fact Declare War: Kor Sestor"
-	on offer
-		event "Player Fact Declare War: Kor Sestor"
-		fail
-
-event "Player Fact Declare War: Kor Sestor"
-	government "Kor Sestor"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Kor Sestor" -1000
-	"reputation: Kor Sestor" = -1000
-
-
-mission "Player Fact Make Peace: Kor Sestor"
-	job
-	repeat
-	name "Make peace with the Kor Sestor"
-	description "Make peace with the Kor Sestor."
-	to offer
-		"reputation: Kor Sestor" < -1
-		has "event: Player Fact Declare War: Kor Sestor"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Kor Sestor"
-		clear "event: Player Fact Make Peace: Kor Sestor"
-		fail
-
-event "Player Fact Make Peace: Kor Sestor"
-	clear "event: Player Fact Declare War: Kor Sestor"
-	government "Kor Sestor"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Kor Sestor" 0
-	"reputation: Kor Sestor" = 0
-	clear "event: Player Fact Make Peace: Kor Sestor"
-
-
-mission "Player Fact Force Peace: Kor Sestor"
-	landing
-	repeat
-	to offer
-		"reputation: Kor Sestor" > 1
-		has "event: Player Fact Declare War: Kor Sestor"
-	on offer
-		event "Player Fact Make Peace: Kor Sestor"
-		fail
 
 mission "Player Fact Declare War: Merchant"
 	landing
@@ -1094,11 +534,11 @@ mission "Player Fact Declare War: Merchant"
 event "Player Fact Declare War: Merchant"
 	government "Merchant"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Merchant" -1000
-	"reputation: Merchant" = -1000
+			"Merchant" -100
+	"reputation: Merchant" = -100
 
 
 mission "Player Fact Make Peace: Merchant"
@@ -1120,11 +560,11 @@ event "Player Fact Make Peace: Merchant"
 	clear "event: Player Fact Declare War: Merchant"
 	government "Merchant"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Merchant" 0
-	"reputation: Merchant" = 0
+			"Merchant" 5
+	"reputation: Merchant" = 5
 	clear "event: Player Fact Make Peace: Merchant"
 
 
@@ -1151,11 +591,11 @@ mission "Player Fact Declare War: Militia"
 event "Player Fact Declare War: Militia"
 	government "Militia"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Militia" -1000
-	"reputation: Militia" = -1000
+			"Militia" -100
+	"reputation: Militia" = -100
 
 
 mission "Player Fact Make Peace: Militia"
@@ -1177,11 +617,11 @@ event "Player Fact Make Peace: Militia"
 	clear "event: Player Fact Declare War: Militia"
 	government "Militia"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Militia" 0
-	"reputation: Militia" = 0
+			"Militia" 5
+	"reputation: Militia" = 5
 	clear "event: Player Fact Make Peace: Militia"
 
 
@@ -1208,11 +648,11 @@ mission "Player Fact Declare War: Navy Intelligence"
 event "Player Fact Declare War: Navy Intelligence"
 	government "Navy Intelligence"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Navy Intelligence" -1000
-	"reputation: Navy Intelligence" = -1000
+			"Navy Intelligence" -100
+	"reputation: Navy Intelligence" = -100
 
 
 mission "Player Fact Make Peace: Navy Intelligence"
@@ -1234,11 +674,11 @@ event "Player Fact Make Peace: Navy Intelligence"
 	clear "event: Player Fact Declare War: Navy Intelligence"
 	government "Navy Intelligence"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Navy Intelligence" 0
-	"reputation: Navy Intelligence" = 0
+			"Navy Intelligence" 5
+	"reputation: Navy Intelligence" = 5
 	clear "event: Player Fact Make Peace: Navy Intelligence"
 
 
@@ -1265,11 +705,11 @@ mission "Player Fact Declare War: Navy (Oathkeeper)"
 event "Player Fact Declare War: Navy (Oathkeeper)"
 	government "Navy (Oathkeeper)"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Navy (Oathkeeper)" -1000
-	"reputation: Navy (Oathkeeper)" = -1000
+			"Navy (Oathkeeper)" -100
+	"reputation: Navy (Oathkeeper)" = -100
 
 
 mission "Player Fact Make Peace: Navy (Oathkeeper)"
@@ -1291,11 +731,11 @@ event "Player Fact Make Peace: Navy (Oathkeeper)"
 	clear "event: Player Fact Declare War: Navy (Oathkeeper)"
 	government "Navy (Oathkeeper)"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Navy (Oathkeeper)" 0
-	"reputation: Navy (Oathkeeper)" = 0
+			"Navy (Oathkeeper)" 5
+	"reputation: Navy (Oathkeeper)" = 5
 	clear "event: Player Fact Make Peace: Navy (Oathkeeper)"
 
 
@@ -1309,119 +749,7 @@ mission "Player Fact Force Peace: Navy (Oathkeeper)"
 		event "Player Fact Make Peace: Navy (Oathkeeper)"
 		fail
 
-mission "Player Fact Declare War: Neutral"
-	landing
-	repeat
-	to offer
-		"reputation: Neutral" < -1
-		not "event: Player Fact Declare War: Neutral"
-	on offer
-		event "Player Fact Declare War: Neutral"
-		fail
 
-event "Player Fact Declare War: Neutral"
-	government "Neutral"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Neutral" -1000
-	"reputation: Neutral" = -1000
-
-
-mission "Player Fact Make Peace: Neutral"
-	job
-	repeat
-	name "Make peace with the Neutral"
-	description "Make peace with the Neutral."
-	to offer
-		"reputation: Neutral" < -1
-		has "event: Player Fact Declare War: Neutral"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Neutral"
-		clear "event: Player Fact Make Peace: Neutral"
-		fail
-
-event "Player Fact Make Peace: Neutral"
-	clear "event: Player Fact Declare War: Neutral"
-	government "Neutral"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Neutral" 0
-	"reputation: Neutral" = 0
-	clear "event: Player Fact Make Peace: Neutral"
-
-
-mission "Player Fact Force Peace: Neutral"
-	landing
-	repeat
-	to offer
-		"reputation: Neutral" > 1
-		has "event: Player Fact Declare War: Neutral"
-	on offer
-		event "Player Fact Make Peace: Neutral"
-		fail
-
-mission "Player Fact Declare War: Parrot"
-	landing
-	repeat
-	to offer
-		"reputation: Parrot" < -1
-		not "event: Player Fact Declare War: Parrot"
-	on offer
-		event "Player Fact Declare War: Parrot"
-		fail
-
-event "Player Fact Declare War: Parrot"
-	government "Parrot"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Parrot" -1000
-	"reputation: Parrot" = -1000
-
-
-mission "Player Fact Make Peace: Parrot"
-	job
-	repeat
-	name "Make peace with the Parrot"
-	description "Make peace with the Parrot."
-	to offer
-		"reputation: Parrot" < -1
-		has "event: Player Fact Declare War: Parrot"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Parrot"
-		clear "event: Player Fact Make Peace: Parrot"
-		fail
-
-event "Player Fact Make Peace: Parrot"
-	clear "event: Player Fact Declare War: Parrot"
-	government "Parrot"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Parrot" 0
-	"reputation: Parrot" = 0
-	clear "event: Player Fact Make Peace: Parrot"
-
-
-mission "Player Fact Force Peace: Parrot"
-	landing
-	repeat
-	to offer
-		"reputation: Parrot" > 1
-		has "event: Player Fact Declare War: Parrot"
-	on offer
-		event "Player Fact Make Peace: Parrot"
-		fail
 
 mission "Player Fact Declare War: Pirate"
 	landing
@@ -1436,11 +764,11 @@ mission "Player Fact Declare War: Pirate"
 event "Player Fact Declare War: Pirate"
 	government "Pirate"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Pirate" -1000
-	"reputation: Pirate" = -1000
+			"Pirate" -100
+	"reputation: Pirate" = -100
 
 
 mission "Player Fact Make Peace: Pirate"
@@ -1462,11 +790,11 @@ event "Player Fact Make Peace: Pirate"
 	clear "event: Player Fact Declare War: Pirate"
 	government "Pirate"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Pirate" 0
-	"reputation: Pirate" = 0
+			"Pirate" 5
+	"reputation: Pirate" = 5
 	clear "event: Player Fact Make Peace: Pirate"
 
 
@@ -1493,11 +821,11 @@ mission "Player Fact Declare War: Pug"
 event "Player Fact Declare War: Pug"
 	government "Pug"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Pug" -1000
-	"reputation: Pug" = -1000
+			"Pug" -100
+	"reputation: Pug" = -100
 
 
 mission "Player Fact Make Peace: Pug"
@@ -1519,11 +847,11 @@ event "Player Fact Make Peace: Pug"
 	clear "event: Player Fact Declare War: Pug"
 	government "Pug"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Pug" 0
-	"reputation: Pug" = 0
+			"Pug" 5
+	"reputation: Pug" = 5
 	clear "event: Player Fact Make Peace: Pug"
 
 
@@ -1550,11 +878,11 @@ mission "Player Fact Declare War: Quarg"
 event "Player Fact Declare War: Quarg"
 	government "Quarg"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Quarg" -1000
-	"reputation: Quarg" = -1000
+			"Quarg" -100
+	"reputation: Quarg" = -100
 
 
 mission "Player Fact Make Peace: Quarg"
@@ -1576,11 +904,11 @@ event "Player Fact Make Peace: Quarg"
 	clear "event: Player Fact Declare War: Quarg"
 	government "Quarg"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Quarg" 0
-	"reputation: Quarg" = 0
+			"Quarg" 5
+	"reputation: Quarg" = 5
 	clear "event: Player Fact Make Peace: Quarg"
 
 
@@ -1607,11 +935,11 @@ mission "Player Fact Declare War: Remnant"
 event "Player Fact Declare War: Remnant"
 	government "Remnant"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Remnant" -1000
-	"reputation: Remnant" = -1000
+			"Remnant" -100
+	"reputation: Remnant" = -100
 
 
 mission "Player Fact Make Peace: Remnant"
@@ -1633,11 +961,11 @@ event "Player Fact Make Peace: Remnant"
 	clear "event: Player Fact Declare War: Remnant"
 	government "Remnant"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Remnant" 0
-	"reputation: Remnant" = 0
+			"Remnant" 5
+	"reputation: Remnant" = 5
 	clear "event: Player Fact Make Peace: Remnant"
 
 
@@ -1664,11 +992,11 @@ mission "Player Fact Declare War: Republic"
 event "Player Fact Declare War: Republic"
 	government "Republic"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Republic" -1000
-	"reputation: Republic" = -1000
+			"Republic" -100
+	"reputation: Republic" = -100
 
 
 mission "Player Fact Make Peace: Republic"
@@ -1690,11 +1018,11 @@ event "Player Fact Make Peace: Republic"
 	clear "event: Player Fact Declare War: Republic"
 	government "Republic"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Republic" 0
-	"reputation: Republic" = 0
+			"Republic" 5
+	"reputation: Republic" = 5
 	clear "event: Player Fact Make Peace: Republic"
 
 
@@ -1721,11 +1049,11 @@ mission "Player Fact Declare War: Syndicate"
 event "Player Fact Declare War: Syndicate"
 	government "Syndicate"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Syndicate" -1000
-	"reputation: Syndicate" = -1000
+			"Syndicate" -100
+	"reputation: Syndicate" = -100
 
 
 mission "Player Fact Make Peace: Syndicate"
@@ -1747,11 +1075,11 @@ event "Player Fact Make Peace: Syndicate"
 	clear "event: Player Fact Declare War: Syndicate"
 	government "Syndicate"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Syndicate" 0
-	"reputation: Syndicate" = 0
+			"Syndicate" 5
+	"reputation: Syndicate" = 5
 	clear "event: Player Fact Make Peace: Syndicate"
 
 
@@ -1765,62 +1093,6 @@ mission "Player Fact Force Peace: Syndicate"
 		event "Player Fact Make Peace: Syndicate"
 		fail
 
-mission "Player Fact Declare War: Syndicate (Extremist)"
-	landing
-	repeat
-	to offer
-		"reputation: Syndicate (Extremist)" < -1
-		not "event: Player Fact Declare War: Syndicate (Extremist)"
-	on offer
-		event "Player Fact Declare War: Syndicate (Extremist)"
-		fail
-
-event "Player Fact Declare War: Syndicate (Extremist)"
-	government "Syndicate (Extremist)"
-		"attitude toward"
-			"Player Faction" -1000
-	government "Player Faction"
-		"attitude toward"
-			"Syndicate (Extremist)" -1000
-	"reputation: Syndicate (Extremist)" = -1000
-
-
-mission "Player Fact Make Peace: Syndicate (Extremist)"
-	job
-	repeat
-	name "Make peace with the Syndicate (Extremist)"
-	description "Make peace with the Syndicate (Extremist)."
-	to offer
-		"reputation: Syndicate (Extremist)" < -1
-		has "event: Player Fact Declare War: Syndicate (Extremist)"
-	source
-		government "Player Faction"
-	on accept
-		event "Player Fact Make Peace: Syndicate (Extremist)"
-		clear "event: Player Fact Make Peace: Syndicate (Extremist)"
-		fail
-
-event "Player Fact Make Peace: Syndicate (Extremist)"
-	clear "event: Player Fact Declare War: Syndicate (Extremist)"
-	government "Syndicate (Extremist)"
-		"attitude toward"
-			"Player Faction" 0
-	government "Player Faction"
-		"attitude toward"
-			"Syndicate (Extremist)" 0
-	"reputation: Syndicate (Extremist)" = 0
-	clear "event: Player Fact Make Peace: Syndicate (Extremist)"
-
-
-mission "Player Fact Force Peace: Syndicate (Extremist)"
-	landing
-	repeat
-	to offer
-		"reputation: Syndicate (Extremist)" > 1
-		has "event: Player Fact Declare War: Syndicate (Extremist)"
-	on offer
-		event "Player Fact Make Peace: Syndicate (Extremist)"
-		fail
 
 mission "Player Fact Declare War: Test Dummy"
 	landing
@@ -1835,11 +1107,11 @@ mission "Player Fact Declare War: Test Dummy"
 event "Player Fact Declare War: Test Dummy"
 	government "Test Dummy"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Test Dummy" -1000
-	"reputation: Test Dummy" = -1000
+			"Test Dummy" -100
+	"reputation: Test Dummy" = -100
 
 
 mission "Player Fact Make Peace: Test Dummy"
@@ -1861,11 +1133,11 @@ event "Player Fact Make Peace: Test Dummy"
 	clear "event: Player Fact Declare War: Test Dummy"
 	government "Test Dummy"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Test Dummy" 0
-	"reputation: Test Dummy" = 0
+			"Test Dummy" 5
+	"reputation: Test Dummy" = 5
 	clear "event: Player Fact Make Peace: Test Dummy"
 
 
@@ -1892,11 +1164,11 @@ mission "Player Fact Declare War: Uninhabited"
 event "Player Fact Declare War: Uninhabited"
 	government "Uninhabited"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Uninhabited" -1000
-	"reputation: Uninhabited" = -1000
+			"Uninhabited" -100
+	"reputation: Uninhabited" = -100
 
 
 mission "Player Fact Make Peace: Uninhabited"
@@ -1918,11 +1190,11 @@ event "Player Fact Make Peace: Uninhabited"
 	clear "event: Player Fact Declare War: Uninhabited"
 	government "Uninhabited"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Uninhabited" 0
-	"reputation: Uninhabited" = 0
+			"Uninhabited" 5
+	"reputation: Uninhabited" = 5
 	clear "event: Player Fact Make Peace: Uninhabited"
 
 
@@ -1949,11 +1221,11 @@ mission "Player Fact Declare War: Wanderer"
 event "Player Fact Declare War: Wanderer"
 	government "Wanderer"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"Wanderer" -1000
-	"reputation: Wanderer" = -1000
+			"Wanderer" -100
+	"reputation: Wanderer" = -100
 
 
 mission "Player Fact Make Peace: Wanderer"
@@ -1975,11 +1247,11 @@ event "Player Fact Make Peace: Wanderer"
 	clear "event: Player Fact Declare War: Wanderer"
 	government "Wanderer"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"Wanderer" 0
-	"reputation: Wanderer" = 0
+			"Wanderer" 5
+	"reputation: Wanderer" = 5
 	clear "event: Player Fact Make Peace: Wanderer"
 
 

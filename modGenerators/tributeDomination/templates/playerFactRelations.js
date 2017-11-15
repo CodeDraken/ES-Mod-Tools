@@ -1,8 +1,13 @@
 const declareWarAt = -1
+// no allowing peace with these
+const ignoreGov = [
+  'Alpha', 'Author', 'Bounty', 'Bounty Hunter', 'Escort', 'Independent', 'Indigenous Lifeform', 'Korath Nanobots', 'Kor Mereti', 'Kor Sestor', 'Neutral', 'Parrot', 'Syndicate (Extremist)'
+]
 
 // generates player faction relations with other governments
-module.exports = (government) =>
-`mission "Player Fact Declare War: ${government}"
+module.exports = (government) => {
+  if (ignoreGov.includes(government)) return
+  return `mission "Player Fact Declare War: ${government}"
 	landing
 	repeat
 	to offer
@@ -15,11 +20,11 @@ module.exports = (government) =>
 event "Player Fact Declare War: ${government}"
 	government "${government}"
 		"attitude toward"
-			"Player Faction" -1000
+			"Player Faction" -100
 	government "Player Faction"
 		"attitude toward"
-			"${government}" -1000
-	"reputation: ${government}" = -1000
+			"${government}" -100
+	"reputation: ${government}" = -100
 
 
 mission "Player Fact Make Peace: ${government}"
@@ -41,11 +46,11 @@ event "Player Fact Make Peace: ${government}"
 	clear "event: Player Fact Declare War: ${government}"
 	government "${government}"
 		"attitude toward"
-			"Player Faction" 0
+			"Player Faction" 5
 	government "Player Faction"
 		"attitude toward"
-			"${government}" 0
-	"reputation: ${government}" = 0
+			"${government}" 5
+	"reputation: ${government}" = 5
 	clear "event: Player Fact Make Peace: ${government}"
 
 
@@ -59,3 +64,4 @@ mission "Player Fact Force Peace: ${government}"
 		event "Player Fact Make Peace: ${government}"
 		fail
 `
+}
