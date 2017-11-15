@@ -1,11 +1,31 @@
+const { selectBlockWith } = require('../../../util/grabDataUtil')
 const { sanitizeStr } = require('../../../util/stringUtil')
 
 // generates player faction relations with other governments
-module.exports = ({ fleetArr, government, systemName, planetName }) => {
+module.exports = ({ fleetArr, government, systemName, planetName, links }) => {
   const sanitizedPlanetName = sanitizeStr(planetName)
   const sanitizedSystemName = sanitizeStr(systemName)
   const largeFleetChance = (2000 + Math.random() * 3000) >> 0
   const smallFleetChance = (500 + Math.random() * 1500) >> 0
+
+	// invade nearby territories
+  const linkedFleets = links.reduce((gameStr, link) => {
+    const linkedSystem = selectBlockWith({ _value: link }, 'map/systems')
+    const linkedFleet = Array.isArray(linkedSystem.fleet) ? linkedSystem.fleet : [linkedSystem.fleet]
+
+    gameStr += `
+	system "${link}"
+		fleet "Small Player Fleet" ${smallFleetChance + 500}
+		fleet "Large Player Fleet" ${largeFleetChance + 2000}
+		${linkedFleet
+			.reduce((fleetStr, fleet) => {
+  fleetStr += `fleet ${fleet}\n\t\t`
+  return fleetStr
+}, '')}
+`
+
+    return gameStr
+  }, '')
 
   return `
 mission "Player Conquer: ${sanitizedSystemName}"
@@ -38,5 +58,11 @@ event "Player Conquer: ${sanitizedSystemName}"
 		government "Player Faction"
 		fleet "Small Player Fleet" ${smallFleetChance}
 		fleet "Large Player Fleet" ${largeFleetChance}
+		${fleetArr
+			.reduce((fleetStr, fleet) => {
+  fleetStr += `fleet ${fleet}\n\t\t`
+  return fleetStr
+}, '')}
+	${linkedFleets}
 `
 }
