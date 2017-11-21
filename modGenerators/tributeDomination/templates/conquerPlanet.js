@@ -30,7 +30,8 @@ module.exports = ({ fleetArr, government, systemName, planetName, links }) => {
 
   return `
 mission "Player Conquer: ${sanitizedSystemName}"
-	job
+  job
+  repeat
 	name "Conquer: ${sanitizedSystemName}"
 	description "Take over the system in your name."
 	source "${sanitizedPlanetName}"

@@ -1170,23 +1170,6 @@
   },
   {
     "_type": "planet",
-    "_value": "\"Ember Reaches\"",
-    "attributes": "\"requires: quantum keystone\"",
-    "description": "\"\""
-  },
-  {
-    "_type": "planet",
-    "_value": "\"Ember Threshold\"",
-    "attributes": "\"requires: quantum keystone\"",
-    "description": "\"\""
-  },
-  {
-    "_type": "planet",
-    "_value": "\"Ember Wormhole\"",
-    "description": "\"\""
-  },
-  {
-    "_type": "planet",
     "_value": "\"Esayaku Fen\"",
     "attributes": "korath",
     "landscape": "land/badlands5",
@@ -3443,12 +3426,6 @@
   },
   {
     "_type": "planet",
-    "_value": "\"Remnant Wormhole\"",
-    "attributes": "\"requires: quantum keystone\"",
-    "description": "\"\""
-  },
-  {
-    "_type": "planet",
     "_value": "\"Remote Blue\"",
     "attributes": "kimek urban",
     "landscape": "land/water5",
@@ -4847,11 +4824,6 @@
       "threshold": 2500,
       "fleet": "\"Large Militia\" 5"
     }
-  },
-  {
-    "_type": "planet",
-    "_value": "\"Wormhole Alpha\"",
-    "description": "\"\""
   },
   {
     "_type": "planet",
