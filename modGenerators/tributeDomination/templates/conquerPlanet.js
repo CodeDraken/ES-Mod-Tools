@@ -2,16 +2,19 @@ const { selectBlockWith } = require('../../../util/grabDataUtil')
 const { sanitizeStr } = require('../../../util/stringUtil')
 
 // generates player faction relations with other governments
-module.exports = ({ fleetArr, government, systemName, planetName, links }) => {
+module.exports = ({ fleetArr, government, systemName, planetName, links, shipyard }) => {
   const sanitizedPlanetName = sanitizeStr(planetName)
   const sanitizedSystemName = sanitizeStr(systemName)
   const largeFleetChance = (2000 + Math.random() * 3000) >> 0
   const smallFleetChance = (500 + Math.random() * 1500) >> 0
+  const captureShipyard = shipyard
+		? `planet ${sanitizedPlanetName}\n\t\tadd shipyard "Captured Ships"`
+		: ''
 
 	// invade nearby territories
   const linkedFleets = links.reduce((gameStr, link) => {
-    const linkedSystem = selectBlockWith({ _value: link }, 'map/systems')
-    const linkedFleet = Array.isArray(linkedSystem.fleet) ? linkedSystem.fleet : [linkedSystem.fleet]
+  const linkedSystem = selectBlockWith({ _value: link }, 'map/systems')
+  const linkedFleet = Array.isArray(linkedSystem.fleet) ? linkedSystem.fleet : [linkedSystem.fleet]
 
 //   ${linkedFleet
 //     .reduce((fleetStr, fleet) => {
@@ -19,19 +22,19 @@ module.exports = ({ fleetArr, government, systemName, planetName, links }) => {
 // return fleetStr
 // }, '')}
 
-    gameStr += `
+  gameStr += `
 	system "${link}"
 		add fleet "Small Player Fleet" ${smallFleetChance}
 		add fleet "Large Player Fleet" ${largeFleetChance}
 `
 
-    return gameStr
-  }, '')
+  return gameStr
+}, '')
 
-  return `
+return `
 mission "Player Conquer: ${sanitizedSystemName}"
-  job
-  repeat
+	job
+	repeat
 	name "Conquer: ${sanitizedSystemName}"
 	description "Take over the system in your name."
 	source "${sanitizedPlanetName}"
@@ -56,6 +59,7 @@ mission "Player Conquer: ${sanitizedSystemName}"
 		event "Player Conquer: ${sanitizedSystemName}"
 
 event "Player Conquer: ${sanitizedSystemName}"
+	${captureShipyard}
 	system "${sanitizedSystemName}"
 		government "Player Faction"
 		add fleet "Small Player Fleet" ${smallFleetChance}

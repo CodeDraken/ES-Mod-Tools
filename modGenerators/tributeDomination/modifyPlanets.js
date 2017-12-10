@@ -140,7 +140,8 @@ const modifyPlanets = (planets = planetsData) => {
         government,
         systemName: planetSystem._value,
         planetName: _value,
-        links: Array.isArray(link) ? link : [link]
+        links: Array.isArray(link) ? link : [link],
+        shipyard: 'shipyard' in planet
       }) + '\n'
 
       // console.log(updatedPlanet)
