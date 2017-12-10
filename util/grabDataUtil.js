@@ -9,6 +9,9 @@ const data = {
     sales: require('../json/globals/sales.json'),
     governments: require('../json/globals/governments.json')
   },
+  ships: {
+    ships: require('../json/ships/ships.json')
+  },
   map: {
     planets: require('../json/map/map-planets.json'),
     systems: require('../json/map/map-systems.json')
@@ -72,7 +75,7 @@ const selectFrom = (attr, _path, keyValues) => {
   return selectBlockWith(keyValues, _path)[attr] || null
 }
 
-// select all attributes from a file
+// select all blocks/attributes from a file
 const selectAllFrom = (attr, _path) => {
   const selectedData = []
   const readData = isDataPath(_path)
