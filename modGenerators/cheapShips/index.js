@@ -3,7 +3,7 @@
 // ships have reduced stats
 
 const { selectAllBlocksWith } = require('../../util/grabDataUtil')
-const { objToGame } = require('../../util/jsonToGame')
+const { objArrToGame } = require('../../util/jsonToGame')
 
 // all human ships
 let ships = selectAllBlocksWith({ _type: 'ship' }, 'ships/ships')
@@ -34,6 +34,6 @@ if (!modifiers.heavyShips) {
 }
 
 // ships object to game file format
-console.log(objToGame(ships))
+console.log(objArrToGame(ships))
 
 // save to file
