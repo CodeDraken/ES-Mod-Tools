@@ -1,0 +1,18 @@
+"Buccaneer Bay"
+	shipyard "Captured Ships"
+
+Covert
+	shipyard "Captured Ships"
+
+Freedom
+	shipyard "Captured Ships"
+
+Greenrock
+	shipyard "Captured Ships"
+
+Haven
+	shipyard "Captured Ships"
+
+"Smuggler's Den"
+	shipyard "Captured Ships"
+

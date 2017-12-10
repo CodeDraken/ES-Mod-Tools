@@ -11,12 +11,27 @@ const { generateSales } = require('../../util/generateSales')
 // all human ships
 let ships = selectAllBlocksWith({ _type: 'ship' }, 'ships/ships')
 
+// planets to add the shipyard to | pirate planets with shipyards
+let planets = selectAllBlocksWith({ _type: 'planet' }, 'map/planets')
+  .filter(planet => planet.attributes && planet.attributes.includes('pirate'))
+  .filter(planet => 'shipyard' in planet)
+  .map(planet => planet._value)
+
+const config = {
+  shipyard: 'shipyard "Captured Ships"'
+}
+
 const modifiers = {
   cost: 0.50,
   shields: 0.80,
   hull: 0.70,
   drag: 1.10,
-  heavyShips: false
+  heavyWarships: false
+}
+
+// dont include heavy warships ( for some balance )
+if (!modifiers.heavyWarships) {
+  ships = ships.filter(ship => ship.attributes.category !== '"Heavy Warship"')
 }
 
 // modify the ships reducing their stats and cost
@@ -32,17 +47,19 @@ ships = ships.map(ship => ({
   }
 }))
 
-// dont include heavy warships ( for some balance )
-if (!modifiers.heavyShips) {
-  ships = ships.filter(ship => ship.attributes.category !== '"Heavy Warship"')
-}
-
-const sales = generateSales('shipyard "Captured Ships"', ships.map(ship => ship._value))
+const sales = generateSales(config.shipyard, ships.map(ship => ship._value))
 
 // ships object to game file format
 const shipsGameStr = objArrToGame(ships).join('\n')
+
+// add shipyard to planets
+const planetShipyards = planets.reduce((str, planet) =>
+  str + planet + '\n' + '\t' + config.shipyard + '\n\n'
+, '')
 
 // save to file
 writeText('./modGenerators/cheapShips/cheap-ships/data/cheap-ships.txt', shipsGameStr)
 
 writeText('./modGenerators/cheapShips/cheap-ships/data/cheap-sales.txt', sales)
+
+writeText('./modGenerators/cheapShips/cheap-ships/data/cheap-shipyards.txt', planetShipyards)

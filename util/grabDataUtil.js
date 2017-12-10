@@ -75,7 +75,7 @@ const selectFrom = (attr, _path, keyValues) => {
   return selectBlockWith(keyValues, _path)[attr] || null
 }
 
-// select all blocks/attributes from a file
+// select all attributes from a file
 const selectAllFrom = (attr, _path) => {
   const selectedData = []
   const readData = isDataPath(_path)
