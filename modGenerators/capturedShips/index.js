@@ -1,4 +1,4 @@
-// CHEAP SHIPS
+// CAPTURED SHIPS
 // adds discounted human ships to its own sales group
 // ships have reduced stats
 
@@ -62,8 +62,8 @@ const planetShipyards = planets.reduce((str, planet) =>
 , '')
 
 // save to file
-writeText('./modGenerators/cheapShips/cheap-ships/data/cheap-ships.txt', shipsGameStr)
+writeText('./modGenerators/capturedShips/captured-ships/data/captured-ships.txt', shipsGameStr)
 
-writeText('./modGenerators/cheapShips/cheap-ships/data/cheap-sales.txt', sales)
+writeText('./modGenerators/capturedShips/captured-ships/data/captured-sales.txt', sales)
 
-writeText('./modGenerators/cheapShips/cheap-ships/data/cheap-shipyards.txt', planetShipyards)
+writeText('./modGenerators/capturedShips/captured-ships/data/captured-shipyards.txt', planetShipyards)
