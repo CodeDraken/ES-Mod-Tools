@@ -2,4 +2,4 @@ A (mostly) programmatically generated mod that adds captured ships with reduced 
 
 Author: Legolas @CodeDraken
 
-Current version: v0.0.1
+Current version: v1.0.0

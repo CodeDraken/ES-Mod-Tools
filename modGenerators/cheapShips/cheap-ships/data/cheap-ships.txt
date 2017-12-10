@@ -538,8 +538,6 @@ ship "captured Combat Drone"
 	sprite "ship/combat drone"
 	attributes
 		category "Drone"
-		licenses
-			Navy
 		"cost" 41500
 		"hull" 489.99999999999994
 		"mass" 20
@@ -817,8 +815,6 @@ ship "captured Frigate"
 	sprite "ship/frigate"
 	attributes
 		category "Medium Warship"
-		licenses
-			Navy
 		"cost" 2600000
 		"shields" 6400
 		"hull" 1750
@@ -909,8 +905,6 @@ ship "captured Gunboat"
 	sprite "ship/gunboat"
 	attributes
 		category "Light Warship"
-		licenses
-			Navy
 		"cost" 1600000
 		"shields" 4640
 		"hull" 979.9999999999999
@@ -1538,8 +1532,6 @@ ship "captured Rainmaker"
 	sprite "ship/rainmaker"
 	attributes
 		category "Light Warship"
-		licenses
-			Navy
 		"cost" 790000
 		"shields" 2800
 		"hull" 840
@@ -1766,8 +1758,6 @@ ship "captured Skein"
 	sprite "ship/skein"
 	attributes
 		category "Medium Warship"
-		licenses
-			"Militia Carrier"
 		"cost" 1750000
 		"shields" 2640
 		"hull" 4690
@@ -1993,8 +1983,6 @@ ship "captured Surveillance Drone"
 	sprite "ship/surveillance drone"
 	attributes
 		category "Drone"
-		licenses
-			Navy
 		"cost" 25000
 		"hull" 210
 		"mass" 15

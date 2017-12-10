@@ -8,8 +8,12 @@ const { writeText } = require('../../util/jsonToFile')
 const { sanitizeStr } = require('../../util/stringUtil')
 const { generateSales } = require('../../util/generateSales')
 
-// all human ships
+// all human ships | no licenses required
 let ships = selectAllBlocksWith({ _type: 'ship' }, 'ships/ships')
+  .map(ship => {
+    delete ship.attributes.licenses
+    return ship
+  })
 
 // planets to add the shipyard to | pirate planets with shipyards
 let planets = selectAllBlocksWith({ _type: 'planet' }, 'map/planets')
