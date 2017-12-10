@@ -4,6 +4,9 @@
 
 const { selectAllBlocksWith } = require('../../util/grabDataUtil')
 const { objArrToGame } = require('../../util/jsonToGame')
+const { writeText } = require('../../util/jsonToFile')
+const { sanitizeStr } = require('../../util/stringUtil')
+const { generateSales } = require('../../util/generateSales')
 
 // all human ships
 let ships = selectAllBlocksWith({ _type: 'ship' }, 'ships/ships')
@@ -19,6 +22,7 @@ const modifiers = {
 // modify the ships reducing their stats and cost
 ships = ships.map(ship => ({
   ...ship, // keep all values then override below
+  _value: `"captured ${sanitizeStr(ship._value)}"`,
   attributes: {
     ...ship.attributes,
     '"cost"': ship.attributes['"cost"'] * modifiers.cost,
@@ -33,7 +37,12 @@ if (!modifiers.heavyShips) {
   ships = ships.filter(ship => ship.attributes.category !== '"Heavy Warship"')
 }
 
+const sales = generateSales('shipyard "Captured Ships"', ships.map(ship => ship._value))
+
 // ships object to game file format
-console.log(objArrToGame(ships))
+const shipsGameStr = objArrToGame(ships).join('\n')
 
 // save to file
+writeText('./modGenerators/cheapShips/cheap-ships/data/cheap-ships.txt', shipsGameStr)
+
+writeText('./modGenerators/cheapShips/cheap-ships/data/cheap-sales.txt', sales)
