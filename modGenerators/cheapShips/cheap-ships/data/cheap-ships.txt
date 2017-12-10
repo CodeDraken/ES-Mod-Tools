@@ -58,7 +58,7 @@ ship "captured Argosy"
 		"required crew" 4
 		"bunks" 14
 		"mass" 330
-		"drag" 6.490000000000001
+		"drag" 6.49
 		"heat dissipation" 0.7
 		"fuel capacity" 400
 		"cargo space" 120
@@ -107,7 +107,7 @@ ship "captured Arrow"
 		"required crew" 1
 		"bunks" 5
 		"mass" 130
-		"drag" 2.9700000000000006
+		"drag" 2.97
 		"heat dissipation" 0.85
 		"fuel capacity" 400
 		"cargo space" 10
@@ -151,7 +151,7 @@ ship "captured Barb"
 		"required crew" 1
 		"bunks" 2
 		"mass" 20
-		"drag" 0.8800000000000001
+		"drag" 0.88
 		"heat dissipation" 0.78
 		"outfit space" 85
 		"weapon capacity" 24
@@ -178,7 +178,7 @@ ship "captured Barb Barb (Proton)"
 		"required crew" 1
 		"bunks" 1
 		"mass" 20
-		"drag" 0.8800000000000001
+		"drag" 0.88
 		"heat dissipation" 0.78
 		"outfit space" 85
 		"weapon capacity" 28
@@ -204,7 +204,7 @@ ship "captured Bastion"
 		"required crew" 32
 		"bunks" 47
 		"mass" 580
-		"drag" 11.330000000000002
+		"drag" 11.33
 		"heat dissipation" 0.5
 		"fuel capacity" 500
 		"cargo space" 110
@@ -255,7 +255,7 @@ ship "captured Behemoth"
 		"required crew" 12
 		"bunks" 30
 		"mass" 540
-		"drag" 12.870000000000001
+		"drag" 12.87
 		"heat dissipation" 0.4
 		"fuel capacity" 600
 		"cargo space" 490
@@ -304,7 +304,7 @@ ship "captured Berserker"
 		"required crew" 1
 		"bunks" 2
 		"mass" 110
-		"drag" 2.4200000000000004
+		"drag" 2.42
 		"heat dissipation" 0.85
 		"fuel capacity" 400
 		"cargo space" 10
@@ -427,7 +427,7 @@ ship "captured Boxwing"
 		"required crew" 1
 		"bunks" 1
 		"mass" 45
-		"drag" 0.649
+		"drag" 0.65
 		"heat dissipation" 0.27
 		"outfit space" 45
 		"engine capacity" 28
@@ -451,7 +451,7 @@ ship "captured Bulk Freighter"
 		"required crew" 6
 		"bunks" 18
 		"mass" 870
-		"drag" 17.380000000000003
+		"drag" 17.38
 		"heat dissipation" 0.5
 		"fuel capacity" 600
 		"cargo space" 600
@@ -543,7 +543,7 @@ ship "captured Combat Drone"
 		"cost" 41500
 		"hull" 489.99999999999994
 		"mass" 20
-		"drag" 0.649
+		"drag" 0.65
 		"heat dissipation" 0.9
 		"outfit space" 58
 		"weapon capacity" 8
@@ -577,7 +577,7 @@ ship "captured Corvette"
 		"required crew" 8
 		"bunks" 32
 		"mass" 150
-		"drag" 3.8500000000000005
+		"drag" 3.85
 		"heat dissipation" 0.7
 		"fuel capacity" 500
 		"cargo space" 40
@@ -624,7 +624,7 @@ ship "captured Dagger"
 		"required crew" 1
 		"bunks" 1
 		"mass" 20
-		"drag" 0.6930000000000001
+		"drag" 0.69
 		"heat dissipation" 0.9
 		"outfit space" 90
 		"weapon capacity" 20
@@ -659,7 +659,7 @@ ship "captured Finch"
 		"required crew" 1
 		"bunks" 1
 		"mass" 40
-		"drag" 0.913
+		"drag" 0.91
 		"heat dissipation" 0.85
 		"outfit space" 110
 		"weapon capacity" 20
@@ -825,7 +825,7 @@ ship "captured Frigate"
 		"required crew" 21
 		"bunks" 44
 		"mass" 310
-		"drag" 5.720000000000001
+		"drag" 5.72
 		"heat dissipation" 0.7
 		"fuel capacity" 500
 		"cargo space" 35
@@ -875,7 +875,7 @@ ship "captured Fury"
 		"required crew" 1
 		"bunks" 3
 		"mass" 70
-		"drag" 1.7600000000000002
+		"drag" 1.76
 		"heat dissipation" 0.9
 		"fuel capacity" 600
 		"cargo space" 15
@@ -917,7 +917,7 @@ ship "captured Gunboat"
 		"required crew" 7
 		"bunks" 12
 		"mass" 150
-		"drag" 3.4100000000000006
+		"drag" 3.41
 		"heat dissipation" 0.8
 		"fuel capacity" 600
 		"cargo space" 50
@@ -1059,7 +1059,7 @@ ship "captured Hauler III"
 		"required crew" 3
 		"bunks" 12
 		"mass" 470
-		"drag" 13.750000000000002
+		"drag" 13.75
 		"heat dissipation" 0.6
 		"fuel capacity" 400
 		"cargo space" 390
@@ -1108,7 +1108,7 @@ ship "captured Hawk"
 		"required crew" 2
 		"bunks" 4
 		"mass" 150
-		"drag" 2.3100000000000005
+		"drag" 2.31
 		"heat dissipation" 0.8
 		"fuel capacity" 300
 		"cargo space" 30
@@ -1147,7 +1147,7 @@ ship "captured Headhunter"
 		"required crew" 2
 		"bunks" 4
 		"mass" 120
-		"drag" 2.8600000000000003
+		"drag" 2.86
 		"heat dissipation" 0.8
 		"fuel capacity" 400
 		"cargo space" 50
@@ -1189,7 +1189,7 @@ ship "captured Heavy Shuttle"
 		"required crew" 1
 		"bunks" 8
 		"mass" 110
-		"drag" 2.3100000000000005
+		"drag" 2.31
 		"heat dissipation" 0.8
 		"fuel capacity" 500
 		"cargo space" 35
@@ -1261,7 +1261,7 @@ ship "captured Manta"
 		"required crew" 6
 		"bunks" 10
 		"mass" 170
-		"drag" 5.170000000000001
+		"drag" 5.17
 		"heat dissipation" 0.8
 		"fuel capacity" 400
 		"cargo space" 20
@@ -1308,7 +1308,7 @@ ship "captured Modified Argosy"
 		"required crew" 5
 		"bunks" 12
 		"mass" 250
-		"drag" 6.820000000000001
+		"drag" 6.82
 		"heat dissipation" 0.6
 		"fuel capacity" 400
 		"cargo space" 60
@@ -1355,7 +1355,7 @@ ship "captured Mule"
 		"required crew" 6
 		"bunks" 43
 		"mass" 320
-		"drag" 6.2700000000000005
+		"drag" 6.27
 		"heat dissipation" 0.5
 		"fuel capacity" 600
 		"cargo space" 270
@@ -1504,7 +1504,7 @@ ship "captured Quicksilver"
 		"required crew" 3
 		"bunks" 6
 		"mass" 120
-		"drag" 2.9700000000000006
+		"drag" 2.97
 		"heat dissipation" 0.8
 		"fuel capacity" 400
 		"cargo space" 10
@@ -1774,7 +1774,7 @@ ship "captured Skein"
 		"required crew" 7
 		"bunks" 18
 		"mass" 470
-		"drag" 13.750000000000002
+		"drag" 13.75
 		"heat dissipation" 0.71
 		"fuel capacity" 700
 		"cargo space" 120
@@ -1952,7 +1952,7 @@ ship "captured Star Queen"
 		"required crew" 43
 		"bunks" 112
 		"mass" 230
-		"drag" 6.050000000000001
+		"drag" 6.05
 		"heat dissipation" 0.65
 		"fuel capacity" 500
 		"cargo space" 60
@@ -1998,7 +1998,7 @@ ship "captured Surveillance Drone"
 		"cost" 25000
 		"hull" 210
 		"mass" 15
-		"drag" 0.5830000000000001
+		"drag" 0.58
 		"heat dissipation" 0.9
 		"outfit space" 53
 		"weapon capacity" 0

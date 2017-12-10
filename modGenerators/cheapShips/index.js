@@ -43,7 +43,7 @@ ships = ships.map(ship => ({
     '"cost"': ship.attributes['"cost"'] * modifiers.cost,
     '"shields"': ship.attributes['"shields"'] * modifiers.shields,
     '"hull"': ship.attributes['"hull"'] * modifiers.hull,
-    '"drag"': ship.attributes['"drag"'] * modifiers.drag
+    '"drag"': +(ship.attributes['"drag"'] * modifiers.drag).toFixed(2)
   }
 }))
 
