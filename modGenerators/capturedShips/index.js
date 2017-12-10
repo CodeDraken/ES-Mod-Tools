@@ -5,15 +5,18 @@
 const { selectAllBlocksWith } = require('../../util/grabDataUtil')
 const { objArrToGame } = require('../../util/jsonToGame')
 const { writeText } = require('../../util/jsonToFile')
-const { sanitizeStr } = require('../../util/stringUtil')
+const { sanitizeStr, sanitizeKeys } = require('../../util/stringUtil')
 const { generateSales } = require('../../util/generateSales')
 
 // all human ships | no licenses required
 let ships = selectAllBlocksWith({ _type: 'ship' }, 'ships/ships')
+  .map(sanitizeKeys)
   .map(ship => {
     delete ship.attributes.licenses
     return ship
   })
+
+console.log(ships[0])
 
 // planets to add the shipyard to | pirate planets with shipyards
 let planets = selectAllBlocksWith({ _type: 'planet' }, 'map/planets')
@@ -44,10 +47,10 @@ ships = ships.map(ship => ({
   _value: `"captured ${sanitizeStr(ship._value)}"`,
   attributes: {
     ...ship.attributes,
-    '"cost"': ship.attributes['"cost"'] * modifiers.cost,
-    '"shields"': ship.attributes['"shields"'] * modifiers.shields,
-    '"hull"': ship.attributes['"hull"'] * modifiers.hull,
-    '"drag"': +(ship.attributes['"drag"'] * modifiers.drag).toFixed(2)
+    cost: ship.attributes.cost * modifiers.cost,
+    shields: ship.attributes.shields * modifiers.shields || 0,
+    hull: ship.attributes.hull * modifiers.hull,
+    drag: +(ship.attributes.drag * modifiers.drag).toFixed(2)
   }
 }))
 

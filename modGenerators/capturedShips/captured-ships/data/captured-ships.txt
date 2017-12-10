@@ -2,13 +2,13 @@ ship "captured Aerie"
 	sprite "ship/aerie"
 	attributes
 		category "Medium Warship"
-		"cost" 1750000
-		"shields" 4560
-		"hull" 1330
+		cost 1750000
+		shields 4560
+		hull 1330
 		"required crew" 10
-		"bunks" 28
-		"mass" 130
-		"drag" 4.51
+		bunks 28
+		mass 130
+		drag 4.51
 		"heat dissipation" 0.7
 		"fuel capacity" 500
 		"cargo space" 50
@@ -52,13 +52,13 @@ ship "captured Argosy"
 	sprite "ship/argosy"
 	attributes
 		category "Light Freighter"
-		"cost" 980000
-		"shields" 3360
-		"hull" 1819.9999999999998
+		cost 980000
+		shields 3360
+		hull 1819.9999999999998
 		"required crew" 4
-		"bunks" 14
-		"mass" 330
-		"drag" 6.49
+		bunks 14
+		mass 330
+		drag 6.49
 		"heat dissipation" 0.7
 		"fuel capacity" 400
 		"cargo space" 120
@@ -101,13 +101,13 @@ ship "captured Arrow"
 	sprite "ship/arrow"
 	attributes
 		category "Transport"
-		"cost" 600000
-		"shields" 1600
-		"hull" 280
+		cost 600000
+		shields 1600
+		hull 280
 		"required crew" 1
-		"bunks" 5
-		"mass" 130
-		"drag" 2.97
+		bunks 5
+		mass 130
+		drag 2.97
 		"heat dissipation" 0.85
 		"fuel capacity" 400
 		"cargo space" 10
@@ -145,13 +145,13 @@ ship "captured Barb"
 	sprite "ship/barb"
 	attributes
 		category "Fighter"
-		"cost" 25000
-		"shields" 640
-		"hull" 140
+		cost 25000
+		shields 640
+		hull 140
 		"required crew" 1
-		"bunks" 2
-		"mass" 20
-		"drag" 0.88
+		bunks 2
+		mass 20
+		drag 0.88
 		"heat dissipation" 0.78
 		"outfit space" 85
 		"weapon capacity" 24
@@ -172,13 +172,13 @@ ship "captured Barb Barb (Proton)"
 	sprite "ship/barbp"
 	attributes
 		category "Fighter"
-		"cost" 25000
-		"shields" 640
-		"hull" 140
+		cost 25000
+		shields 640
+		hull 140
 		"required crew" 1
-		"bunks" 1
-		"mass" 20
-		"drag" 0.88
+		bunks 1
+		mass 20
+		drag 0.88
 		"heat dissipation" 0.78
 		"outfit space" 85
 		"weapon capacity" 28
@@ -198,13 +198,13 @@ ship "captured Bastion"
 	sprite "ship/bastion"
 	attributes
 		category "Medium Warship"
-		"cost" 1780000
-		"shields" 5360
-		"hull" 2940
+		cost 1780000
+		shields 5360
+		hull 2940
 		"required crew" 32
-		"bunks" 47
-		"mass" 580
-		"drag" 11.33
+		bunks 47
+		mass 580
+		drag 11.33
 		"heat dissipation" 0.5
 		"fuel capacity" 500
 		"cargo space" 110
@@ -249,13 +249,13 @@ ship "captured Behemoth"
 	sprite "ship/behemoth"
 	attributes
 		category "Heavy Freighter"
-		"cost" 5400000
-		"shields" 6080
-		"hull" 4410
+		cost 5400000
+		shields 6080
+		hull 4410
 		"required crew" 12
-		"bunks" 30
-		"mass" 540
-		"drag" 12.87
+		bunks 30
+		mass 540
+		drag 12.87
 		"heat dissipation" 0.4
 		"fuel capacity" 600
 		"cargo space" 490
@@ -298,13 +298,13 @@ ship "captured Berserker"
 	sprite "ship/berserker"
 	attributes
 		category "Interceptor"
-		"cost" 260000
-		"shields" 1760
-		"hull" 350
+		cost 260000
+		shields 1760
+		hull 350
 		"required crew" 1
-		"bunks" 2
-		"mass" 110
-		"drag" 2.42
+		bunks 2
+		mass 110
+		drag 2.42
 		"heat dissipation" 0.85
 		"fuel capacity" 400
 		"cargo space" 10
@@ -339,13 +339,13 @@ ship "captured Blackbird"
 	sprite "ship/blackbird"
 	attributes
 		category "Transport"
-		"cost" 1115000
-		"shields" 3520
-		"hull" 630
+		cost 1115000
+		shields 3520
+		hull 630
 		"required crew" 3
-		"bunks" 28
-		"mass" 220
-		"drag" 5.5
+		bunks 28
+		mass 220
+		drag 5.5
 		"heat dissipation" 0.7
 		"fuel capacity" 700
 		"cargo space" 60
@@ -381,13 +381,13 @@ ship "captured Bounder"
 	sprite "ship/bounder"
 	attributes
 		category "Transport"
-		"cost" 570000
-		"shields" 1760
-		"hull" 489.99999999999994
+		cost 570000
+		shields 1760
+		hull 489.99999999999994
 		"required crew" 1
-		"bunks" 17
-		"mass" 130
-		"drag" 4.07
+		bunks 17
+		mass 130
+		drag 4.07
 		"heat dissipation" 0.8
 		"fuel capacity" 900
 		"cargo space" 40
@@ -421,13 +421,13 @@ ship "captured Boxwing"
 	sprite "ship/boxwing"
 	attributes
 		category "Fighter"
-		cost 369000
-		"shields" 320
-		"hull" 560
+		cost 184500
+		shields 320
+		hull 560
 		"required crew" 1
-		"bunks" 1
-		"mass" 45
-		"drag" 0.65
+		bunks 1
+		mass 45
+		drag 0.65
 		"heat dissipation" 0.27
 		"outfit space" 45
 		"engine capacity" 28
@@ -437,7 +437,6 @@ ship "captured Boxwing"
 			"shield damage" 120
 			"hull damage" 60
 			"hit force" 180
-		"cost" NaN
 	outfits
 		"nGVF-AA Fuel Cell"
 
@@ -445,13 +444,13 @@ ship "captured Bulk Freighter"
 	sprite "ship/bulk freighter"
 	attributes
 		category "Heavy Freighter"
-		"cost" 4700000
-		"shields" 3200
-		"hull" 5320
+		cost 4700000
+		shields 3200
+		hull 5320
 		"required crew" 6
-		"bunks" 18
-		"mass" 870
-		"drag" 17.38
+		bunks 18
+		mass 870
+		drag 17.38
 		"heat dissipation" 0.5
 		"fuel capacity" 600
 		"cargo space" 600
@@ -494,13 +493,13 @@ ship "captured Clipper"
 	sprite "ship/clipper"
 	attributes
 		category "Light Freighter"
-		"cost" 450000
-		"shields" 2160
-		"hull" 560
+		cost 450000
+		shields 2160
+		hull 560
 		"required crew" 3
-		"bunks" 9
-		"mass" 150
-		"drag" 4.07
+		bunks 9
+		mass 150
+		drag 4.07
 		"heat dissipation" 0.8
 		"fuel capacity" 500
 		"cargo space" 70
@@ -515,7 +514,7 @@ ship "captured Clipper"
 	outfits
 		"Beam Laser" 2
 		"Javelin Pod" 2
-		"Javelin" 400
+		Javelin 400
 		"nGVF-DD Fuel Cell"
 		"LP072a Battery Pack"
 		"D23-QP Shield Generator"
@@ -538,21 +537,21 @@ ship "captured Combat Drone"
 	sprite "ship/combat drone"
 	attributes
 		category "Drone"
-		"cost" 41500
-		"hull" 489.99999999999994
-		"mass" 20
-		"drag" 0.65
+		cost 41500
+		hull 489.99999999999994
+		mass 20
+		drag 0.65
 		"heat dissipation" 0.9
 		"outfit space" 58
 		"weapon capacity" 8
 		"engine capacity" 28
-		"automaton" 1
+		automaton 1
 		weapon
 			"blast radius" 5
 			"shield damage" 50
 			"hull damage" 25
 			"hit force" 75
-		"shields" NaN
+		shields 0
 	outfits
 		"Beam Laser"
 		"nGVF-AA Fuel Cell"
@@ -569,13 +568,13 @@ ship "captured Corvette"
 	sprite "ship/corvette"
 	attributes
 		category "Medium Warship"
-		"cost" 2200000
-		"shields" 4880
-		"hull" 840
+		cost 2200000
+		shields 4880
+		hull 840
 		"required crew" 8
-		"bunks" 32
-		"mass" 150
-		"drag" 3.85
+		bunks 32
+		mass 150
+		drag 3.85
 		"heat dissipation" 0.7
 		"fuel capacity" 500
 		"cargo space" 40
@@ -616,13 +615,13 @@ ship "captured Dagger"
 	sprite "ship/dagger"
 	attributes
 		category "Fighter"
-		"cost" 64500
-		"shields" 800
-		"hull" 210
+		cost 64500
+		shields 800
+		hull 210
 		"required crew" 1
-		"bunks" 1
-		"mass" 20
-		"drag" 0.69
+		bunks 1
+		mass 20
+		drag 0.69
 		"heat dissipation" 0.9
 		"outfit space" 90
 		"weapon capacity" 20
@@ -651,13 +650,13 @@ ship "captured Finch"
 	sprite "ship/finch"
 	attributes
 		category "Fighter"
-		"cost" 63000
-		"shields" 880
-		"hull" 140
+		cost 63000
+		shields 880
+		hull 140
 		"required crew" 1
-		"bunks" 1
-		"mass" 40
-		"drag" 0.91
+		bunks 1
+		mass 40
+		drag 0.91
 		"heat dissipation" 0.85
 		"outfit space" 110
 		"weapon capacity" 20
@@ -686,13 +685,13 @@ ship "captured Firebird"
 	sprite "ship/firebird"
 	attributes
 		category "Medium Warship"
-		"cost" 1850000
-		"shields" 5120
-		"hull" 1959.9999999999998
+		cost 1850000
+		shields 5120
+		hull 1959.9999999999998
 		"required crew" 7
-		"bunks" 22
-		"mass" 290
-		"drag" 4.95
+		bunks 22
+		mass 290
+		drag 4.95
 		"heat dissipation" 0.6
 		"fuel capacity" 400
 		"cargo space" 50
@@ -733,13 +732,13 @@ ship "captured Flivver"
 	sprite "ship/flivver"
 	attributes
 		category "Transport"
-		"cost" 90000
-		"shields" 1120
-		"hull" 140
+		cost 90000
+		shields 1120
+		hull 140
 		"required crew" 1
-		"bunks" 3
-		"mass" 40
-		"drag" 1.1
+		bunks 3
+		mass 40
+		drag 1.1
 		"heat dissipation" 0.9
 		"fuel capacity" 500
 		"cargo space" 5
@@ -772,13 +771,13 @@ ship "captured Freighter"
 	sprite "ship/freighter"
 	attributes
 		category "Light Freighter"
-		"cost" 365000
-		"shields" 1600
-		"hull" 1400
+		cost 365000
+		shields 1600
+		hull 1400
 		"required crew" 2
-		"bunks" 7
-		"mass" 240
-		"drag" 6.16
+		bunks 7
+		mass 240
+		drag 6.16
 		"heat dissipation" 0.6
 		"fuel capacity" 600
 		"cargo space" 150
@@ -815,13 +814,13 @@ ship "captured Frigate"
 	sprite "ship/frigate"
 	attributes
 		category "Medium Warship"
-		"cost" 2600000
-		"shields" 6400
-		"hull" 1750
+		cost 2600000
+		shields 6400
+		hull 1750
 		"required crew" 21
-		"bunks" 44
-		"mass" 310
-		"drag" 5.72
+		bunks 44
+		mass 310
+		drag 5.72
 		"heat dissipation" 0.7
 		"fuel capacity" 500
 		"cargo space" 35
@@ -836,7 +835,7 @@ ship "captured Frigate"
 	outfits
 		"Particle Cannon" 2
 		"Torpedo Launcher" 2
-		"Torpedo" 60
+		Torpedo 60
 		"Blaster Turret" 3
 		"NT-200 Nucleovoltaic"
 		"LP144a Battery Pack"
@@ -865,13 +864,13 @@ ship "captured Fury"
 	sprite "ship/fury"
 	attributes
 		category "Interceptor"
-		"cost" 245000
-		"shields" 1600
-		"hull" 280
+		cost 245000
+		shields 1600
+		hull 280
 		"required crew" 1
-		"bunks" 3
-		"mass" 70
-		"drag" 1.76
+		bunks 3
+		mass 70
+		drag 1.76
 		"heat dissipation" 0.9
 		"fuel capacity" 600
 		"cargo space" 15
@@ -905,13 +904,13 @@ ship "captured Gunboat"
 	sprite "ship/gunboat"
 	attributes
 		category "Light Warship"
-		"cost" 1600000
-		"shields" 4640
-		"hull" 979.9999999999999
+		cost 1600000
+		shields 4640
+		hull 979.9999999999999
 		"required crew" 7
-		"bunks" 12
-		"mass" 150
-		"drag" 3.41
+		bunks 12
+		mass 150
+		drag 3.41
 		"heat dissipation" 0.8
 		"fuel capacity" 600
 		"cargo space" 50
@@ -949,13 +948,13 @@ ship "captured Hauler"
 	sprite "ship/hauler i"
 	attributes
 		category "Light Freighter"
-		"cost" 715000
-		"shields" 2000
-		"hull" 2590
+		cost 715000
+		shields 2000
+		hull 2590
 		"required crew" 3
-		"bunks" 12
-		"mass" 250
-		"drag" 11.55
+		bunks 12
+		mass 250
+		drag 11.55
 		"heat dissipation" 0.6
 		"fuel capacity" 400
 		"cargo space" 130
@@ -998,13 +997,13 @@ ship "captured Hauler II"
 	sprite "ship/hauler ii"
 	attributes
 		category "Heavy Freighter"
-		"cost" 1170000
-		"shields" 2320
-		"hull" 3639.9999999999995
+		cost 1170000
+		shields 2320
+		hull 3639.9999999999995
 		"required crew" 3
-		"bunks" 12
-		"mass" 360
-		"drag" 12.65
+		bunks 12
+		mass 360
+		drag 12.65
 		"heat dissipation" 0.6
 		"fuel capacity" 400
 		"cargo space" 260
@@ -1047,13 +1046,13 @@ ship "captured Hauler III"
 	sprite "ship/hauler iii"
 	attributes
 		category "Heavy Freighter"
-		"cost" 1630000
-		"shields" 2640
-		"hull" 4690
+		cost 1630000
+		shields 2640
+		hull 4690
 		"required crew" 3
-		"bunks" 12
-		"mass" 470
-		"drag" 13.75
+		bunks 12
+		mass 470
+		drag 13.75
 		"heat dissipation" 0.6
 		"fuel capacity" 400
 		"cargo space" 390
@@ -1096,13 +1095,13 @@ ship "captured Hawk"
 	sprite "ship/hawk"
 	attributes
 		category "Interceptor"
-		"cost" 335000
-		"shields" 2000
-		"hull" 350
+		cost 335000
+		shields 2000
+		hull 350
 		"required crew" 2
-		"bunks" 4
-		"mass" 150
-		"drag" 2.31
+		bunks 4
+		mass 150
+		drag 2.31
 		"heat dissipation" 0.8
 		"fuel capacity" 300
 		"cargo space" 30
@@ -1135,13 +1134,13 @@ ship "captured Headhunter"
 	sprite "ship/headhunter"
 	attributes
 		category "Light Warship"
-		"cost" 925000
-		"shields" 3040
-		"hull" 489.99999999999994
+		cost 925000
+		shields 3040
+		hull 489.99999999999994
 		"required crew" 2
-		"bunks" 4
-		"mass" 120
-		"drag" 2.86
+		bunks 4
+		mass 120
+		drag 2.86
 		"heat dissipation" 0.8
 		"fuel capacity" 400
 		"cargo space" 50
@@ -1177,13 +1176,13 @@ ship "captured Heavy Shuttle"
 	sprite "ship/heavy shuttle"
 	attributes
 		category "Transport"
-		"cost" 160000
-		"shields" 560
-		"hull" 489.99999999999994
+		cost 160000
+		shields 560
+		hull 489.99999999999994
 		"required crew" 1
-		"bunks" 8
-		"mass" 110
-		"drag" 2.31
+		bunks 8
+		mass 110
+		drag 2.31
 		"heat dissipation" 0.8
 		"fuel capacity" 500
 		"cargo space" 35
@@ -1214,13 +1213,13 @@ ship "captured Lance"
 	sprite "ship/lance"
 	attributes
 		category "Fighter"
-		"cost" 46500
-		"shields" 640
-		"hull" 280
+		cost 46500
+		shields 640
+		hull 280
 		"required crew" 1
-		"bunks" 1
-		"mass" 30
-		"drag" 0.77
+		bunks 1
+		mass 30
+		drag 0.77
 		"heat dissipation" 0.8
 		"outfit space" 100
 		"weapon capacity" 20
@@ -1249,13 +1248,13 @@ ship "captured Manta"
 	sprite "ship/manta"
 	attributes
 		category "Medium Warship"
-		"cost" 1700000
-		"shields" 4720
-		"hull" 1050
+		cost 1700000
+		shields 4720
+		hull 1050
 		"required crew" 6
-		"bunks" 10
-		"mass" 170
-		"drag" 5.17
+		bunks 10
+		mass 170
+		drag 5.17
 		"heat dissipation" 0.8
 		"fuel capacity" 400
 		"cargo space" 20
@@ -1296,13 +1295,13 @@ ship "captured Modified Argosy"
 	sprite "ship/modified argosy"
 	attributes
 		category "Light Warship"
-		"cost" 980000
-		"shields" 3840
-		"hull" 1330
+		cost 980000
+		shields 3840
+		hull 1330
 		"required crew" 5
-		"bunks" 12
-		"mass" 250
-		"drag" 6.82
+		bunks 12
+		mass 250
+		drag 6.82
 		"heat dissipation" 0.6
 		"fuel capacity" 400
 		"cargo space" 60
@@ -1343,13 +1342,13 @@ ship "captured Mule"
 	sprite "ship/mule"
 	attributes
 		category "Medium Warship"
-		"cost" 2290000
-		"shields" 4320
-		"hull" 3080
+		cost 2290000
+		shields 4320
+		hull 3080
 		"required crew" 6
-		"bunks" 43
-		"mass" 320
-		"drag" 6.27
+		bunks 43
+		mass 320
+		drag 6.27
 		"heat dissipation" 0.5
 		"fuel capacity" 600
 		"cargo space" 270
@@ -1393,13 +1392,13 @@ ship "captured Nest"
 	sprite "ship/nest"
 	attributes
 		category "Medium Warship"
-		"cost" 1250000
-		"shields" 2000
-		"hull" 2590
+		cost 1250000
+		shields 2000
+		hull 2590
 		"required crew" 5
-		"bunks" 14
-		"mass" 250
-		"drag" 11.55
+		bunks 14
+		mass 250
+		drag 11.55
 		"heat dissipation" 0.67
 		"fuel capacity" 500
 		"cargo space" 40
@@ -1444,13 +1443,13 @@ ship "captured Osprey"
 	sprite "ship/osprey"
 	attributes
 		category "Medium Warship"
-		"cost" 2200000
-		"shields" 5760
-		"hull" 1120
+		cost 2200000
+		shields 5760
+		hull 1120
 		"required crew" 9
-		"bunks" 24
-		"mass" 270
-		"drag" 6.71
+		bunks 24
+		mass 270
+		drag 6.71
 		"heat dissipation" 0.8
 		"fuel capacity" 600
 		"cargo space" 40
@@ -1492,13 +1491,13 @@ ship "captured Quicksilver"
 	sprite "ship/quicksilver"
 	attributes
 		category "Light Warship"
-		"cost" 545000
-		"shields" 2400
-		"hull" 560
+		cost 545000
+		shields 2400
+		hull 560
 		"required crew" 3
-		"bunks" 6
-		"mass" 120
-		"drag" 2.97
+		bunks 6
+		mass 120
+		drag 2.97
 		"heat dissipation" 0.8
 		"fuel capacity" 400
 		"cargo space" 10
@@ -1532,13 +1531,13 @@ ship "captured Rainmaker"
 	sprite "ship/rainmaker"
 	attributes
 		category "Light Warship"
-		"cost" 790000
-		"shields" 2800
-		"hull" 840
+		cost 790000
+		shields 2800
+		hull 840
 		"required crew" 7
-		"bunks" 14
-		"mass" 180
-		"drag" 4.18
+		bunks 14
+		mass 180
+		drag 4.18
 		"heat dissipation" 0.6
 		"fuel capacity" 500
 		"cargo space" 25
@@ -1578,13 +1577,13 @@ ship "captured Raven"
 	sprite "ship/raven"
 	attributes
 		category "Light Warship"
-		"cost" 900000
-		"shields" 3760
-		"hull" 979.9999999999999
+		cost 900000
+		shields 3760
+		hull 979.9999999999999
 		"required crew" 6
-		"bunks" 13
-		"mass" 130
-		"drag" 4.07
+		bunks 13
+		mass 130
+		drag 4.07
 		"heat dissipation" 0.8
 		"fuel capacity" 500
 		"cargo space" 30
@@ -1621,13 +1620,13 @@ ship "captured Roost"
 	sprite "ship/roost"
 	attributes
 		category "Medium Warship"
-		"cost" 1500000
-		"shields" 2320
-		"hull" 3639.9999999999995
+		cost 1500000
+		shields 2320
+		hull 3639.9999999999995
 		"required crew" 7
-		"bunks" 16
-		"mass" 360
-		"drag" 12.65
+		bunks 16
+		mass 360
+		drag 12.65
 		"heat dissipation" 0.67
 		"fuel capacity" 600
 		"cargo space" 80
@@ -1674,13 +1673,13 @@ ship "captured Scout"
 	sprite "ship/scout"
 	attributes
 		category "Transport"
-		"cost" 425000
-		"shields" 960
-		"hull" 280
+		cost 425000
+		shields 960
+		hull 280
 		"required crew" 2
-		"bunks" 12
-		"mass" 110
-		"drag" 3.74
+		bunks 12
+		mass 110
+		drag 3.74
 		"heat dissipation" 0.7
 		"fuel capacity" 800
 		"cargo space" 55
@@ -1717,17 +1716,17 @@ ship "captured Scout"
 ship "captured Shuttle"
 	sprite "ship/shuttle"
 		"frame time" 4
-		"delay" 14
+		delay 14
 		"random start frame"
 	attributes
 		category "Transport"
-		"cost" 90000
-		"shields" 400
-		"hull" 420
+		cost 90000
+		shields 400
+		hull 420
 		"required crew" 1
-		"bunks" 6
-		"mass" 70
-		"drag" 1.87
+		bunks 6
+		mass 70
+		drag 1.87
 		"heat dissipation" 0.7
 		"fuel capacity" 400
 		"cargo space" 20
@@ -1758,13 +1757,13 @@ ship "captured Skein"
 	sprite "ship/skein"
 	attributes
 		category "Medium Warship"
-		"cost" 1750000
-		"shields" 2640
-		"hull" 4690
+		cost 1750000
+		shields 2640
+		hull 4690
 		"required crew" 7
-		"bunks" 18
-		"mass" 470
-		"drag" 13.75
+		bunks 18
+		mass 470
+		drag 13.75
 		"heat dissipation" 0.71
 		"fuel capacity" 700
 		"cargo space" 120
@@ -1813,13 +1812,13 @@ ship "captured Sparrow"
 	sprite "ship/sparrow"
 	attributes
 		category "Interceptor"
-		"cost" 112500
-		"shields" 960
-		"hull" 210
+		cost 112500
+		shields 960
+		hull 210
 		"required crew" 1
-		"bunks" 2
-		"mass" 50
-		"drag" 1.1
+		bunks 2
+		mass 50
+		drag 1.1
 		"heat dissipation" 0.8
 		"fuel capacity" 300
 		"cargo space" 15
@@ -1852,13 +1851,13 @@ ship "captured Splinter"
 	sprite "ship/splinter"
 	attributes
 		category "Medium Warship"
-		"cost" 1550000
-		"shields" 4160
-		"hull" 1190
+		cost 1550000
+		shields 4160
+		hull 1190
 		"required crew" 12
-		"bunks" 21
-		"mass" 250
-		"drag" 4.4
+		bunks 21
+		mass 250
+		drag 4.4
 		"heat dissipation" 0.7
 		"fuel capacity" 600
 		"cargo space" 75
@@ -1899,13 +1898,13 @@ ship "captured Star Barge"
 	sprite "ship/star barge"
 	attributes
 		category "Light Freighter"
-		"cost" 105000
-		"shields" 480
-		"hull" 700
+		cost 105000
+		shields 480
+		hull 700
 		"required crew" 1
-		"bunks" 3
-		"mass" 70
-		"drag" 2.64
+		bunks 3
+		mass 70
+		drag 2.64
 		"heat dissipation" 0.7
 		"fuel capacity" 300
 		"cargo space" 50
@@ -1936,13 +1935,13 @@ ship "captured Star Queen"
 	sprite "ship/star queen"
 	attributes
 		category "Transport"
-		"cost" 2750000
-		"shields" 3280
-		"hull" 1540
+		cost 2750000
+		shields 3280
+		hull 1540
 		"required crew" 43
-		"bunks" 112
-		"mass" 230
-		"drag" 6.05
+		bunks 112
+		mass 230
+		drag 6.05
 		"heat dissipation" 0.65
 		"fuel capacity" 500
 		"cargo space" 60
@@ -1983,21 +1982,21 @@ ship "captured Surveillance Drone"
 	sprite "ship/surveillance drone"
 	attributes
 		category "Drone"
-		"cost" 25000
-		"hull" 210
-		"mass" 15
-		"drag" 0.58
+		cost 25000
+		hull 210
+		mass 15
+		drag 0.58
 		"heat dissipation" 0.9
 		"outfit space" 53
 		"weapon capacity" 0
 		"engine capacity" 28
-		"automaton" 1
+		automaton 1
 		weapon
 			"blast radius" 3
 			"shield damage" 30
 			"hull damage" 15
 			"hit force" 45
-		"shields" NaN
+		shields 0
 	outfits
 		"nGVF-AA Fuel Cell"
 		"Surveillance Pod"
@@ -2012,13 +2011,13 @@ ship "captured Wasp"
 	sprite "ship/wasp"
 	attributes
 		category "Interceptor"
-		"cost" 200000
-		"shields" 1200
-		"hull" 350
+		cost 200000
+		shields 1200
+		hull 350
 		"required crew" 1
-		"bunks" 2
-		"mass" 60
-		"drag" 1.32
+		bunks 2
+		mass 60
+		drag 1.32
 		"heat dissipation" 0.8
 		"fuel capacity" 400
 		"cargo space" 10
@@ -2039,7 +2038,7 @@ ship "captured Wasp"
 		"X2700 Ion Thruster"
 		"X2200 Ion Steering"
 		"Hyperdrive"
-		"Javelin" 200
+		Javelin 200
 	engine -6 33
 	engine 6 33
 	gun 0 -38 "Javelin Pod"
