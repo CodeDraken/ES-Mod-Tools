@@ -1,0 +1,5 @@
+A (mostly) programmatically generated mod that adds cheaper, and reduced stats, captured ships.
+
+Author: Legolas @CodeDraken
+
+Current version: v0.0.1
