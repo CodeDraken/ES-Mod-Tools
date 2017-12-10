@@ -23,14 +23,14 @@ ship "captured Aerie"
 	outfits
 		"Heavy Laser" 2
 		"Heavy Laser Turret" 2
-		 "Heavy Anti-Missile Turret"
-		 "NT-200 Nucleovoltaic"
-		 "LP072a Battery Pack"
-		 "D41-HY Shield Generator"
-		 "Large Radar Jammer"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"Heavy Anti-Missile Turret"
+		"NT-200 Nucleovoltaic"
+		"LP072a Battery Pack"
+		"D41-HY Shield Generator"
+		"Large Radar Jammer"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 	engine -10 91
 	engine 10 91
 	gun -13 -79 "Heavy Laser"
@@ -75,12 +75,12 @@ ship "captured Argosy"
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 70
 		"Blaster Turret" 2
-		 "RT-I Radiothermal"
-		 "LP072a Battery Pack"
-		 "D23-QP Shield Generator"
-		 "Greyhound Plasma Thruster"
-		 "Greyhound Plasma Steering"
-		 "Hyperdrive"
+		"RT-I Radiothermal"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Hyperdrive"
 	engine -20 91
 	engine 20 91
 	gun -22 -37 "Energy Blaster"
@@ -122,14 +122,14 @@ ship "captured Arrow"
 	outfits
 		"Sidewinder Missile Launcher" 2
 		"Sidewinder Missile" 100
-		 "Anti-Missile Turret"
-		 "Dwarf Core"
-		 "Supercapacitor"
-		 "D14-RN Shield Generator"
-		 "Small Radar Jammer"
-		 "A250 Atomic Thruster"
-		 "A255 Atomic Steering"
-		 "Hyperdrive"
+		"Anti-Missile Turret"
+		"Dwarf Core"
+		"Supercapacitor"
+		"D14-RN Shield Generator"
+		"Small Radar Jammer"
+		"A250 Atomic Thruster"
+		"A255 Atomic Steering"
+		"Hyperdrive"
 	engine -10 60
 	engine 10 60
 	gun -8 -34 "Sidewinder Missile Launcher"
@@ -162,11 +162,11 @@ ship "captured Barb"
 			"hull damage" 60
 			"hit force" 180
 	outfits
-		 "Energy Blaster"
-		 "Blaster Turret"
-		 "nGVF-AA Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
+		"Energy Blaster"
+		"Blaster Turret"
+		"nGVF-AA Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
 
 ship "captured Barb Barb (Proton)"
 	sprite "ship/barbp"
@@ -189,10 +189,10 @@ ship "captured Barb Barb (Proton)"
 			"hull damage" 60
 			"hit force" 180
 	outfits
-		 "Proton Gun"
-		 "nGVF-AA Fuel Cell"
-		 Supercapacitor
-		 "D14-RN Shield Generator"
+		"Proton Gun"
+		"nGVF-AA Fuel Cell"
+		Supercapacitor
+		"D14-RN Shield Generator"
 
 ship "captured Bastion"
 	sprite "ship/bastion"
@@ -221,14 +221,14 @@ ship "captured Bastion"
 		"Heavy Rocket Launcher" 2
 		"Heavy Rocket" 40
 		"Blaster Turret" 3
-		 "S3 Thermionic"
-		 "LP144a Battery Pack"
-		 "nGVF-BB Fuel Cell"
-		 "D67-TM Shield Generator"
-		 "Water Coolant System"
-		 "Impala Plasma Thruster"
-		 "Impala Plasma Steering"
-		 "Hyperdrive"
+		"S3 Thermionic"
+		"LP144a Battery Pack"
+		"nGVF-BB Fuel Cell"
+		"D67-TM Shield Generator"
+		"Water Coolant System"
+		"Impala Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
 	engine -28 85
 	engine 28 85
 	gun -54 -14 "Plasma Cannon"
@@ -270,13 +270,13 @@ ship "captured Behemoth"
 	outfits
 		"Heavy Laser Turret" 4
 		"Heavy Anti-Missile Turret" 2
-		 "NT-200 Nucleovoltaic"
-		 "LP144a Battery Pack"
-		 "D41-HY Shield Generator"
-		 "Small Radar Jammer"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Scram Drive"
+		"NT-200 Nucleovoltaic"
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		"Small Radar Jammer"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Scram Drive"
 	engine -34 154
 	engine 34 154
 	gun -27 -83
@@ -318,12 +318,12 @@ ship "captured Berserker"
 			"hit force" 450
 	outfits
 		"Beam Laser" 4
-		 "nGVF-CC Fuel Cell"
-		 "LP072a Battery Pack"
-		 "D23-QP Shield Generator"
-		 "X2700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"nGVF-CC Fuel Cell"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"X2700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 	engine -10 45
 	engine 10 45
 	gun -20 12
@@ -359,13 +359,13 @@ ship "captured Blackbird"
 			"hit force" 900
 	outfits
 		"Heavy Laser Turret" 2
-		 "S3 Thermionic"
-		 "LP072a Battery Pack"
-		 "D23-QP Shield Generator"
-		 "Small Radar Jammer"
-		 "Impala Plasma Thruster"
-		 "Impala Plasma Steering"
-		 "Hyperdrive"
+		"S3 Thermionic"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Small Radar Jammer"
+		"Impala Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
 	engine -40 55
 	engine 40 55
 	turret -18 0 "Heavy Laser Turret"
@@ -401,12 +401,12 @@ ship "captured Bounder"
 			"hit force" 450
 	outfits
 		"Blaster Turret" 2
-		 "nGVF-CC Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"nGVF-CC Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 	engine -12 44
 	engine 12 44
 	turret -37 4 "Blaster Turret"
@@ -439,7 +439,7 @@ ship "captured Boxwing"
 			"hit force" 180
 		"cost" NaN
 	outfits
-		 "nGVF-AA Fuel Cell"
+		"nGVF-AA Fuel Cell"
 
 ship "captured Bulk Freighter"
 	sprite "ship/bulk freighter"
@@ -468,12 +468,12 @@ ship "captured Bulk Freighter"
 		"Sidewinder Missile" 100
 		"Laser Turret" 3
 		"Heavy Anti-Missile Turret" 2
-		 "RT-I Radiothermal"
-		 "LP144a Battery Pack"
-		 "D23-QP Shield Generator"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Scram Drive"
+		"RT-I Radiothermal"
+		"LP144a Battery Pack"
+		"D23-QP Shield Generator"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Scram Drive"
 	engine -22 198
 	engine 22 198
 	gun -20 -175 "Sidewinder Missile Launcher"
@@ -516,12 +516,12 @@ ship "captured Clipper"
 		"Beam Laser" 2
 		"Javelin Pod" 2
 		"Javelin" 400
-		 "nGVF-DD Fuel Cell"
-		 "LP072a Battery Pack"
-		 "D23-QP Shield Generator"
-		 "Greyhound Plasma Thruster"
-		 "Greyhound Plasma Steering"
-		 "Hyperdrive"
+		"nGVF-DD Fuel Cell"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Hyperdrive"
 	engine -20 45
 	engine 20 45
 	gun -23 -19 "Javelin Pod"
@@ -539,7 +539,7 @@ ship "captured Combat Drone"
 	attributes
 		category "Drone"
 		licenses
-			 Navy
+			Navy
 		"cost" 41500
 		"hull" 489.99999999999994
 		"mass" 20
@@ -556,11 +556,11 @@ ship "captured Combat Drone"
 			"hit force" 75
 		"shields" NaN
 	outfits
-		 "Beam Laser"
-		 "nGVF-AA Fuel Cell"
-		 "Supercapacitor"
-		 "X1700 Ion Thruster"
-		 "X1200 Ion Steering"
+		"Beam Laser"
+		"nGVF-AA Fuel Cell"
+		"Supercapacitor"
+		"X1700 Ion Thruster"
+		"X1200 Ion Steering"
 	engine -9 29
 	engine 9 29
 	gun 0 -29 "Beam Laser"
@@ -592,13 +592,13 @@ ship "captured Corvette"
 	outfits
 		"Heavy Laser" 4
 		"Heavy Laser Turret" 2
-		 "NT-200 Nucleovoltaic"
-		 "LP072a Battery Pack"
-		 "D67-TM Shield Generator"
-		 "Large Radar Jammer"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"NT-200 Nucleovoltaic"
+		"LP072a Battery Pack"
+		"D67-TM Shield Generator"
+		"Large Radar Jammer"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 	engine -11 118
 	engine 11 118
 	gun -12 -68 "Heavy Laser"
@@ -636,10 +636,10 @@ ship "captured Dagger"
 			"hit force" 180
 	outfits
 		"Beam Laser" 2
-		 "nGVF-BB Fuel Cell"
-		 "D14-RN Shield Generator"
-		 "X1700 Ion Thruster"
-		 "X1200 Ion Steering"
+		"nGVF-BB Fuel Cell"
+		"D14-RN Shield Generator"
+		"X1700 Ion Thruster"
+		"X1200 Ion Steering"
 	engine -15 30
 	engine 15 30
 	gun -14 -10 "Beam Laser"
@@ -671,11 +671,11 @@ ship "captured Finch"
 			"hit force" 180
 	outfits
 		"Beam Laser" 2
-		 "nGVF-BB Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "Chipmunk Plasma Thruster"
-		 "Chipmunk Plasma Steering"
+		"nGVF-BB Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"Chipmunk Plasma Thruster"
+		"Chipmunk Plasma Steering"
 	engine -5 32
 	engine 5 32
 	gun -7 -14 "Beam Laser"
@@ -709,13 +709,13 @@ ship "captured Firebird"
 	outfits
 		"Heavy Laser" 4
 		"Heavy Laser Turret" 2
-		 "RT-I Radiothermal"
-		 "nGVF-AA Fuel Cell"
-		 "LP144a Battery Pack"
-		 "D41-HY Shield Generator"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"RT-I Radiothermal"
+		"nGVF-AA Fuel Cell"
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 	engine -33 65
 	engine 33 65
 	gun -28 -27 "Heavy Laser"
@@ -756,12 +756,12 @@ ship "captured Flivver"
 	outfits
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 70
-		 "nGVF-BB Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "A120 Atomic Thruster"
-		 "X1200 Ion Steering"
-		 "Hyperdrive"
+		"nGVF-BB Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"A120 Atomic Thruster"
+		"X1200 Ion Steering"
+		"Hyperdrive"
 	engine -16 27
 	engine 16 27
 	gun -6 -31
@@ -794,13 +794,13 @@ ship "captured Freighter"
 			"hit force" 600
 	outfits
 		"Blaster Turret" 2
-		 "Heavy Anti-Missile Turret"
-		 "nGVF-EE Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "X2700 Ion Thruster"
-		 "X2200 Ion Steering"
-		 "Scram Drive"
+		"Heavy Anti-Missile Turret"
+		"nGVF-EE Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Scram Drive"
 	engine -9 97
 	engine 9 97
 	turret 0 -52 "Blaster Turret"
@@ -818,7 +818,7 @@ ship "captured Frigate"
 	attributes
 		category "Medium Warship"
 		licenses
-			 Navy
+			Navy
 		"cost" 2600000
 		"shields" 6400
 		"hull" 1750
@@ -842,12 +842,12 @@ ship "captured Frigate"
 		"Torpedo Launcher" 2
 		"Torpedo" 60
 		"Blaster Turret" 3
-		 "NT-200 Nucleovoltaic"
-		 "LP144a Battery Pack"
-		 "D41-HY Shield Generator"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"NT-200 Nucleovoltaic"
+		"LP144a Battery Pack"
+		"D41-HY Shield Generator"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 	engine -26 92
 	engine 26 92
 	gun -10 -83 "Particle Cannon"
@@ -889,12 +889,12 @@ ship "captured Fury"
 			"hit force" 360
 	outfits
 		"Energy Blaster" 4
-		 "nGVF-CC Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "X2700 Ion Thruster"
-		 "X2200 Ion Steering"
-		 "Hyperdrive"
+		"nGVF-CC Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
 	engine -17 35
 	engine 17 35
 	gun -10 -26
@@ -910,7 +910,7 @@ ship "captured Gunboat"
 	attributes
 		category "Light Warship"
 		licenses
-			 Navy
+			Navy
 		"cost" 1600000
 		"shields" 4640
 		"hull" 979.9999999999999
@@ -931,15 +931,15 @@ ship "captured Gunboat"
 			"hit force" 1080
 	outfits
 		"Heavy Laser" 2
-		 "Heavy Laser Turret"
-		 "RT-I Radiothermal"
-		 "LP144a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "Cargo Scanner"
-		 "Outfit Scanner"
-		 "X3700 Ion Thruster"
-		 "X2200 Ion Steering"
-		 "Hyperdrive"
+		"Heavy Laser Turret"
+		"RT-I Radiothermal"
+		"LP144a Battery Pack"
+		"D14-RN Shield Generator"
+		"Cargo Scanner"
+		"Outfit Scanner"
+		"X3700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
 	engine -12 57
 	engine 12 57
 	gun -28 -28 "Heavy Laser"
@@ -978,13 +978,13 @@ ship "captured Hauler"
 		"Meteor Missile" 70
 		"Quad Blaster Turret" 2
 		"Heavy Anti-Missile Turret" 2
-		 "S3 Thermionic"
-		 "LP072a Battery Pack"
-		 "D23-QP Shield Generator"
-		 "Small Radar Jammer"
-		 "Greyhound Plasma Thruster"
-		 "Impala Plasma Steering"
-		 "Hyperdrive"
+		"S3 Thermionic"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Small Radar Jammer"
+		"Greyhound Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
 	engine -45 122
 	engine 45 122
 	gun -15 -91
@@ -1027,13 +1027,13 @@ ship "captured Hauler II"
 		"Meteor Missile" 70
 		"Quad Blaster Turret" 2
 		"Heavy Anti-Missile Turret" 2
-		 "S3 Thermionic"
-		 "LP072a Battery Pack"
-		 "D23-QP Shield Generator"
-		 "Small Radar Jammer"
-		 "Greyhound Plasma Thruster"
-		 "Impala Plasma Steering"
-		 "Hyperdrive"
+		"S3 Thermionic"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Small Radar Jammer"
+		"Greyhound Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
 	engine -45 160
 	engine 45 160
 	gun -15 -128
@@ -1076,13 +1076,13 @@ ship "captured Hauler III"
 		"Meteor Missile" 70
 		"Quad Blaster Turret" 2
 		"Heavy Anti-Missile Turret" 2
-		 "S3 Thermionic"
-		 "LP072a Battery Pack"
-		 "D23-QP Shield Generator"
-		 "Small Radar Jammer"
-		 "Greyhound Plasma Thruster"
-		 "Impala Plasma Steering"
-		 "Hyperdrive"
+		"S3 Thermionic"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Small Radar Jammer"
+		"Greyhound Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
 	engine -45 196
 	engine 45 196
 	gun -15 -165
@@ -1122,12 +1122,12 @@ ship "captured Hawk"
 			"hit force" 450
 	outfits
 		"Heavy Laser" 2
-		 "nGVF-CC Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D23-QP Shield Generator"
-		 "Greyhound Plasma Thruster"
-		 "Greyhound Plasma Steering"
-		 "Hyperdrive"
+		"nGVF-CC Fuel Cell"
+		"LP036a Battery Pack"
+		"D23-QP Shield Generator"
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Hyperdrive"
 	engine -24 41
 	engine 24 41
 	gun -9 -17
@@ -1161,13 +1161,13 @@ ship "captured Headhunter"
 			"hit force" 660
 	outfits
 		"Heavy Laser" 2
-		 "Heavy Anti-Missile Turret"
-		 "RT-I Radiothermal"
-		 "LP072a Battery Pack"
-		 "D23-QP Shield Generator"
-		 "Greyhound Plasma Thruster"
-		 "Greyhound Plasma Steering"
-		 "Hyperdrive"
+		"Heavy Anti-Missile Turret"
+		"RT-I Radiothermal"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Hyperdrive"
 	engine -16 47
 	engine 16 47
 	gun -13 -27 "Heavy Laser"
@@ -1202,12 +1202,12 @@ ship "captured Heavy Shuttle"
 			"hull damage" 60
 			"hit force" 180
 	outfits
-		 "nGVF-AA Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "X2700 Ion Thruster"
-		 "X2200 Ion Steering"
-		 "Hyperdrive"
+		"nGVF-AA Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
 	engine 6 30
 	engine -6 30
 	gun -7 -37
@@ -1238,11 +1238,11 @@ ship "captured Lance"
 			"hit force" 180
 	outfits
 		"Beam Laser" 2
-		 "nGVF-AA Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "X1700 Ion Thruster"
-		 "X1200 Ion Steering"
+		"nGVF-AA Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"X1700 Ion Thruster"
+		"X1200 Ion Steering"
 	engine -15 30
 	engine 15 30
 	gun -14 -10 "Beam Laser"
@@ -1277,12 +1277,12 @@ ship "captured Manta"
 		"Particle Cannon" 4
 		"Meteor Missile Launcher" 2
 		"Meteor Missile" 70
-		 "RT-I Radiothermal"
-		 "LP144a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"RT-I Radiothermal"
+		"LP144a Battery Pack"
+		"D14-RN Shield Generator"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 	engine -33 38
 	engine 33 38
 	gun -21 -35 "Particle Cannon"
@@ -1323,13 +1323,13 @@ ship "captured Modified Argosy"
 	outfits
 		"Heavy Laser" 4
 		"Heavy Laser Turret" 2
-		 "NT-200 Nucleovoltaic"
-		 "LP072a Battery Pack"
-		 "D23-QP Shield Generator"
-		 "Small Radar Jammer"
-		 "Greyhound Plasma Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"NT-200 Nucleovoltaic"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Small Radar Jammer"
+		"Greyhound Plasma Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 	engine -20 91
 	engine 20 91
 	gun -22 -37 "Heavy Laser"
@@ -1371,14 +1371,14 @@ ship "captured Mule"
 		"Sidewinder Missile Launcher" 2
 		"Sidewinder Missile" 100
 		"Heavy Laser Turret" 3
-		 "Heavy Anti-Missile Turret"
-		 "NT-200 Nucleovoltaic"
-		 "LP072a Battery Pack"
-		 "D41-HY Shield Generator"
-		 "Ramscoop"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"Heavy Anti-Missile Turret"
+		"NT-200 Nucleovoltaic"
+		"LP072a Battery Pack"
+		"D41-HY Shield Generator"
+		"Ramscoop"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 		"Small Radar Jammer" 2
 	engine -12 123
 	engine 12 123
@@ -1422,12 +1422,12 @@ ship "captured Nest"
 		"Meteor Missile" 70
 		"Quad Blaster Turret" 2
 		"Heavy Anti-Missile Turret" 2
-		 "S3 Thermionic"
-		 "LP072a Battery Pack"
-		 "Large Radar Jammer"
-		 "Greyhound Plasma Thruster"
-		 "Impala Plasma Steering"
-		 "Hyperdrive"
+		"S3 Thermionic"
+		"LP072a Battery Pack"
+		"Large Radar Jammer"
+		"Greyhound Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
 		"D41-HY Shield Generator" 2
 	engine -45 122
 	engine 45 122
@@ -1471,13 +1471,13 @@ ship "captured Osprey"
 	outfits
 		"Plasma Cannon" 4
 		"Quad Blaster Turret" 2
-		 "Breeder Reactor"
-		 "LP072a Battery Pack"
-		 "D41-HY Shield Generator"
-		 "Liquid Helium Cooler"
-		 "Impala Plasma Thruster"
-		 "Impala Plasma Steering"
-		 "Hyperdrive"
+		"Breeder Reactor"
+		"LP072a Battery Pack"
+		"D41-HY Shield Generator"
+		"Liquid Helium Cooler"
+		"Impala Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
 		"Small Radar Jammer" 2
 	engine -40 67
 	engine 40 67
@@ -1518,13 +1518,13 @@ ship "captured Quicksilver"
 			"hit force" 600
 	outfits
 		"Particle Cannon" 2
-		 "RT-I Radiothermal"
-		 "LP036a Battery Pack"
-		 "D23-QP Shield Generator"
-		 "Cooling Ducts"
-		 "Greyhound Plasma Thruster"
-		 "Greyhound Plasma Steering"
-		 "Hyperdrive"
+		"RT-I Radiothermal"
+		"LP036a Battery Pack"
+		"D23-QP Shield Generator"
+		"Cooling Ducts"
+		"Greyhound Plasma Thruster"
+		"Greyhound Plasma Steering"
+		"Hyperdrive"
 	engine -17 54
 	engine 17 54
 	gun -6 -38 "Particle Cannon"
@@ -1539,7 +1539,7 @@ ship "captured Rainmaker"
 	attributes
 		category "Light Warship"
 		licenses
-			 Navy
+			Navy
 		"cost" 790000
 		"shields" 2800
 		"hull" 840
@@ -1562,12 +1562,12 @@ ship "captured Rainmaker"
 		"Energy Blaster" 2
 		"Meteor Missile Launcher" 4
 		"Meteor Missile" 140
-		 "nGVF-CC Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "X2700 Ion Thruster"
-		 "X2200 Ion Steering"
-		 "Hyperdrive"
+		"nGVF-CC Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
 	engine -8 46
 	engine 8 46
 	gun -10 -30 "Energy Blaster"
@@ -1606,12 +1606,12 @@ ship "captured Raven"
 			"hit force" 900
 	outfits
 		"Heavy Laser" 4
-		 "RT-I Radiothermal"
-		 "LP072a Battery Pack"
-		 "D41-HY Shield Generator"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"RT-I Radiothermal"
+		"LP072a Battery Pack"
+		"D41-HY Shield Generator"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 	engine -12 43
 	engine 12 43
 	gun -10 -33 "Heavy Laser"
@@ -1652,12 +1652,12 @@ ship "captured Roost"
 		"Meteor Missile" 70
 		"Quad Blaster Turret" 2
 		"Heavy Anti-Missile Turret" 2
-		 "S3 Thermionic"
-		 "LP072a Battery Pack"
-		 "Large Radar Jammer"
-		 "Greyhound Plasma Thruster"
-		 "Impala Plasma Steering"
-		 "Hyperdrive"
+		"S3 Thermionic"
+		"LP072a Battery Pack"
+		"Large Radar Jammer"
+		"Greyhound Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
 		"D41-HY Shield Generator" 4
 	engine -45 159
 	engine 45 159
@@ -1702,15 +1702,15 @@ ship "captured Scout"
 			"hit force" 240
 	outfits
 		"Energy Blaster" 2
-		 "Anti-Missile Turret"
-		 "nGVF-CC Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "Small Radar Jammer"
-		 "Ramscoop"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"Anti-Missile Turret"
+		"nGVF-CC Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"Small Radar Jammer"
+		"Ramscoop"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 	engine -8 46
 	engine 8 46
 	gun -20 -7 "Energy Blaster"
@@ -1723,11 +1723,10 @@ ship "captured Scout"
 	description "The Lionheart Scoutship was designed back in the days when the galaxy was more sparsely populated, and ships prospecting for habitable worlds or worlds rich in resources would often travel far away from any habitable ports where they would be able to refuel. Although the galaxy has now been much more thoroughly explored, the Scout remains a popular ship for long-distance travel."
 
 ship "captured Shuttle"
-	sprite
-		_value "ship/shuttle"
+	sprite "ship/shuttle"
 		"frame time" 4
 		"delay" 14
-		 "random start frame"
+		"random start frame"
 	attributes
 		category "Transport"
 		"cost" 90000
@@ -1749,12 +1748,12 @@ ship "captured Shuttle"
 			"hull damage" 60
 			"hit force" 180
 	outfits
-		 "nGVF-AA Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "X2700 Ion Thruster"
-		 "X2200 Ion Steering"
-		 "Hyperdrive"
+		"nGVF-AA Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
 	engine 6 30
 	engine -6 30
 	gun 0 -30
@@ -1768,7 +1767,7 @@ ship "captured Skein"
 	attributes
 		category "Medium Warship"
 		licenses
-			 "Militia Carrier"
+			"Militia Carrier"
 		"cost" 1750000
 		"shields" 2640
 		"hull" 4690
@@ -1792,12 +1791,12 @@ ship "captured Skein"
 		"Meteor Missile" 70
 		"Quad Blaster Turret" 2
 		"Heavy Anti-Missile Turret" 2
-		 "S3 Thermionic"
-		 "LP072a Battery Pack"
-		 "Large Radar Jammer"
-		 "Greyhound Plasma Thruster"
-		 "Impala Plasma Steering"
-		 "Hyperdrive"
+		"S3 Thermionic"
+		"LP072a Battery Pack"
+		"Large Radar Jammer"
+		"Greyhound Plasma Thruster"
+		"Impala Plasma Steering"
+		"Hyperdrive"
 		"D67-TM Shield Generator" 4
 	engine -45 197
 	engine 45 197
@@ -1844,12 +1843,12 @@ ship "captured Sparrow"
 			"hit force" 240
 	outfits
 		"Beam Laser" 2
-		 "nGVF-BB Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "Chipmunk Plasma Thruster"
-		 "Chipmunk Plasma Steering"
-		 "Hyperdrive"
+		"nGVF-BB Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"Chipmunk Plasma Thruster"
+		"Chipmunk Plasma Steering"
+		"Hyperdrive"
 	engine -5 35
 	engine 5 35
 	gun -7 -10
@@ -1884,13 +1883,13 @@ ship "captured Splinter"
 	outfits
 		"Proton Gun" 2
 		"Blaster Turret" 3
-		 "RT-I Radiothermal"
-		 "LP144a Battery Pack"
-		 "D67-TM Shield Generator"
-		 "Water Coolant System"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"RT-I Radiothermal"
+		"LP144a Battery Pack"
+		"D67-TM Shield Generator"
+		"Water Coolant System"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 		"Small Radar Jammer" 2
 	engine -15 115
 	engine 15 115
@@ -1929,12 +1928,12 @@ ship "captured Star Barge"
 			"hull damage" 80
 			"hit force" 240
 	outfits
-		 "nGVF-BB Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "Chipmunk Plasma Thruster"
-		 "Chipmunk Plasma Steering"
-		 "Hyperdrive"
+		"nGVF-BB Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"Chipmunk Plasma Thruster"
+		"Chipmunk Plasma Steering"
+		"Hyperdrive"
 	engine -9 38
 	engine 9 38
 	turret 0 -8
@@ -1969,12 +1968,12 @@ ship "captured Star Queen"
 		"Sidewinder Missile Launcher" 3
 		"Sidewinder Missile" 150
 		"Heavy Anti-Missile Turret" 2
-		 "NT-200 Nucleovoltaic"
-		 "LP072a Battery Pack"
-		 "D94-YV Shield Generator"
-		 "X3700 Ion Thruster"
-		 "X3200 Ion Steering"
-		 "Hyperdrive"
+		"NT-200 Nucleovoltaic"
+		"LP072a Battery Pack"
+		"D94-YV Shield Generator"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 		"Small Radar Jammer" 3
 	engine -18 116
 	engine 18 116
@@ -1995,7 +1994,7 @@ ship "captured Surveillance Drone"
 	attributes
 		category "Drone"
 		licenses
-			 Navy
+			Navy
 		"cost" 25000
 		"hull" 210
 		"mass" 15
@@ -2012,10 +2011,10 @@ ship "captured Surveillance Drone"
 			"hit force" 45
 		"shields" NaN
 	outfits
-		 "nGVF-AA Fuel Cell"
-		 "Surveillance Pod"
-		 "X1700 Ion Thruster"
-		 "X1200 Ion Steering"
+		"nGVF-AA Fuel Cell"
+		"Surveillance Pod"
+		"X1700 Ion Thruster"
+		"X1200 Ion Steering"
 	engine -5 29
 	engine 5 29
 	explode "tiny explosion" 15
@@ -2045,13 +2044,13 @@ ship "captured Wasp"
 			"hit force" 300
 	outfits
 		"Energy Blaster" 2
-		 "Javelin Pod"
-		 "nGVF-BB Fuel Cell"
-		 "LP036a Battery Pack"
-		 "D14-RN Shield Generator"
-		 "X2700 Ion Thruster"
-		 "X2200 Ion Steering"
-		 "Hyperdrive"
+		"Javelin Pod"
+		"nGVF-BB Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
 		"Javelin" 200
 	engine -6 33
 	engine 6 33

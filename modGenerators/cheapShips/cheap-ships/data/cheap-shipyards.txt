@@ -1,18 +1,18 @@
-"Buccaneer Bay"
+planet "Buccaneer Bay"
 	add shipyard "Captured Ships"
 
-Covert
+planet Covert
 	add shipyard "Captured Ships"
 
-Freedom
+planet Freedom
 	add shipyard "Captured Ships"
 
-Greenrock
+planet Greenrock
 	add shipyard "Captured Ships"
 
-Haven
+planet Haven
 	add shipyard "Captured Ships"
 
-"Smuggler's Den"
+planet "Smuggler's Den"
 	add shipyard "Captured Ships"
 

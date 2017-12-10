@@ -30,14 +30,20 @@ const objLooper = (obj, indent) => {
       gameStr += tabs + key + ' ' + value + '\n'
     } else if (typeof value === 'object' && Array.isArray(value)) {
       // array value | prepend the key except for singles
-      key = key !== 'singles' ? key : ''
+      key = key !== 'singles' ? key + ' ' : ''
 
       gameStr += value.reduce((str, val) =>
-        str + tabs + key + ' ' + val + '\n',
+        str + tabs + key + val + '\n',
       '')
     } else if (typeof value === 'object' && !Array.isArray(value)) {
-      // object value | loop deeper
-      gameStr += tabs + key + '\n' + objLooper(value, indent + 1)
+      const _value = value._value
+        ? ' ' + value._value
+        : ''
+
+      delete value._value
+
+      // object value | loop deeper and if it has its own _value add it
+      gameStr += tabs + key + _value + '\n' + objLooper(value, indent + 1)
     }
   }
 

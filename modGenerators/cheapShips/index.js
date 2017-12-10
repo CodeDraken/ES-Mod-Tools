@@ -54,7 +54,7 @@ const shipsGameStr = objArrToGame(ships).join('\n')
 
 // add shipyard to planets
 const planetShipyards = planets.reduce((str, planet) =>
-  str + planet + '\n' + '\t' + 'add ' + config.shipyard + '\n\n'
+  str + 'planet ' + planet + '\n' + '\t' + 'add ' + config.shipyard + '\n\n'
 , '')
 
 // save to file

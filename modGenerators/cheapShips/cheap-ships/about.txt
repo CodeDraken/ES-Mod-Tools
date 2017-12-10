@@ -1,4 +1,4 @@
-A (mostly) programmatically generated mod that adds cheaper, and reduced stats, captured ships.
+A (mostly) programmatically generated mod that adds captured ships with reduced stats and cost.
 
 Author: Legolas @CodeDraken
 
