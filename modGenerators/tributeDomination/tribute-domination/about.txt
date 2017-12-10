@@ -2,4 +2,4 @@ A (mostly) programmatically generated mod that allows you to demand tribute from
 
 Author: Legolas @CodeDraken
 
-Current version: Beta v0.7.0
+Current version: Beta v0.8.0
